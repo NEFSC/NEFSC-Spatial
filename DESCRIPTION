@@ -5,7 +5,7 @@ Authors@R:
     person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID"))
 Description: Provides spatial data as sf objects
-License:  file LICENSE
+License: file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
@@ -19,5 +19,7 @@ Suggests:
     sf,
     purrr,
     RCurl,
-    stringr
-
+    stringr,
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr

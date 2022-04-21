@@ -1,0 +1,39 @@
+---
+title: "Contributing Spatial Data"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{ContributeSpatialData}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(NEFSCspatial)
+```
+
+There are two options for adding spatial data into the package.
+
+1. Create an [issue](https://github.com/andybeet/NEFSCspatial/issues) in the repo indicating where the shapefile is located and what it represents 
+
+2. Create a pull request. Follow these steps
+
+* Clone the [repo](https://github.com/andybeet/NEFSCspatial)
+* Create a new branch
+* Use one of the supplied functions in the `data-raw` folder to convert your .shp file into the required format
+* Commit the .rda file
+* Create a pull request
+
+Your request will be reviewed by a team member
+
+## Supplied function
+
+*   create_sf_data_from_shp - To convert a shapefile you have stored locally on your machine to sf
+*   create_sf_data_from_url - Downloads a zip file from a website (containing shapefile(s)) and converts to sf
+*   create_sf_data_from_ftp - Downloads shapefile(s) from a public ftp site and converts to sf
