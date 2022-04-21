@@ -2,7 +2,7 @@
 title: "Contributing Spatial Data"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{ContributeSpatialData}
+  %\VignetteIndexEntry{Contributing Spatial Data}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---

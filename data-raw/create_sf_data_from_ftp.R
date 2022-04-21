@@ -34,7 +34,7 @@ create_sf_data_from_ftp <- function(ftpsite,file = NULL,tempDir=here::here("data
 
   # list all shp files
   message("Pulling the names of shapefiles from the ftp site")
-  allFiles <- NEFSCspatial::list_files_ftp(ftpsite)
+  allFiles <- list_files_ftp(ftpsite)
 
   # filter shape files
   shpFiles <- grep("shp$",allFiles,value=T)
