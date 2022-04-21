@@ -1,20 +1,25 @@
 #' Read in shape files from within zip file on web
 #'
-#' Zip file can contain multiple zipfiles. All shapefiles will be converted to sf objects and
-#' copied to data folder
+#' Zip file can contain multiple shapefiles.
+#' All shapefiles will be converted to sf objects and saved to data folder as rda files
 #'
 #' @param url Character string. Url of zip file containing shapefiles
 #'
+#' @return creates sf object in data folder. Package then needs to be rebuilt (Ctrl+shift+B)
+#'
+#'
 
 library(magrittr)
-library(usethis)
-url <- "https://www.nafo.int/Portals/0/GIS/Divisions.zip"
-url <- "https://www.nafo.int/Portals/0/GIS/Footprint_Projected.zip"
-url <- "https://www.nafo.int/Portals/0/GIS/VME_closures.zip"
+# url <- "https://www.nafo.int/Portals/0/GIS/Divisions.zip"
+# url <- "https://www.nafo.int/Portals/0/GIS/Footprint_Projected.zip"
+# url <- "https://www.nafo.int/Portals/0/GIS/VME_closures.zip"
 #options(warn=-1)
 ##options(warn=0)
 
 create_sf_data_from_url <- function(url) {
+
+  # set up function for use in do.call
+  myfun <- get("use_data", asNamespace("usethis"))
 
     # get zip file, catch error for missing file
       result <- tryCatch(
@@ -59,8 +64,7 @@ create_sf_data_from_url <- function(url) {
           centroids <-  sf::st_coordinates(sf::st_centroid(layer))
           layer <- cbind(layer,centroids)
           assign(exportName,layer)
-          do.call("use_data", list(as.name(exportName), overwrite = TRUE))
-          #save(list=exportName,file=paste0(here::here("data-raw"),"/",exportName,".rdata"))
+          do.call(myfun, list(as.name(exportName), overwrite = TRUE))
        }
 
       }
