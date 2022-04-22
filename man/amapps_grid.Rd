@@ -16,7 +16,7 @@ A \code{raster} object:
 }
 }
 \source{
-\url{https://www.https://www.fisheries.noaa.gov/new-england-mid-atlantic/population-assessments/atlantic-marine-assessment-program-protected}
+\url{https://www.fisheries.noaa.gov/new-england-mid-atlantic/population-assessments/atlantic-marine-assessment-program-protected}
 }
 \usage{
 data("amapps_grid")
