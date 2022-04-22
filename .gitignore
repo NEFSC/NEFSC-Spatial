@@ -7,3 +7,4 @@
 # exclude folders
 data-raw/temp
 inst/doc
+docs
