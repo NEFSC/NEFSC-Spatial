@@ -1,14 +1,12 @@
 # NEFSCspatial
 
-A repository of Spatial data (shapefiles) in simple features [`sf`](https://r-spatial.github.io/sf/) format
+A repository of spatial data (vectors and rasters) in simple features [`sf`](https://r-spatial.github.io/sf/)  or [`raster`](https://github.com/rspatial/raster) format.
 
 ### Installation
 
 ``` 
 remotes::install_github("andybeet/NEFSCspatial")
-
 ```
-
 
 #### Legal disclaimer
 
