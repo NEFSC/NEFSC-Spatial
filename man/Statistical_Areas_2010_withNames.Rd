@@ -9,8 +9,8 @@ A data frame/ sf object (135 x 6)
 \describe{
 \item{Id}{Area Number}
 \item{NAFODIV}{NAFO Division code}
-\item{FULL_NAME}{}
-\item{SHORT_NAME}{Area Number}
+\item{FULL_NAME}{Description of Division area}
+\item{SHORT_NAME}{Abbreviated version of FULL_NAME}
 \item{X}{x coordinate of polygon center}
 \item{y}{y coordinate of polygon center}
 }
