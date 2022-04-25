@@ -13,12 +13,15 @@ get_amapps_grid_raster <- function(save_clean = TRUE) {
   # read in .tif file
   amapps_grid <- here::here('data-raw/gis/AMAPPS_10km_grid.tif') %>% 
     raster::raster() 
+  
+  # load into memory
+  amapps_grid_all <- raster::readAll(amapps_grid)
 
   # save or not
   if (save_clean) {
-    usethis::use_data(amapps_grid, overwrite = TRUE)
+    usethis::use_data(amapps_grid_all, overwrite = TRUE)
   } else {
-    return(amapps_grid)
+    return(amapps_grid_all)
   }
   
 }
