@@ -1,0 +1,45 @@
+url: https://andybeet.github.io/NEFSCspatial/
+
+navbar:
+  structure:
+    left:
+    - home
+    - reference
+    - sourcecode
+    - issue
+    - articles
+    right: github
+    
+  components:
+    home:
+      icon: fas fa-home fa-lg
+      href: index.html
+
+    reference:
+      text: Data
+      icon: far fa-file-code fa-lg
+      href: reference/index.html
+
+    issue:
+      text: Issues
+      icon: fas fa-question-circle fa-lg
+      href: https://github.com/andybeet/NEFSCspatial/issues/
+
+    articles:
+      text: Vignettes
+      icon: fas fa-file-contract fa-lg
+      href: articles/index.html
+
+reference:
+- title: Spatial data
+  contents:
+  - starts_with("amapps_")
+  - starts_with("Statistical_")
+
+authors:
+  Andy Beet:
+    href: https://github.com/andybeet
+  Kimberly Bastille:
+    href: https://github.com/kimberly-bastille
+  Joshua Hatch:
+    href: https://github.com/jmhatch-NOAA
