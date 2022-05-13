@@ -1,6 +1,6 @@
 # NEFSCspatial
 
-![gitleaks](https://github.com/andybeet/NEFSCspatial/actions/workflows/secretScan.yml/badge.svg) 
+[![gitleaks](https://github.com/andybeet/NEFSCspatial/actions/workflows/secretScan.yml/badge.svg)](https://github.com/andybeet/NEFSCspatial/actions/workflows/secretScan.yml)
 
 A repository of spatial data (vectors and rasters) in simple features [`sf`](https://r-spatial.github.io/sf/)  or [`raster`](https://github.com/rspatial/raster) format.
 
