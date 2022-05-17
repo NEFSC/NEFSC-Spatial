@@ -28,7 +28,8 @@ There are two options for adding spatial data into the package.
     * Use one of the supplied functions in the `data-raw` folder to convert your .shp file into the required format
     * Commit the .rda file
     * Create a pull request
-    Your request will be reviewed by a team member
+
+Your request will be reviewed by a team member
 
 ## Supplied functions
 
