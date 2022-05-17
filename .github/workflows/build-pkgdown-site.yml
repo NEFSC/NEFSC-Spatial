@@ -13,7 +13,7 @@ jobs:
       - uses: r-lib/actions/setup-pandoc@v2
 
       - name: Install packages
-        run: Rscript -e 'install.packages(c("pkgdown", "roxygen2", "knitr"))'
+        run: Rscript -e 'install.packages(c("pkgdown", "roxygen2", "knitr", "raster"), dependencies = TRUE)'
 
       - name: Update R function documentation
         run: Rscript -e 'roxygen2::roxygenize()'
