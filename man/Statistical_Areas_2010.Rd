@@ -5,11 +5,9 @@
 \alias{Statistical_Areas_2010}
 \title{Greater Atlantic Region Statistical Areas}
 \format{
-A data frame/ sf object (135 x2)
+A data frame/ sf object (135 x 1)
 \describe{
-\item{}{}
-\item{}{}
-...
+\item{Id}{Area Number}
 }
 }
 \source{
@@ -19,6 +17,7 @@ A data frame/ sf object (135 x2)
 Statistical_Areas_2010
 }
 \description{
-An sf object containing the Greater Atlantic Region Statistical Areas
+An sf object containing the Greater Atlantic Region Statistical Areas.
+Pulled from ftp://ftp.nefsc.noaa.gov/pub/gis/
 }
 \keyword{datasets}

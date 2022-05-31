@@ -1,0 +1,10 @@
+pandoc: 2.14.2
+pkgdown: 2.0.3
+pkgdown_sha: ~
+articles:
+  ContributeSpatialData: ContributeSpatialData.html
+last_built: 2022-05-19T15:50Z
+urls:
+  reference: https://andybeet.github.io/NEFSCspatial/reference
+  article: https://andybeet.github.io/NEFSCspatial/articles
+

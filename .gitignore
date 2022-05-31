@@ -3,3 +3,7 @@
 .RData
 .Ruserdata
 *.Rproj
+
+# exclude folders
+data-raw/temp
+inst/doc
