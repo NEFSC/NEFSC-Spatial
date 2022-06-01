@@ -5,13 +5,13 @@ library(ggimage)
 
 ### Option 1
 img1<- ggimage::image_read2("images/hexstickerV1_ppt.PNG")
-res1<- img %>% 
+res1<- img1 %>% 
   #image_convert("png") %>% 
-  magick::image_resize("1080 x 200")#%>% 
+  magick::image_resize("1080 x 600")#%>% 
   #magick::image_fill(color="#062047", point="+45") %>% 
   #magick::image_annotate("NEFSCspatial", size=38, location = "-10+100", color="black") 
   
-res_final1<- hexSticker::sticker(res, package = "NEFSCspatial", p_size = 12, 
+res_final1<- hexSticker::sticker(res1, package = "NEFSCspatial", p_size = 16, 
                                 p_y = 1.4, p_color = "#9DC3E6",
                                 s_x = 1, s_y=1.1, s_width = 1.5, 
                                 s_height = 14, h_fill = "white", h_color="#1F4E79", 
