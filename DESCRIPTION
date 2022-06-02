@@ -22,6 +22,10 @@ Suggests:
     RCurl,
     stringr,
     knitr,
-    rmarkdown
+    rmarkdown,
+    magick,
+    hexSticker,
+    ggimage,
+    dplyr
 LazyData: true
 VignetteBuilder: knitr
