@@ -12,12 +12,12 @@ res1<- img1 %>%
   #magick::image_annotate("NEFSCspatial", size=38, location = "-10+100", color="black")
 
 res_final1<- hexSticker::sticker(res1, package = "NEFSCspatial", p_size = 16,
-                                p_y = 1.4, p_color = "#9DC3E6",
-                                s_x = 1, s_y=1.1, s_width = 1.5,
-                                s_height = 14, h_fill = "white", h_color="#1F4E79",
-                                u_x = 1.02,
-                                u_y=.07,
-                                url = "xxx.github.io/NEFSCspatial",
+                                p_y = 0.5, p_color = "#003087",
+                                s_x = 1, s_y=1.2, s_width = 1.5,
+                                s_height = 14, h_fill = "white", h_color="#003087",
+                                u_x = 0.2,
+                                u_y=1.47,
+                                url = "github.io/NEFSCspatial",
                                 u_size = 5.8,
                                 filename = here::here("data-raw/NEFSCspatial_hexsticker_v1.png"))
                                 #filename = here::here("man/figures/logo.png"))
@@ -31,12 +31,12 @@ res2<- img2 %>%
 #magick::image_annotate("NEFSCspatial", size=38, location = "-10+100", color="black")
 
 res_final2<- hexSticker::sticker(res2, package = "NEFSCspatial", p_size = 16,
-                                 p_y = 1.3, p_color = "#1F4E79",
+                                 p_y = 0.7, p_color = "#003087",
                                  s_x = 0.95, s_y=1.05, s_width = 1.2,
-                                 s_height = 12, h_fill = "white", h_color="#1F4E79",
+                                 s_height = 12, h_fill = "white", h_color="#003087",
                                  u_x = 1.02,
                                  u_y=.07,
-                                 url = "xxx.github.io/NEFSCspatial",
+                                 url = "github.io/NEFSCspatial",
                                  u_size = 5.8,
                                  filename = here::here("data-raw/NEFSCspatial_hexsticker_v2.png"))
                                   #filename = here::here("man/figures/logo.png"))
