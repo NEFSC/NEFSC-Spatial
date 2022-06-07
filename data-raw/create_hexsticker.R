@@ -12,7 +12,7 @@ res1<- img1 %>%
   #magick::image_annotate("NEFSCspatial", size=38, location = "-10+100", color="black")
 
 res_final1<- hexSticker::sticker(res1, package = "NEFSCspatial", p_size = 16,
-                                p_y = 0.5, p_color = "#003087",
+                                p_y = 0.45, p_color = "#003087",
                                 s_x = 1, s_y=1.2, s_width = 1.5,
                                 s_height = 14, h_fill = "white", h_color="#003087",
                                 u_x = 0.2,
@@ -31,7 +31,7 @@ res2<- img2 %>%
 #magick::image_annotate("NEFSCspatial", size=38, location = "-10+100", color="black")
 
 res_final2<- hexSticker::sticker(res2, package = "NEFSCspatial", p_size = 16,
-                                 p_y = 0.7, p_color = "#003087",
+                                 p_y = 0.65, p_color = "#003087",
                                  s_x = 0.95, s_y=1.05, s_width = 1.2,
                                  s_height = 12, h_fill = "white", h_color="#003087",
                                  u_x = 1.02,
