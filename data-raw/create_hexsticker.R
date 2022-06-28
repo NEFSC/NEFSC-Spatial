@@ -15,11 +15,11 @@ res_final1<- hexSticker::sticker(res1, package = "NEFSCspatial", p_size = 16,
                                 p_y = 0.45, p_color = "#003087",
                                 s_x = 1, s_y=1.2, s_width = 1.5,
                                 s_height = 14, h_fill = "white", h_color="#003087",
-                                u_x = 0.2,
+                                u_x = 0.18,
                                 u_y=1.47,
-                                url = "github.io/NEFSCspatial",
+                                url = "nefsc.github.io/NEFSCspatial",
                                 u_size = 5.8,
-                                filename = here::here("data-raw/NEFSCspatial_hexsticker_v1.png"))
+                                filename = here::here("man/NEFSCspatial_hexsticker_v1.png"))
                                 #filename = here::here("man/figures/logo.png"))
 
 ### Option 2
