@@ -3,7 +3,7 @@ pkgdown: 2.0.5
 pkgdown_sha: ~
 articles:
   ContributeSpatialData: ContributeSpatialData.html
-last_built: 2022-06-28T19:37Z
+last_built: 2022-06-28T21:38Z
 urls:
   reference: https://andybeet.github.io/NEFSCspatial/reference
   article: https://andybeet.github.io/NEFSCspatial/articles
