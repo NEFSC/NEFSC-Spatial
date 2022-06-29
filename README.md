@@ -7,8 +7,15 @@ A repository of spatial data (vectors and rasters) in simple features [`sf`](htt
 ### Installation
 
 ``` 
-remotes::install_github("andybeet/NEFSCspatial")
+remotes::install_github("NEFSC/NEFSC-spatial")
 ```
+
+# Contact (in alphabetical order)
+
+| [kimberly-bastille](https://github.com/kimberly-bastille) | [andybeet](https://github.com/andybeet) | [jmhatch](https://github.com/jmhatch) | 
+|---|---|---|
+<img src = "https://avatars.githubusercontent.com/u/39955661?s=100&v=4" > | <img src = "https://avatars1.githubusercontent.com/u/22455149?s=100&v=4" > | <img src = "https://avatars.githubusercontent.com/u/35869229?s=100&v=4" width = "100" height = "100" > ||
+
 
 ### Legal disclaimer
 
