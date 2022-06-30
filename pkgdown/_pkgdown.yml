@@ -1,4 +1,4 @@
-url: https://andybeet.github.io/NEFSCspatial/
+url: https://nefsc.github.io/NEFSC-Spatial/
 
 navbar:
   structure:
@@ -9,7 +9,7 @@ navbar:
     - issue
     - articles
     right: github
-    
+
   components:
     home:
       icon: fas fa-home fa-lg
@@ -23,7 +23,7 @@ navbar:
     issue:
       text: Issues
       icon: fas fa-question-circle fa-lg
-      href: https://github.com/andybeet/NEFSCspatial/issues/
+      href: https://github.com/NEFSC/NEFSC-Spatial/issues/
 
     articles:
       text: Vignettes
@@ -35,6 +35,7 @@ reference:
   contents:
   - starts_with("amapps_")
   - starts_with("Statistical_")
+  - starts_with("boem_")
 
 authors:
   Andy Beet:
