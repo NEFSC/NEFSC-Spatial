@@ -25,6 +25,7 @@ dnld_boem_weas <- function(gdb_loc) {
 
 #' Extract renewable energy lease areas and wind planning areas from BOEM geodatabase and save as an rda file.
 #'
+#' @param gdb_loc File path for the BOEM geodatabase.
 #' @param save_clean Boolean. TRUE / FALSE to save data as an rda file or return \code{sf} object.
 #'
 #' @return A \code{sf} object if \code{save_clean = FALSE}, otherwise \code{NULL}.
@@ -41,16 +42,24 @@ get_boem_weas <- function(gdb_loc, save_clean = TRUE) {
   active_name <- list_layers$name[stringr::str_detect(list_layers$name, 'WindLeaseOutlines')]
   planning_name <- list_layers$name[stringr::str_detect(list_layers$name, 'WindPlanningAreaOutlines')]
     
-  # read in features
+  # read in feature layers
   active_shapes <- here::here(paste0(gdb_loc, '/BOEMWindLayers_4Download.gdb')) %>% 
     sf::st_read(layer = active_name) %>%
     dplyr::mutate(LEASE_STAGE = 'Active')
   planning_shapes <- here::here(paste0(gdb_loc, '/BOEMWindLayers_4Download.gdb')) %>% 
     sf::st_read(layer = planning_name) %>%
     dplyr::mutate(LEASE_STAGE = 'Planning')
+  
+  # figure out which columns are in one and not the other
+  cols_not_planning = colnames(active_shapes)[!colnames(active_shapes) %in% colnames(planning_shapes)]
+  cols_not_active = colnames(planning_shapes)[!colnames(planning_shapes) %in% colnames(active_shapes)]
+  
+  # add missing columns to enable rbind
+  active_shapes[cols_not_active] = NA
+  planning_shapes[cols_not_planning] = NA 
 
-  # union
-  boem_wea_outlines <- sf::st_union(active_shapes, planning_shapes)
+  # combine 
+  boem_wea_outlines <- sf:::rbind.sf(active_shapes, planning_shapes)
 
   # save or not
   if (save_clean) {
