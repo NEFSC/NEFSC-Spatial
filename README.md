@@ -1,4 +1,4 @@
-# NEFSCspatial
+# NEFSCspatial  <img src="man/figures/logo.png" align="right" width="120" />
 
 [![gitleaks](https://github.com/andybeet/NEFSCspatial/actions/workflows/secretScan.yml/badge.svg)](https://github.com/andybeet/NEFSCspatial/actions/workflows/secretScan.yml)
 
