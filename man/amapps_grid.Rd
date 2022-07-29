@@ -19,7 +19,7 @@ A \code{raster} object:
 \url{https://www.fisheries.noaa.gov/new-england-mid-atlantic/population-assessments/atlantic-marine-assessment-program-protected}
 }
 \usage{
-data("amapps_grid")
+data('amapps_grid')
 }
 \description{
 A \code{raster} object containing the Atlantic Marine Assessment Program for Protected Species (AMAPPS) 10 km grid.
