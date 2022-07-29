@@ -1,0 +1,73 @@
+name: New Data Submission Request
+description: Request new data be added to NEFSCspatial (test form instead of template)
+title: "[Request]: "
+labels: ["enhancement"]
+assignees: ["andybeet","jmhatch","kimberly-bastille"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this submission request!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@noaa.gov
+    validations:
+      required: false
+  - type: textarea
+    id: what-data
+    attributes:
+      label: What data would you like to add?
+      description: Please provide a clear and concise description of what the data are.
+      value: "All data require source documentation. Without this, data can not be accepted."
+    validations:
+      required: true
+  - type: checkboxes
+    id: search-data
+    attributes:
+      label: Are there data currently in the package that are similar?
+      description: Please search to see if data already exists for your purposes.
+      options:
+        - label: I have searched the existing data.
+          required: true
+  - type: input
+    id: data-url
+    attributes:
+      label: Can you provide a URL to view the data online?
+      description: Please provide a link to the data, whether http, ftp, or other.
+      placeholder: ex. https://www.fisheries.noaa.gov/inport/stats/NEFSC/data-sets
+    validations:
+      required: false
+  - type: dropdown
+    id: data-type
+    attributes:
+      label: What is the type of data?
+      description: Spatial data type for the requested addition.
+      multiple: false
+      options:
+        - Shapefile
+        - Raster
+        - Other (please specify below)
+    validations:
+      required: true      
+  - type: input
+    id: data-type-other
+    attributes:
+      label: If Other, please specify data type
+      description: If you selected Other from the dropdown menu above, please specify the spatial data type.
+      placeholder: ex. Geodatabase (*.gdb)
+    validations:
+      required: false
+  - type: dropdown
+    id: data-manip
+    attributes:
+      label: Does this data require any additional manipulation before usage?
+      description: If yes, and upon acceptance, a pull request will need to be initiated containing the R code. You will be instructed when to do this.
+      multiple: false
+      options:
+        - 'Yes'
+        - 'No'
+    validations:
+      required: true 
