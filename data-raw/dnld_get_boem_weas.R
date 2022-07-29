@@ -70,8 +70,106 @@ get_boem_weas <- function(gdb_loc, save_clean = TRUE) {
   
 }
 
-# download
-dnld_boem_weas(gdb_loc = gdb_loc)
+#' Was the metadata updated for renewable energy lease areas and wind planning areas from BOEM?
+#' 
+#' @return TRUE if updated, otherwise FALSE.
+#' 
+weas_updated = function() {
+  
+  # download html from boem website
+  wea_html <- 'https://catalog.data.gov/dataset/boem-wind-planning-areas' %>% 
+    rvest::read_html() 
+  
+  # html nodes with links
+  metadata_links <- wea_html %>% 
+    rvest::html_nodes(css = '[href]') 
+  
+  # look for a specific node
+  metadata_href <- tibble::tibble(links = metadata_links %>% rvest::html_attr('href')) %>% 
+    tibble::rownames_to_column() %>%
+    dplyr::filter(links == '#sec-dates') %>% 
+    `[[`("rowname") %>%
+    as.numeric()
+   
+  # extract metadata update date
+  metadata_update <- metadata_links[metadata_href] %>% 
+    rvest::html_text()
+  
+  # read date of latest download
+  latest_date <- here::here('data-raw', 'boem-renewable-energy-geodatabase', 'boem_wea_date_downloaded.txt') %>%
+    readLines() %>%
+    as.Date(format = '%B %d, %Y')
+  
+  # was the geodatabase updated?
+  if (metadata_update %>% as.Date(format = '%B %d, %Y') > latest_date) {
+    
+    # save new date
+    cat(paste0(metadata_update, '\n'), file = here::here('data-raw', 'boem-renewable-energy-geodatabase', 'boem_wea_date_downloaded.txt'))
 
-# extract
-get_boem_weas(gdb_loc = gdb_loc)
+    return(TRUE)
+  } else {
+    return(FALSE)
+  }
+  
+}
+
+#' Update the R file documenting the renewable energy lease areas and wind planning areas from BOEM.
+#' 
+#' @return NULL
+#' 
+update_weas_R <- function() {
+  
+  # load data
+  load(file = here::here('data', 'boem_wea_outlines.rda'))
+  
+  # get metadata
+  n_features <- nrow(boem_wea_outlines)
+  n_fields <- ncol(boem_wea_outlines)
+  bbox <- sf::st_bbox(boem_wea_outlines)
+  x_min <- round(bbox['xmin'], 4)
+  x_max <- round(bbox['xmax'], 4)
+  y_min <- round(bbox['ymin'], 4)
+  y_max <- round(bbox['ymax'], 4)
+    
+  # paste string
+  txt_file <- paste0("#' @title BOEM Renewable Energy Lease Areas and Wind Planning Areas
+#'
+#' @description A \\code{sf} object containing the outlines for BOEM Renewable Energy Lease Areas (LEASE_STAGE = 'Active') and Wind Planning Areas (LEASE_STAGE = 'Planning').
+#'
+#' @format A \\code{sf} collection with ", n_features," features and ", n_fields," fields:
+#' \\describe{
+#'   \\item{Geometry type}{MULTIPOLYGON}
+#'   \\item{Dimension}{XY}
+#'   \\item{Bounding box}{xmin: ", x_min," ymin: ", y_min," xmax: ", x_max," ymax: ", y_max,"}
+#'   \\item{Geodetic CRS}{WGS 84}
+#'   \\item{source}{data-raw/boem-renewable-energy-geodatabase/BOEMWindLayers_4Download.gdb}
+#' }
+#' 
+#' @docType data
+#' @name boem_wea_outlines
+#' @usage data('boem_wea_outlines')
+#' @keywords datasets
+#' @source \\url{https://www.boem.gov/renewable-energy/mapping-and-data/renewable-energy-gis-data}
+NULL")
+
+  # output
+  cat(txt_file, file = here::here('R/data_boem_wea_outlines.R'))
+  
+}
+
+# update if needed
+if (weas_updated()) {
+  
+  # download
+  dnld_boem_weas(gdb_loc = gdb_loc)
+  
+  # extract
+  get_boem_weas(gdb_loc = gdb_loc)
+  
+  # update R 
+  update_weas_R()
+  
+  # re-build documentation
+  devtools::document()
+  
+}

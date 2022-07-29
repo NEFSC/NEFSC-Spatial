@@ -16,7 +16,7 @@
 #' 
 #' @docType data
 #' @name amapps_grid
-#' @usage data("amapps_grid")
+#' @usage data('amapps_grid')
 #' @keywords datasets
 #' @source \url{https://www.fisheries.noaa.gov/new-england-mid-atlantic/population-assessments/atlantic-marine-assessment-program-protected}
 NULL
