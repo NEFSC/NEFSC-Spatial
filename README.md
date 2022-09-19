@@ -7,7 +7,7 @@ A repository of spatial data (vectors and rasters) in simple features [`sf`](htt
 ### Installation
 
 ``` 
-remotes::install_github("andybeet/NEFSCspatial")
+remotes::install_github("NEFSC/NEFSC-Spatial")
 ```
 
 ### Legal disclaimer
