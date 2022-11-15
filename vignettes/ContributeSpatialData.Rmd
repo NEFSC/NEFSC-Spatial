@@ -18,18 +18,37 @@ knitr::opts_chunk$set(
 library(NEFSCspatial)
 ```
 
-There are two options for adding spatial data into the package.
+## Adding spatial data to the package.
 
-1. Create an [issue](https://github.com/andybeet/NEFSCspatial/issues) in the repo indicating where the shapefile is located and what it represents 
+The initial step is to create an [issue](https://github.com/NEFSC/NEFSC-Spatial/issues/new/choose). The issue should describe the data, and indicate where it is located.
 
-2. Create a pull request. Follow these steps
-    * Clone the [repo](https://github.com/andybeet/NEFSCspatial)
-    * Create a new branch
-    * Use one of the supplied functions in the `data-raw` folder to convert your .shp file into the required format
-    * Commit the .rda file
+### For collaborators
+
+You will need to clone the repository, create a branch, then a pull request.
+
+  *   Clone the [repo](https://github.com/NEFSC/NEFSC-Spatial)
+  *   Set up a new, version controlled, git project in Rstudio
+  *   Create a new branch (in Rstudio)
+  *   Use one of the supplied functions in the [`data-raw`](https://github.com/NEFSC/NEFSC-Spatial/tree/main/data-raw) folder to convert your shapefile (.shp) file into the required format. If the spatial data is not a shapefile then you will need to include processing scripts.
+    * Create documentation for this data set.
+    * Commit your files
     * Create a pull request
 
-Your request will be reviewed by a team member
+### For non collaborators
+
+You will need to fork the repository, create a branch, then a pull request.
+
+  *   [Fork](https://github.com/NEFSC/NEFSC-Spatial/fork) the repository to your account
+  *   Clone the forked repo
+  *   Set up a new, version controlled, git project in Rstudio
+  *   Create a new branch
+  *   Use one of the supplied [functions](#supplied-functions) in the [`data-raw`](https://github.com/NEFSC/NEFSC-Spatial/tree/main/data-raw) folder to convert your shapefile (.shp) file into the required format. If the spatial data is not a shapefile then you will need to include processing scripts.
+    * Create documentation for this data set.
+    * Commit your files
+    * Create a pull request
+
+
+Pull requests will be reviewed by a team member
 
 ## Supplied functions
 
