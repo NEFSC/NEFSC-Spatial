@@ -13,6 +13,7 @@ library(magrittr)
 # url <- "https://www.nafo.int/Portals/0/GIS/Divisions.zip"
 # url <- "https://www.nafo.int/Portals/0/GIS/Footprint_Projected.zip"
 # url <- "https://www.nafo.int/Portals/0/GIS/VME_closures.zip"
+# url <- "https://media.fisheries.noaa.gov/2021-10/GillnetClosureAreas_20211021.zip"
 #options(warn=-1)
 ##options(warn=0)
 
