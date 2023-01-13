@@ -35,7 +35,8 @@ reference:
   contents:
   - starts_with("amapps_")
   - starts_with("Statistical_")
-
+  - starts_with("LMA1_")
+  
 authors:
   Andy Beet:
     href: https://github.com/andybeet
