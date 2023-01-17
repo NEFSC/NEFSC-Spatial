@@ -4,3 +4,4 @@
 
 # download, process, and save
 create_sf_data_from_url(url = 'https://media.fisheries.noaa.gov/2022-08/LMA1_Restricted_Area_FR_2.zip')
+create_sf_data_from_url(url = 'https://media.fisheries.noaa.gov/2022-08/Great_South_Channel_Restricted_Trap-Pot_Area_2.zip')

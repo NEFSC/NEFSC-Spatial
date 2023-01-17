@@ -61,6 +61,8 @@ create_sf_data_from_url <- function(url) {
           message(paste0("Shapefile = ",afile))
           exportName <- tail(unlist(strsplit(afile,"/")),1)
           exportName <- head(unlist(strsplit(exportName,"\\.")),1)
+          ## replace any hyphens with underscores, hyphens can cause issues
+          exportName <- gsub('-', '_',exportName)
           layer <- sf::st_read(dsn=paste0(temp2,"/",afile),quiet=T)
           centroids <-  sf::st_coordinates(sf::st_centroid(layer))
           layer <- cbind(layer,centroids)
