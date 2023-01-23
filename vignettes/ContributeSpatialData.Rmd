@@ -14,25 +14,24 @@ knitr::opts_chunk$set(
 )
 ```
 
-```{r setup, warning = FALSE}
-library(NEFSCspatial)
-```
-
 ## Adding spatial data to the package.
 
-The initial step is to create an [issue](https://github.com/NEFSC/NEFSC-Spatial/issues/new/choose). The issue should describe the data, and indicate where it is located.
+The initial step is to create an [issue](https://github.com/NEFSC/NEFSC-Spatial/issues/new/choose). Select the option "New Data Submission Request". Follow the guidelines in the template.
 
 ### For collaborators
 
-You will need to clone the repository, create a branch, then a pull request.
+To process issues flagged as "New Data Submission Request" and add them to the `NEFSCspatial` package you will need to clone the repository, create a branch, then a pull request.
 
   *   Clone the [repo](https://github.com/NEFSC/NEFSC-Spatial)
   *   Set up a new, version controlled, git project in Rstudio
-  *   Create a new branch (in Rstudio)
-  *   Use one of the supplied functions in the [`data-raw`](https://github.com/NEFSC/NEFSC-Spatial/tree/main/data-raw) folder to convert your shapefile (.shp) file into the required format. If the spatial data is not a shapefile then you will need to include processing scripts.
-    * Create documentation for this data set.
-    * Commit your files
-    * Create a pull request
+  *   Create a new branch (in Rstudio) with the name "data_request_xx" where xx is the issue number
+  *   Use one of the supplied functions in the [`data-raw`](https://github.com/NEFSC/NEFSC-Spatial/tree/main/data-raw) folder to convert the shapefile (.shp) file into the required format. If the spatial data is not a shapefile then you will need to include processing scripts.
+  * Create documentation for this data set and save it in the `R` folder. Documentation should consist of a single file with the extension `.R` with a file name `data_shapefilename.R`, where `shapefilename` is the name of the `rda` object.
+  * Include an entry in the `pkgdown/_pkgdown.yml` file under the heading `Spatial data`
+  * Commit your files
+  * Create a pull request documenting what you have included
+  * Link the issue to the pull request under the `Development` section of the pull request
+  * Assign 2 reviewers to your pull request. These must be [team members]()
 
 ### For non collaborators
 
@@ -43,12 +42,14 @@ You will need to fork the repository, create a branch, then a pull request.
   *   Set up a new, version controlled, git project in Rstudio
   *   Create a new branch
   *   Use one of the supplied [functions](#supplied-functions) in the [`data-raw`](https://github.com/NEFSC/NEFSC-Spatial/tree/main/data-raw) folder to convert your shapefile (.shp) file into the required format. If the spatial data is not a shapefile then you will need to include processing scripts.
-    * Create documentation for this data set.
-    * Commit your files
-    * Create a pull request
+  * Create documentation for this data set and save it in the `R` folder. Documentation should consist of a single file with the extension `.R` with a file name `data_shapefilename.R`, where `shapefilename` is the name of the `rda` object.
+  * Include an entry in the `pkgdown/_pkgdown.yml` file under the heading `Spatial data`
+  * Commit your files
+  * Create a pull request documenting what you have included
+  * Link the issue to the pull request under the `Development` section of the pull request
+  * Assign 2 reviewers to your pull request. These must be [team members]()
 
-
-Pull requests will be reviewed by a team member
+All pull requests will be reviewed by a team member
 
 ## Supplied functions
 
