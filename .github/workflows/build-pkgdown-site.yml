@@ -19,7 +19,7 @@ jobs:
         shell: bash
         
       - name: Install R packages
-        run: Rscript -e 'install.packages(c("pkgdown", "roxygen2", "knitr", "raster", "sf"))'
+        run: Rscript -e 'install.packages(c("pkgdown", "roxygen2", "pkgload", "withr", "knitr", "raster", "sf"))'
 
       - name: Update R function documentation
         run: Rscript -e 'roxygen2::roxygenize()'
