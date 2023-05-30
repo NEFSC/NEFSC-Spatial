@@ -7,3 +7,5 @@
 # exclude folders
 data-raw/temp
 inst/doc
+# old pkgdown site
+docs
