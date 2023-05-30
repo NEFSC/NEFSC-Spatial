@@ -1,4 +1,4 @@
-url: https://andybeet.github.io/NEFSCspatial/
+url: https://nefsc.github.io/NEFSC-Spatial/
 
 navbar:
   structure:
@@ -23,7 +23,7 @@ navbar:
     issue:
       text: Issues
       icon: fas fa-question-circle fa-lg
-      href: https://github.com/andybeet/NEFSCspatial/issues/
+      href: https://github.com/NEFSC/NEFSC-Spatial/issues
 
     articles:
       text: Vignettes
