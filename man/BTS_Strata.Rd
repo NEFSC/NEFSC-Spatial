@@ -16,11 +16,14 @@ An \code{sf} object:
 }
 \source{
 \url{https://drive.google.com/drive/folders/15s70lDwezatlNVReDMWRJadtlklMYSnC}
+
+\url{https://www.fisheries.noaa.gov/inport/item/33471}
 }
 \usage{
 BTS_Strata
 }
 \description{
-An \code{sf} object containing the boundaries of the NEFSC bottom trawl survey strata
+An \code{sf} object containing the boundaries of the NEFSC bottom trawl survey strata.
+This set of strata is considered historical. (Pre 2000).
 }
 \keyword{datasets}
