@@ -31,14 +31,24 @@ navbar:
       href: articles/index.html
 
 reference:
-- title: Spatial data
-  contents:
+- title: Fishing Areas
+  desc: Areas in which fishing is reported
+- contents:
   - starts_with("Statistical_")
+  - starts_with("NAFO_")
+- title: Closed Areas
+  desc: Areas in which Fishing is restricted
+- contents:
   - starts_with("Gillnet")
-  - starts_with("amapps_")
   - starts_with("LMA1_")
   - starts_with("Great_")
-  - starts_with("NAFO_")
+- title: Protected species
+- contents:
+  - starts_with("amapps_")
+- title: Survey Strata
+  desc: Areas in which survey sampling is reported
+- contents:
+  - "EcoMon_Strata"
 
 authors:
   Andy Beet:
