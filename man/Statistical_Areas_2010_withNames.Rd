@@ -7,12 +7,12 @@
 \format{
 A data frame/ sf object (135 x 6)
 \describe{
-\item{Id}{Area Number}
-\item{NAFODIV}{NAFO Division code}
-\item{FULL_NAME}{Description of Division area}
-\item{SHORT_NAME}{Abbreviated version of FULL_NAME}
-\item{X}{x coordinate of polygon center}
-\item{y}{y coordinate of polygon center}
+\item{Geometry type}{MULTIPOLYGON}
+\item{Dimension}{XY}
+\item{Bounding box}{xmin: -81.53406 ymin: 24 xmax: -42 ymax: 52.25}
+\item{Geodetic CRS}{NAD 83}
+\item{Metadata}{See source}
+\item{Features}{135 x 1}
 }
 }
 \source{
@@ -23,6 +23,7 @@ Statistical_Areas_2010_withNames
 }
 \description{
 An sf object containing the Greater Atlantic Region Statistical Areas.
+With name labels
 Pulled from ftp://ftp.nefsc.noaa.gov/pub/gis/
 }
 \keyword{datasets}
