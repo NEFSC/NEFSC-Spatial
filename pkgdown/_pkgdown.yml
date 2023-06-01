@@ -42,14 +42,13 @@ reference:
   - starts_with("Gillnet")
   - starts_with("LMA1_")
   - starts_with("Great_")
-- title: Protected species
+- title: Protected Species
 - contents:
   - starts_with("amapps_")
 - title: Survey Strata
   desc: Areas in which survey sampling is reported
 - contents:
   - starts_with("BTS_")
-  - starts_with("NAFO_")
   - "EcoMon_Strata"
 
 authors:
