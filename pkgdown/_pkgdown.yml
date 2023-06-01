@@ -48,6 +48,8 @@ reference:
 - title: Survey Strata
   desc: Areas in which survey sampling is reported
 - contents:
+  - starts_with("BTS_")
+  - starts_with("NAFO_")
   - "EcoMon_Strata"
 
 authors:
