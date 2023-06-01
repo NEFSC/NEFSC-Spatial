@@ -18,6 +18,8 @@ knitr::opts_chunk$set(
 
 The initial step is to create an [issue](https://github.com/NEFSC/NEFSC-Spatial/issues/new/choose). Select the option "New Data Submission Request". Follow the guidelines in the template.
 
+All pull requests will be reviewed by a [team member](teamMembers.html)
+
 ### For collaborators
 
 To process issues flagged as "New Data Submission Request" and add them to the `NEFSCspatial` package you will need to clone the repository, create a branch, then a pull request.
@@ -31,11 +33,11 @@ To process issues flagged as "New Data Submission Request" and add them to the `
   * Commit your files
   * Create a pull request documenting what you have included
   * Link the issue to the pull request under the `Development` section of the pull request
-  * Assign 2 reviewers to your pull request. These must be [team members]()
+  * Assign 2 reviewers to your pull request. These must be [team members](teamMembers.html)
 
 ### For non collaborators
 
-You will need to fork the repository, create a branch, then a pull request.
+If you do not have access to contribute to the repository you can either wait for a team memeber to contact you regarding your data request or you can create a pull request. If you choose to create a pull request you will need to `fork` the repository, create a branch, then a pull request.
 
   *   [Fork](https://github.com/NEFSC/NEFSC-Spatial/fork) the repository to your account
   *   Clone the forked repo
@@ -43,13 +45,10 @@ You will need to fork the repository, create a branch, then a pull request.
   *   Create a new branch
   *   Use one of the supplied [functions](#supplied-functions) in the [`data-raw`](https://github.com/NEFSC/NEFSC-Spatial/tree/main/data-raw) folder to convert your shapefile (.shp) file into the required format. If the spatial data is not a shapefile then you will need to include processing scripts.
   * Create documentation for this data set and save it in the `R` folder. Documentation should consist of a single file with the extension `.R` with a file name `data_shapefilename.R`, where `shapefilename` is the name of the `rda` object.
-  * Include an entry in the `pkgdown/_pkgdown.yml` file under the heading `Spatial data`
   * Commit your files
   * Create a pull request documenting what you have included
   * Link the issue to the pull request under the `Development` section of the pull request
-  * Assign 2 reviewers to your pull request. These must be [team members]()
-
-All pull requests will be reviewed by a team member
+  * Assign 2 reviewers to your pull request. These must be [team members](teamMembers.html)
 
 ## Supplied functions
 
