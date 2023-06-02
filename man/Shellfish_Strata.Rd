@@ -10,9 +10,9 @@ A data frame/ \code{sf} object
 \item{Geometry type}{POLYGON}
 \item{Dimension}{XY}
 \item{Bounding box}{xmin: -75.95982 ymin: 35.50142 xmax: -65.89944 ymax: 42.16817}
-\item{Geodetic CRS}{NAD 83}
-\item{Metadata}{See source}
+\item{Geodetic CRS}{NAD83}
 \item{Features}{97 x 9}
+\item{Metadata}{See source}
 }
 }
 \source{

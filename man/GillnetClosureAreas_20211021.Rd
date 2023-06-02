@@ -7,6 +7,13 @@
 \format{
 A data frame/ sf object (2 x 25)
 \describe{
+\item{Geometry type}{POLYGON}
+\item{Dimension}{XY}
+\item{Bounding box}{xmin: -70.33333 ymin: 40.33333 xmax: -68.5 ymax: 41.5}
+\item{Geodetic CRS}{NAD83}
+\item{Features}{2 x 25}
+\item{Metadata}{See source}
+
 \item{GARFO_ID}{A unique identifier used to identify and track this feature;
 a new GARFO_ID is generated for each version of a Regulated Area, including
 proposed or final versions (i.e. whenever boundaries or attributes are
@@ -45,7 +52,7 @@ GillnetClosureAreas_20211021
 }
 \description{
 An sf object containing the Closure areas for Gillnets
-Specifically Closed Area 1, and Nantucket Lightship Closure Area
+Specifically Closed Area 1 and Nantucket Lightship Closure Area
 }
 \section{Contact}{
 
