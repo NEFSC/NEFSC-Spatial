@@ -1,6 +1,5 @@
 url: https://nefsc.github.io/NEFSC-Spatial/
 
-
 navbar:
   structure:
     left:
@@ -10,7 +9,7 @@ navbar:
     - sourcecode
     - issue
     - articles
-    right: [search,github]
+    right: [search, github]
 
   components:
     home:
@@ -36,7 +35,7 @@ navbar:
       text: Articles
       icon: fas fa-file-contract fa-lg
       menu:
-        - text: Contributing to package
+        - text: Contributing to Package
           href: articles/ContributeSpatialData.html
         - text: Team Members
           href: articles/teamMembers.html
@@ -62,9 +61,6 @@ reference:
   - starts_with("BTS_")
   - "EcoMon_Strata"
   - "Shellfish_Strata"
-
-
-
 
 authors:
   Andy Beet:
