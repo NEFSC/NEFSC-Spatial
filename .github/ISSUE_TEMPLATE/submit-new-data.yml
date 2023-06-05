@@ -2,7 +2,6 @@ name: New Data Submission Request
 description: Request new data be added to NEFSCspatial (test form instead of template)
 title: "[Request]: "
 labels: ["enhancement"]
-assignees: ["andybeet","jmhatch","kimberly-bastille"]
 body:
   - type: markdown
     attributes:
@@ -71,3 +70,11 @@ body:
         - 'No'
     validations:
       required: true 
+  - type: checkboxes
+    id: assign-reviewer
+    attributes:
+      label: Have you assigned 2 reviewers for this new data submission request?
+      description: Please assign 2 team members (@andybeet, @jmhatch, @kimberly-bastille) to review this new data submission request.
+      options:
+        - label: I have assigned 2 reviewers
+          required: true
