@@ -15,7 +15,7 @@
 #'
 #' @docType data
 #' @name EcoMon_Strata
-#' @usage EcoMon_Strata
+#' @usage data("EcoMon_Strata")
 #' @keywords datasets
 #' @source \url{https://www.fisheries.noaa.gov/inport/item/33468}
 NULL

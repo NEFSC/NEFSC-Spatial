@@ -15,7 +15,7 @@
 #'
 #' @docType data
 #' @name Shellfish_Strata
-#' @usage Shellfish_Strata
+#' @usage data("Shellfish_Strata")
 #' @keywords datasets
 #' @source \url{https://www.fisheries.noaa.gov/inport/item/33466}
 NULL

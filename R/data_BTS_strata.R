@@ -16,7 +16,7 @@
 #'
 #' @docType data
 #' @name BTS_Strata
-#' @usage BTS_Strata
+#' @usage data("BTS_Strata")
 #' @keywords datasets
 #' @source \url{https://drive.google.com/drive/folders/15s70lDwezatlNVReDMWRJadtlklMYSnC}
 #' @source \url{https://www.fisheries.noaa.gov/inport/item/33471}

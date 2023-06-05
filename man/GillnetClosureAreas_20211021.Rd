@@ -48,7 +48,7 @@ changed, edited or updated)}
 \url{https://www.fisheries.noaa.gov/resource/map/gillnet-closure-areas}
 }
 \usage{
-GillnetClosureAreas_20211021
+data("GillnetClosureAreas_20211021")
 }
 \description{
 An sf object containing the Closure areas for Gillnets

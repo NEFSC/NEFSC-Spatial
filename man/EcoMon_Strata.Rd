@@ -19,7 +19,7 @@ A data frame/ \code{sf} object
 \url{https://www.fisheries.noaa.gov/inport/item/33468}
 }
 \usage{
-EcoMon_Strata
+data("EcoMon_Strata")
 }
 \description{
 An sf object containing the EcoMon strata

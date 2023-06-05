@@ -49,7 +49,7 @@
 #'
 #' @docType data
 #' @name GillnetClosureAreas_20211021
-#' @usage GillnetClosureAreas_20211021
+#' @usage data("GillnetClosureAreas_20211021")
 #' @keywords datasets
 #' @source \url{https://www.fisheries.noaa.gov/resource/map/gillnet-closure-areas}
 NULL

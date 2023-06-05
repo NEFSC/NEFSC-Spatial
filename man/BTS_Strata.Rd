@@ -21,7 +21,7 @@ An \code{sf} object:
 \url{https://www.fisheries.noaa.gov/inport/item/33471}
 }
 \usage{
-BTS_Strata
+data("BTS_Strata")
 }
 \description{
 An \code{sf} object containing the boundaries of the NEFSC bottom trawl survey strata.

@@ -19,7 +19,7 @@ A data frame/ sf object (135 x 1)
 \url{https://www.fisheries.noaa.gov/resource/map/greater-atlantic-region-statistical-areas}
 }
 \usage{
-Statistical_Areas_2010
+data("Statistical_Areas_2010")
 }
 \description{
 An sf object containing the Greater Atlantic Region Statistical Areas.

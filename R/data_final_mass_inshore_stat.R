@@ -15,7 +15,7 @@
 #'
 #' @docType data
 #' @name final_mass_inshore_stat
-#' @usage final_mass_inshore_stat
+#' @usage data("final_mass_inshore_stat")
 #' @keywords datasets
 #' @source \url{https://www.fisheries.noaa.gov/inport/item/33467}
 NULL

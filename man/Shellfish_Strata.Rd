@@ -19,7 +19,7 @@ A data frame/ \code{sf} object
 \url{https://www.fisheries.noaa.gov/inport/item/33466}
 }
 \usage{
-Shellfish_Strata
+data("Shellfish_Strata")
 }
 \description{
 An sf object containing the Clam and Scallop survey strata

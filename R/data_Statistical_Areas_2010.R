@@ -15,7 +15,7 @@
 #'
 #' @docType data
 #' @name Statistical_Areas_2010
-#' @usage Statistical_Areas_2010
+#' @usage data("Statistical_Areas_2010")
 #' @keywords datasets
 #'
 #' @source \url{https://www.fisheries.noaa.gov/resource/map/greater-atlantic-region-statistical-areas}
