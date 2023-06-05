@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contributing Spatial Data • NEFSCspatial</title>
+<title>Team members • NEFSCspatial</title>
 <!-- favicons --><link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
 <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="../apple-touch-icon.png">
@@ -18,7 +18,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
 <!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="../pkgdown.css" rel="stylesheet">
 <script src="../pkgdown.js"></script><link href="../extra.css" rel="stylesheet">
-<meta property="og:title" content="Contributing Spatial Data">
+<meta property="og:title" content="Team members">
 <meta property="og:description" content="NEFSCspatial">
 <meta property="og:image" content="https://nefsc.github.io/NEFSC-Spatial/logo.png">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
@@ -112,104 +112,53 @@
       </header><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
-      <h1 data-toc-skip>Contributing Spatial Data</h1>
+      <h1 data-toc-skip>Team members</h1>
             
       
-      <small class="dont-index">Source: <a href="https://github.com/andybeet/NEFSCspatial/blob/HEAD/vignettes/ContributeSpatialData.Rmd" class="external-link"><code>vignettes/ContributeSpatialData.Rmd</code></a></small>
-      <div class="hidden name"><code>ContributeSpatialData.Rmd</code></div>
+      <small class="dont-index">Source: <a href="https://github.com/andybeet/NEFSCspatial/blob/HEAD/vignettes/teamMembers.Rmd" class="external-link"><code>vignettes/teamMembers.Rmd</code></a></small>
+      <div class="hidden name"><code>teamMembers.Rmd</code></div>
 
     </div>
 
     
     
 <div class="section level2">
-<h2 id="adding-spatial-data-to-the-package-">Adding spatial data to the package.<a class="anchor" aria-label="anchor" href="#adding-spatial-data-to-the-package-"></a>
+<h2 id="team-members-in-alphabetical-order">Team members (in alphabetical order)<a class="anchor" aria-label="anchor" href="#team-members-in-alphabetical-order"></a>
 </h2>
-<p>The initial step is to create an <a href="https://github.com/NEFSC/NEFSC-Spatial/issues/new/choose" class="external-link">issue</a>.
-Select the option “New Data Submission Request”. Follow the guidelines
-in the template.</p>
-<p>All pull requests will be reviewed by a <a href="teamMembers.html">team member</a></p>
-<div class="section level3">
-<h3 id="for-collaborators">For collaborators<a class="anchor" aria-label="anchor" href="#for-collaborators"></a>
-</h3>
-<p>To process issues flagged as “New Data Submission Request” and add
-them to the <code>NEFSCspatial</code> package you will need to clone the
-repository, create a branch, then a pull request.</p>
-<ul>
-<li>Clone the <a href="https://github.com/NEFSC/NEFSC-Spatial" class="external-link">repo</a>
-</li>
-<li>Set up a new, version controlled, git project in Rstudio</li>
-<li>Create a new branch (in Rstudio) with the name “data_request_xx”
-where xx is the issue number</li>
-<li>Use one of the supplied functions in the <a href="https://github.com/NEFSC/NEFSC-Spatial/tree/main/data-raw" class="external-link"><code>data-raw</code></a>
-folder to convert the shapefile (.shp) file into the required format. If
-the spatial data is not a shapefile then you will need to include
-processing scripts.</li>
-<li>Create documentation for this data set and save it in the
-<code>R</code> folder. Documentation should consist of a single file
-with the extension <code>.R</code> with a file name
-<code>data_shapefilename.R</code>, where <code>shapefilename</code> is
-the name of the <code>rda</code> object.</li>
-<li>Include an entry in the <code>pkgdown/_pkgdown.yml</code> file under
-the heading <code>Spatial data</code>
-</li>
-<li>Commit your files</li>
-<li>Create a pull request documenting what you have included</li>
-<li>Link the issue to the pull request under the
-<code>Development</code> section of the pull request</li>
-<li>Assign 2 reviewers to your pull request. These must be <a href="teamMembers.html">team members</a>
-</li>
-</ul>
-</div>
-<div class="section level3">
-<h3 id="for-non-collaborators">For non collaborators<a class="anchor" aria-label="anchor" href="#for-non-collaborators"></a>
-</h3>
-<p>If you do not have access to contribute to the repository you can
-either wait for a team memeber to contact you regarding your data
-request or you can create a pull request. If you choose to create a pull
-request you will need to <code>fork</code> the repository, create a
-branch, then a pull request.</p>
-<ul>
-<li>
-<a href="https://github.com/NEFSC/NEFSC-Spatial/fork" class="external-link">Fork</a> the
-repository to your account</li>
-<li>Clone the forked repo</li>
-<li>Set up a new, version controlled, git project in Rstudio</li>
-<li>Create a new branch (in Rstudio) with the name “data_request_xx”
-where xx is the issue number</li>
-<li>Use one of the supplied <a href="#supplied-functions">functions</a>
-in the <a href="https://github.com/NEFSC/NEFSC-Spatial/tree/main/data-raw" class="external-link"><code>data-raw</code></a>
-folder to convert your shapefile (.shp) file into the required format.
-If the spatial data is not a shapefile then you will need to include
-processing scripts.</li>
-<li>Create documentation for this data set and save it in the
-<code>R</code> folder. Documentation should consist of a single file
-with the extension <code>.R</code> with a file name
-<code>data_shapefilename.R</code>, where <code>shapefilename</code> is
-the name of the <code>rda</code> object.</li>
-<li>Include an entry in the <code>pkgdown/_pkgdown.yml</code> file under
-the heading <code>Spatial data</code>
-</li>
-<li>Commit your files</li>
-<li>Create a pull request documenting what you have included</li>
-<li>Link the issue to the pull request under the
-<code>Development</code> section of the pull request</li>
-<li>Assign 2 reviewers to your pull request. These must be <a href="teamMembers.html">team members</a>
-</li>
-</ul>
-</div>
-</div>
-<div class="section level2">
-<h2 id="supplied-functions">Supplied functions<a class="anchor" aria-label="anchor" href="#supplied-functions"></a>
-</h2>
-<ul>
-<li>create_sf_data_from_shp - To convert a shapefile you have stored
-locally on your machine to sf</li>
-<li>create_sf_data_from_url - Downloads a zip file from a website
-(containing shapefile(s)) and converts to sf</li>
-<li>create_sf_data_from_ftp - Downloads shapefile(s) from a public ftp
-site and converts to sf</li>
-</ul>
+<table class="table">
+<colgroup>
+<col width="25%">
+<col width="25%">
+<col width="25%">
+<col width="25%">
+</colgroup>
+<thead><tr class="header">
+<th>Avatar</th>
+<th>Username</th>
+<th>Division</th>
+<th>Branch</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td><img src="https://avatars.githubusercontent.com/u/39955661?s=100&amp;v=4"></td>
+<td><a href="https://github.com/kimberly-bastille" class="external-link">kimberly-bastille</a></td>
+<td>READ</td>
+<td>SSB</td>
+</tr>
+<tr class="even">
+<td><img src="https://avatars1.githubusercontent.com/u/22455149?s=100&amp;v=4"></td>
+<td><a href="https://github.com/andybeet" class="external-link">andybeet</a></td>
+<td>READ</td>
+<td>EDAB</td>
+</tr>
+<tr class="odd">
+<td><img src="https://avatars.githubusercontent.com/u/35869229?s=100&amp;v=4" width="100" height="100"></td>
+<td><a href="https://github.com/jmhatch" class="external-link">jmhatch</a></td>
+<td>READ</td>
+<td>PSB</td>
+</tr>
+</tbody>
+</table>
 </div>
   </div>
 
