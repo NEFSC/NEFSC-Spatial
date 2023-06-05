@@ -42,9 +42,10 @@ If you do not have access to contribute to the repository you can either wait fo
   *   [Fork](https://github.com/NEFSC/NEFSC-Spatial/fork) the repository to your account
   *   Clone the forked repo
   *   Set up a new, version controlled, git project in Rstudio
-  *   Create a new branch
+  *   Create a new branch (in Rstudio) with the name "data_request_xx" where xx is the issue number
   *   Use one of the supplied [functions](#supplied-functions) in the [`data-raw`](https://github.com/NEFSC/NEFSC-Spatial/tree/main/data-raw) folder to convert your shapefile (.shp) file into the required format. If the spatial data is not a shapefile then you will need to include processing scripts.
   * Create documentation for this data set and save it in the `R` folder. Documentation should consist of a single file with the extension `.R` with a file name `data_shapefilename.R`, where `shapefilename` is the name of the `rda` object.
+  * Include an entry in the `pkgdown/_pkgdown.yml` file under the heading `Spatial data`
   * Commit your files
   * Create a pull request documenting what you have included
   * Link the issue to the pull request under the `Development` section of the pull request

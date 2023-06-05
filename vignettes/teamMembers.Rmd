@@ -9,11 +9,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Team members (in alphabetical order)
 
-|Avatar|Username|Branch|
-|---|---|---|
-| <img src = "https://avatars.githubusercontent.com/u/39955661?s=100&v=4" > | [kimberly-bastille](https://github.com/kimberly-bastille) | SSB |
-| <img src = "https://avatars1.githubusercontent.com/u/22455149?s=100&v=4" >| [andybeet](https://github.com/andybeet) | EDAB |
-| <img src = "https://avatars.githubusercontent.com/u/35869229?s=100&v=4" width = "100" height = "100" > | [jmhatch](https://github.com/jmhatch) | PSB |
- | <img src = "https://avatars.githubusercontent.com/u/77019097?s=100&v=4"> | [ejosephson](https://github.com/ejosephson) | PSB| 
- | <img src = "https://avatars.githubusercontent.com/u/11235095?s=100&v=4" > | [alomiller](https://github.com/alomiller) | PSB| 
- |
+|Avatar|Username|Division|Branch|
+|---|---|---|---|
+| <img src = "https://avatars.githubusercontent.com/u/39955661?s=100&v=4" > | [kimberly-bastille](https://github.com/kimberly-bastille) | READ | SSB |
+| <img src = "https://avatars1.githubusercontent.com/u/22455149?s=100&v=4" >| [andybeet](https://github.com/andybeet) | READ | EDAB |
+| <img src = "https://avatars.githubusercontent.com/u/35869229?s=100&v=4" width = "100" height = "100" > | [jmhatch](https://github.com/jmhatch) | READ | PSB | 

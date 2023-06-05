@@ -16,17 +16,27 @@ knitr::opts_chunk$set(
 
 ```{r setup, message=FALSE,warning=FALSE}
 library(sf)
+library(raster)
 library(NEFSCspatial)
 ```
 
-The spatial data bundled in this package are either in `raster` or `sf` format. For the shape files in `sf` you can view the fields simply by typing the name of the data set
+The spatial data bundled in this package are either in `raster` or `sf` format. For the shapefiles in `sf` format, you can view the fields simply by typing the name of the data set
 
-```{r data}
+```{r data_sf}
 NEFSCspatial::Shellfish_Strata
+```
+
+Similarly, you can view the details of a `raster` data set by typing its name into the R Console
+
+```{r data_raster}
+NEFSCspatial::amapps_grid
 ```
 
 To visualize the data simply use the plot function
 
-```{r plot}
+```{r plot_sf}
 plot(NEFSCspatial::Shellfish_Strata)
+```
+```{r plot_raster}
+plot(NEFSCspatial::amapps_grid)
 ```
