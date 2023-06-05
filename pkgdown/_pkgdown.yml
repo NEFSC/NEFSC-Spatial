@@ -4,16 +4,22 @@ navbar:
   structure:
     left:
     - home
+    - getting started
     - reference
     - sourcecode
     - issue
     - articles
-    right: github
+    right: [search, github]
 
   components:
     home:
       icon: fas fa-home fa-lg
       href: index.html
+
+    getting started:
+      text: Getting Started
+      icon: fas fa-solid fa-play
+      href: articles/NEFSCspatial.html
 
     reference:
       text: Data
@@ -26,9 +32,13 @@ navbar:
       href: https://github.com/NEFSC/NEFSC-Spatial/issues
 
     articles:
-      text: Vignettes
+      text: Articles
       icon: fas fa-file-contract fa-lg
-      href: articles/index.html
+      menu:
+        - text: Contributing to Package
+          href: articles/ContributeSpatialData.html
+        - text: Team Members
+          href: articles/teamMembers.html
 
 reference:
 - title: Fishing Areas
