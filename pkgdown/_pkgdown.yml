@@ -62,6 +62,7 @@ reference:
   - starts_with("BTS_")
   - "EcoMon_Strata"
   - "Shellfish_Strata"
+  - "final_mass_inshore_stat"
 
 authors:
   Andy Beet:

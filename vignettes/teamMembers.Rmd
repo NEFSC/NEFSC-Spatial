@@ -1,5 +1,5 @@
 ---
-title: "Team members"
+title: "Team Members"
 output: html_document
 ---
 
