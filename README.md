@@ -1,4 +1,4 @@
-# NEFSCspatial  <img src="man/figures/logo.png" align="right" width="120" />
+# NEFSCspatial  <img src="man/figures/logo.png" style="float:right; height:200px;" />
 
 [![gitleaks](https://github.com/NEFSC/NEFSC-Spatial/actions/workflows/secretScan.yml/badge.svg)](https://github.com/NEFSC/NEFSC-Spatial/actions/workflows/secretScan.yml) [![gh-pages](https://github.com/NEFSC/NEFSC-Spatial/actions/workflows/pkgdown.yml/badge.svg)](https://github.com/NEFSC/NEFSC-Spatial/actions/workflows/pkgdown.yml)
 
