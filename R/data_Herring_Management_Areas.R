@@ -15,7 +15,7 @@
 #'
 #' @docType data
 #' @name Herring_Management_Areas
-#' @usage data("Herring_MAnagement_Areas")
+#' @usage data("Herring_Management_Areas")
 #' @keywords datasets
 #' @source \url{https://www.fisheries.noaa.gov/resource/map/herring-management-areas}
 NULL

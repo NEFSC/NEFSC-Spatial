@@ -19,7 +19,7 @@ An \code{sf} object:
 \url{https://www.fisheries.noaa.gov/resource/map/herring-management-areas}
 }
 \usage{
-data("Herring_MAnagement_Areas")
+data("Herring_Management_Areas")
 }
 \description{
 An \code{sf} object depicting the boundaries of the Herring Management Areas
