@@ -62,6 +62,7 @@ reference:
   - starts_with("BTS_")
   - "EcoMon_Strata"
   - "Shellfish_Strata"
+  - "Shrimp_Strata"
 
 authors:
   Andy Beet:
