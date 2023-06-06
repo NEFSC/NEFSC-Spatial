@@ -7,7 +7,7 @@
 #'   \item{Geometry type}{LINESTRING}
 #'   \item{Dimension}{XY}
 #'   \item{Bounding box}{xmin: -80 ymin: 35 xmax: -42 ymax: 78.16667}
-#'   \item{Geodetic CRS}{NAD 83}
+#'   \item{Geodetic CRS}{NAD83}
 #'   \item{Features}{38 x 5}
 #'   \item{Metadata}{See source}
 #' }

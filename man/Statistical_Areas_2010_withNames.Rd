@@ -10,7 +10,7 @@ A data frame/ sf object (135 x 6)
 \item{Geometry type}{MULTIPOLYGON}
 \item{Dimension}{XY}
 \item{Bounding box}{xmin: -81.53406 ymin: 24 xmax: -42 ymax: 52.25}
-\item{Geodetic CRS}{NAD 83}
+\item{Geodetic CRS}{NAD83}
 \item{Metadata}{See source}
 \item{Features}{135 x 1}
 }
@@ -19,7 +19,7 @@ A data frame/ sf object (135 x 6)
 \url{https://www.fisheries.noaa.gov/resource/map/greater-atlantic-region-statistical-areas}
 }
 \usage{
-Statistical_Areas_2010_withNames
+data("Statistical_Areas_2010_withNames")
 }
 \description{
 An sf object containing the Greater Atlantic Region Statistical Areas.
