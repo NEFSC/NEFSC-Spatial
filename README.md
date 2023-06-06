@@ -1,6 +1,6 @@
 # NEFSCspatial  <img src="man/figures/logo.png" style="float:right; height:200px;" />
 
-[![gitleaks](https://github.com/NEFSC/NEFSC-Spatial/actions/workflows/secretScan.yml/badge.svg)](https://github.com/NEFSC/NEFSC-Spatial/actions/workflows/secretScan.yml) [![gh-pages](https://github.com/NEFSC/NEFSC-Spatial/actions/workflows/pkgdown.yml/badge.svg)](https://github.com/NEFSC/NEFSC-Spatial/actions/workflows/pkgdown.yml)
+[![gitleaks](https://github.com/NEFSC/NEFSC-Spatial/actions/workflows/secretScan.yml/badge.svg)](https://github.com/NEFSC/NEFSC-Spatial/actions/workflows/secretScan.yml) [![gh-pages](https://github.com/NEFSC/NEFSC-Spatial/actions/workflows/pkgdown.yml/badge.svg)](https://github.com/NEFSC/NEFSC-Spatial/actions/workflows/pkgdown.yml) [![R-CMD-check](https://github.com/NEFSC/NEFSC-Spatial/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/NEFSC/NEFSC-Spatial/actions/workflows/R-CMD-check.yaml)
 
 A repository of spatial data (vectors and rasters) in simple features [`sf`](https://r-spatial.github.io/sf/)  or [`raster`](https://github.com/rspatial/raster) format.
 
