@@ -46,7 +46,7 @@ reference:
 - contents:
   - starts_with("Statistical_")
   - starts_with("NAFO_")
-  - final_mass_inshore_stat
+  - "final_mass_inshore_stat"
 - title: Closed Areas
   desc: Areas in which Fishing is restricted
 - contents:
@@ -62,7 +62,6 @@ reference:
   - starts_with("BTS_")
   - "EcoMon_Strata"
   - "Shellfish_Strata"
-  - "final_mass_inshore_stat"
 
 authors:
   Andy Beet:
