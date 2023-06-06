@@ -41,12 +41,13 @@ navbar:
           href: articles/teamMembers.html
 
 reference:
-- title: Fishing Areas
+- title: Fishing Areas/Management Areas
   desc: Areas in which fishing is reported
 - contents:
   - starts_with("Statistical_")
   - starts_with("NAFO_")
   - "final_mass_inshore_stat"
+  - Herring_Management_Areas
 - title: Closed Areas
   desc: Areas in which fishing is restricted
 - contents:
