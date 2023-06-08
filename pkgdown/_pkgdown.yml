@@ -48,6 +48,7 @@ reference:
   - starts_with("NAFO_")
   - "final_mass_inshore_stat"
   - "Herring_Management_Areas"
+  - "epu_sf"
 - title: Closed Areas
   desc: Areas in which fishing is restricted
 - contents:
