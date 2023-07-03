@@ -18,16 +18,16 @@ ui <- fluidPage(
     # Sidebar with a slider input for number of bins 
     sidebarLayout(
         sidebarPanel(
-            sliderInput("bins",
-                        "Number of bins:",
-                        min = 1,
-                        max = 50,
-                        value = 30)
+          checkboxGroupInput("dat", label = "Select Data to Explore", 
+                             choices = list("epu_sf" = "epu_sf",
+                                            "Shellfish_Strata" = "Shellfish_Strata"),
+                             selected = c(FALSE))
         ),
 
         # Show a plot of the generated distribution
         mainPanel(
-           plotOutput("distPlot")
+           plotOutput("mapPlot"),
+           tableOutput("summaryTable")
         )
     )
 )
@@ -35,14 +35,50 @@ ui <- fluidPage(
 # Define server logic required to draw a histogram
 server <- function(input, output) {
 
-    output$distPlot <- renderPlot({
-        # generate bins based on input$bins from ui.R
-        x    <- faithful[, 2]
-        bins <- seq(min(x), max(x), length.out = input$bins + 1)
+    output$mapPlot <- renderPlot({
+      
+      
+      library(magrittr)
+      crs <- "+proj=longlat +lat_1=35 +lat_2=45 +lat_0=40 +lon_0=-77 +x_0=0 +y_0=0 +datum=NAD83 +no_defs +ellps=GRS80 +towgs84=0,0,0"
+      
+      xmin = -12
+      xmax = 15
+      ymin = 30
+      ymax = 50
+      xlims <- c(xmin, xmax)
+      ylims <- c(ymin, ymax)
+      
+      coast <- rnaturalearth::ne_countries(scale = 10,
+                                           continent = "North America",
+                                           returnclass = "sf") %>%
+        sf::st_transform(crs = crs)
+      
 
-        # draw the histogram with the specified number of bins
-        hist(x, breaks = bins, col = 'darkgray', border = 'white')
+      plt<- ggplot2::ggplot() +
+          ggplot2::geom_sf(data = coast) +
+          ggplot2::coord_sf(crs = crs, xlim = xlims, ylim = ylims) +
+          ggplot2::ggtitle("") +
+          ggplot2::xlab(ggplot2::element_blank()) +
+          ggplot2::ylab(ggplot2::element_blank()) 
+      
+      
+      eventReactive(input$dat,{
+        if (input$dat %in% "epu_sf" ){ 
+          plt<- plt +
+            ggplot2::geom_sf(data = NEFSCspatial::epu_sf)
+        }
+      
+      })
+      
+      plt
+      
     })
+      
+    output$summaryTable<- renderText({
+      print("Add Summary Table - I'm thinking head of a dataset or something?")
+        
+      })
+      
 }
 
 # Run the application 
