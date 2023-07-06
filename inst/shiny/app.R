@@ -1,11 +1,3 @@
-#
-# This is a Shiny web application. You can run the application by clicking
-# the 'Run App' button above.
-#
-# Find out more about building applications with Shiny here:
-#
-#    http://shiny.rstudio.com/
-#
 
 library(shiny)
 
@@ -21,12 +13,12 @@ ui <- fluidPage(
           checkboxGroupInput("dat", label = "Select Data to Explore", 
                              choices = list("epu_sf" = "epu_sf",
                                             "Shellfish_Strata" = "Shellfish_Strata"),
-                             selected = c(FALSE))
+                             selected = NULL)
         ),
 
         # Show a plot of the generated distribution
         mainPanel(
-           plotOutput("mapPlot"),
+          leaflet::leafletOutput("mapPlot"),
            tableOutput("summaryTable")
         )
     )
@@ -34,9 +26,6 @@ ui <- fluidPage(
 
 # Define server logic required to draw a histogram
 server <- function(input, output) {
-
-    output$mapPlot <- renderPlot({
-      
       
       library(magrittr)
       crs <- "+proj=longlat +lat_1=35 +lat_2=45 +lat_0=40 +lon_0=-77 +x_0=0 +y_0=0 +datum=NAD83 +no_defs +ellps=GRS80 +towgs84=0,0,0"
@@ -53,31 +42,35 @@ server <- function(input, output) {
                                            returnclass = "sf") %>%
         sf::st_transform(crs = crs)
       
-
       plt<- ggplot2::ggplot() +
-          ggplot2::geom_sf(data = coast) +
-          ggplot2::coord_sf(crs = crs, xlim = xlims, ylim = ylims) +
-          ggplot2::ggtitle("") +
-          ggplot2::xlab(ggplot2::element_blank()) +
-          ggplot2::ylab(ggplot2::element_blank()) 
+        ggplot2::geom_sf(data = coast) +
+        ggplot2::coord_sf(crs = crs, xlim = xlims, ylim = ylims) +
+        ggplot2::ggtitle("") +
+        ggplot2::xlab(ggplot2::element_blank()) +
+        ggplot2::ylab(ggplot2::element_blank()) 
       
       
       eventReactive(input$dat,{
         if (input$dat %in% "epu_sf" ){ 
-          plt<- plt +
+          plt <- plt +
             ggplot2::geom_sf(data = NEFSCspatial::epu_sf)
         }
-      
-      })
-      
-      plt
-      
-    })
+        
+      output$mapPlot <- renderPlot({
+        plt
+        })
+        
+        })
       
     output$summaryTable<- renderText({
-      print("Add Summary Table - I'm thinking head of a dataset or something?")
-        
-      })
+      
+    #   eventReactive(input$dat,{
+    #   if (input$dat == "epu_sf" ){ 
+    #     head(NEFSCspatial::epu_sf)
+    #   }
+    # 
+    #   })
+     })
       
 }
 
