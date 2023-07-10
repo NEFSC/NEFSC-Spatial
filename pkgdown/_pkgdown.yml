@@ -65,6 +65,12 @@ reference:
   - "EcoMon_Strata"
   - "Shellfish_Strata"
   - "Shrimp_Strata"
+- title: Models
+  desc: Spatial footprint of models
+- contents:
+  - "Neus_atlantis"
+
+
 
 authors:
   Andy Beet:
