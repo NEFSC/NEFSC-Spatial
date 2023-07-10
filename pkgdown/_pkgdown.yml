@@ -64,6 +64,10 @@ reference:
   - "EcoMon_Strata"
   - "Shellfish_Strata"
   - "Shrimp_Strata"
+- title: Models
+  desc: Areas defining model boundaries
+- contents:
+  - "Neus_atlantis"
 
 authors:
   Andy Beet:
