@@ -17,14 +17,14 @@ create_sf_data_from_shp <- function(filePath,overwrite=F,addCentroids=T,shapefil
   sf::sf_use_s2(F)
 
   # get filename
-  fileName <- gsub(".shp$","",filePath)
-  fileName <- tail(unlist(strsplit(fileName,"/")),1)
-  fn <- fileName
   #overwrite filename with custom name
   if(!is.null(shapefilenm)) {
-    fn <- shapefilenm
+    fileName <- shapefilenm
+  } else {
+    fileName <- gsub(".shp$","",filePath)
+    fileName <- tail(unlist(strsplit(fileName,"/")),1)
   }
-
+  fn <- fileName
 
   # read in shapefile
   layer <- sf::st_read(dsn=filePath)
