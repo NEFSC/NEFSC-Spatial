@@ -3,7 +3,7 @@
 \docType{data}
 \name{Neus_atlantis}
 \alias{Neus_atlantis}
-\title{Northeast US (NEUS) atlantis model extent}
+\title{Northeast US (NEUS) atlantis model domain}
 \format{
 An \code{sf} object:
 \describe{

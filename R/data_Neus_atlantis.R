@@ -1,4 +1,4 @@
-#' Northeast US (NEUS) atlantis model extent
+#' Northeast US (NEUS) atlantis model domain
 #'
 #' An sf object containing the box level boundaries used in the Northeast Atlantis ecosystem end to end model
 #'
