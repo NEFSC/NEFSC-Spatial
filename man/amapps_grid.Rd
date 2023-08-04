@@ -27,6 +27,7 @@ The AMAPPS grid has a cell size of 10 km x 10 km, with an oblique Mercator proje
 Grid cell values represent grid cell IDs.
 }
 \examples{
+\dontrun{
 # convert sf to SpatVector
 amapps_vec <- amapps_grid |> as('SpatVector') 
 
@@ -38,5 +39,6 @@ amapps <- terra::rasterize(amapps_vec, amapps_ras, field = 'AMAPPS_10km_grid')
 
 # visualize
 terra::plot(amapps)
+}
 }
 \keyword{datasets}

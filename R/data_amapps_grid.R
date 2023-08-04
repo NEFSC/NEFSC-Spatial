@@ -20,6 +20,7 @@
 #' @keywords datasets
 #' @source \url{https://www.fisheries.noaa.gov/new-england-mid-atlantic/population-assessments/atlantic-marine-assessment-program-protected}
 #' @examples
+#' \dontrun{
 #' # convert sf to SpatVector
 #' amapps_vec <- amapps_grid |> as('SpatVector') 
 #' 
@@ -31,5 +32,6 @@
 #' 
 #' # visualize
 #' terra::plot(amapps)
+#' }
 NULL
 
