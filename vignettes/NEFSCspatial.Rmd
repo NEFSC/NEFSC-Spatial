@@ -19,7 +19,7 @@ library(sf)
 library(NEFSCspatial)
 ```
 
-The spatial data bundled in this package are in `sf` format. For the shapefiles in `sf` format, you can view the fields simply by typing the name of the data set
+The spatial data bundled in this package are in `sf` format. For the data in `sf` format, you can view the fields simply by typing the name of the data set
 
 ```{r data_sf}
 NEFSCspatial::Shellfish_Strata
