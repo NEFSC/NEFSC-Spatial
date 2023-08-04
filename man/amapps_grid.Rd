@@ -5,14 +5,14 @@
 \alias{amapps_grid}
 \title{AMAPPS 10 km Grid}
 \format{
-A \code{raster} object:
+An \code{sf} object:
 \describe{
-\item{class}{RasterLayer}
-\item{dimensions}{328, 240, 78720 (nrow, ncol, ncell)}
-\item{resolution}{10000 m, 10000 m (x, y)}
-\item{extent}{-820443.2, 1579557, -1234728, 2045272 (xmin, xmax, ymin, ymax)}
-\item{crs}{+proj=omerc +lat_0=35 +lonc=-75 +alpha=40 +gamma=40 +k=0.9996 +x_0=0 +y_0=0 +ellps=GRS80 +units=m +no_defs}
-\item{source}{data-raw/gis/AMAPPS_10km_grid.tif}
+\item{Geometry type}{POLYGON}
+\item{Dimension}{XY}
+\item{Bounding box}{xmin: -820443.2 ymin: -1234728 xmax: 1579557 ymax: 2045272}
+\item{Projected CRS}{unnamed}
+\item{Features}{78720 x 1}
+\item{Source}{data-raw/gis/AMAPPS_10km_grid.tif}
 }
 }
 \source{
@@ -22,8 +22,21 @@ A \code{raster} object:
 data("amapps_grid")
 }
 \description{
-A \code{raster} object containing the Atlantic Marine Assessment Program for Protected Species (AMAPPS) 10 km grid.
+An \code{sf} object containing the Atlantic Marine Assessment Program for Protected Species (AMAPPS) 10 km grid.
 The AMAPPS grid has a cell size of 10 km x 10 km, with an oblique Mercator projection.
 Grid cell values represent grid cell IDs.
+}
+\examples{
+# convert sf to SpatVector
+amapps_vec <- amapps_grid |> as('SpatVector') 
+
+# empty raster from amapps_vec
+amapps_ras <- terra::rast(amapps_vec, nrow = 328, ncol = 240)
+
+# rasterize
+amapps <- terra::rasterize(amapps_vec, amapps_ras, field = 'AMAPPS_10km_grid')
+
+# visualize
+terra::plot(amapps)
 }
 \keyword{datasets}
