@@ -28,17 +28,20 @@ Grid cell values represent grid cell IDs.
 }
 \examples{
 \dontrun{
+# load terra
+library(terra)
+
 # convert sf to SpatVector
 amapps_vec <- NEFSCspatial::amapps_grid |> as('SpatVector') 
 
 # empty raster from amapps_vec
-amapps_ras <- terra::rast(amapps_vec, nrow = 328, ncol = 240)
+amapps_ras <- rast(amapps_vec, nrow = 328, ncol = 240)
 
 # rasterize
-amapps <- terra::rasterize(amapps_vec, amapps_ras, field = 'AMAPPS_10km_grid')
+amapps <- rasterize(amapps_vec, amapps_ras, field = 'AMAPPS_10km_grid')
 
 # visualize
-terra::plot(amapps)
+plot(amapps)
 }
 }
 \keyword{datasets}
