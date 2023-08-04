@@ -29,7 +29,7 @@ Grid cell values represent grid cell IDs.
 \examples{
 \dontrun{
 # convert sf to SpatVector
-amapps_vec <- amapps_grid |> as('SpatVector') 
+amapps_vec <- NEFSCspatial::amapps_grid |> as('SpatVector') 
 
 # empty raster from amapps_vec
 amapps_ras <- terra::rast(amapps_vec, nrow = 328, ncol = 240)
