@@ -1,0 +1,13 @@
+--- 
+title: 'Great_South_Channel_Restricted_Trap_Pot_Area' 
+output: html_document 
+--- 
+
+```{r, echo = FALSE, warning = FALSE} 
+library(leaflet) 
+m <- readRDS(here::here('pkgdown/leaflet_maps/Great_South_Channel_Restricted_Trap_Pot_Area_leaflet.rds')) 
+``` 
+
+```{r, echo = FALSE} 
+m 
+```

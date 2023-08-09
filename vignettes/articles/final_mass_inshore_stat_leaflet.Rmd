@@ -1,0 +1,13 @@
+--- 
+title: 'final_mass_inshore_stat' 
+output: html_document 
+--- 
+
+```{r, echo = FALSE, warning = FALSE} 
+library(leaflet) 
+m <- readRDS(here::here('pkgdown/leaflet_maps/final_mass_inshore_stat_leaflet.rds')) 
+``` 
+
+```{r, echo = FALSE} 
+m 
+```
