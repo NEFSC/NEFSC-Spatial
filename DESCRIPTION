@@ -25,6 +25,7 @@ Suggests:
     magick,
     hexSticker,
     ggimage,
-    dplyr
+    dplyr,
+    leaflet
 LazyData: true
 VignetteBuilder: knitr
