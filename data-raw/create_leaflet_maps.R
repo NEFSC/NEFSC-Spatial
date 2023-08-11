@@ -15,7 +15,7 @@ file.remove(leaflet_rmd)
 exp_data <- ls("package:NEFSCspatial")
 
 # ignore certain data sets, leaflet fails to render for some reason (maybe too big)
-exp_data <- exp_data[-which(exp_data %in% c("amapps_grid", "Herring_Management_Areas", "NAFO_Divisions_2021_poly_clipped", "Statistical_Areas_2010", "Statistical_Areas_2010_withNames"))]
+exp_data <- exp_data[-which(exp_data %in% c("amapps_grid"))]
 
 # loop through data and make leaflet maps
 for (i in exp_data) {
