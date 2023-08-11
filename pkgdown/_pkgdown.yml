@@ -51,6 +51,8 @@ navbar:
         href: articles/GillnetClosureAreas_20211021_leaflet.html
       - text: Great_South_Channel_Restricted_Trap_Pot_Area
         href: articles/Great_South_Channel_Restricted_Trap_Pot_Area_leaflet.html
+      - text: Herring_Management_Areas
+        href: articles/Herring_Management_Areas_leaflet.html
       - text: LMA1_Restricted_Area_FR
         href: articles/LMA1_Restricted_Area_FR_leaflet.html
       - text: NAFO_Divisions_2021_line_enclosed
@@ -59,10 +61,16 @@ navbar:
         href: articles/NAFO_Divisions_2021_line_not_enclosed_leaflet.html
       - text: NAFO_Divisions_2021_poly_not_clipped
         href: articles/NAFO_Divisions_2021_poly_not_clipped_leaflet.html
+      - text: NAFO_Divisions_2021_poly_clipped
+        href: articles/NAFO_Divisions_2021_poly_clipped_leaflet.html
       - text: Neus_atlantis
         href: articles/Neus_atlantis_leaflet.html
       - text: Shellfish_Strata
         href: articles/Shellfish_Strata_leaflet.html
+      - text: Statistical_Areas_2010
+        href: articles/Statistical_Areas_2010_leaflet.html
+      - text: Statistical_Areas_2010_withNames
+        href: articles/Statistical_Areas_2010_withNames_leaflet.html
       - text: Shrimp_Strata
         href: articles/Shrimp_Strata_leaflet.html
 reference:
