@@ -61,7 +61,7 @@ navbar:
         href: articles/NAFO_Divisions_2021_line_not_enclosed_leaflet.html
       - text: NAFO_Divisions_2021_poly_not_clipped
         href: articles/NAFO_Divisions_2021_poly_not_clipped_leaflet.html
-      - text: NAFO_Divisions_2021_poly__clipped
+      - text: NAFO_Divisions_2021_poly_clipped
         href: articles/NAFO_Divisions_2021_poly_clipped_leaflet.html
       - text: Neus_atlantis
         href: articles/Neus_atlantis_leaflet.html
