@@ -41,14 +41,14 @@ jobs:
           install.packages(c("pkgdown", "yaml"), type = "binary")
         shell: Rscript {0}
         
+      - name: Install package
+        run: R CMD INSTALL .
+        
       - name: Create leaflet maps
         run: |
           source("./data-raw/create_leaflet_maps.R", echo = TRUE)
         shell: Rscript {0}
         
-      - name: Install package
-        run: R CMD INSTALL .
-
       - name: Deploy package
         run: |
           git config --local user.email "actions@github.com"
