@@ -38,9 +38,14 @@ jobs:
 
       - name: Install pkgdown
         run: |
-          install.packages("pkgdown", type = "binary")
+          install.packages(c("pkgdown", "yaml"), type = "binary")
         shell: Rscript {0}
-
+        
+      - name: Create leaflet maps
+        run: |
+          source("./data-raw/create_leaflet_maps.R")
+        shell: Rscript {0}
+        
       - name: Install package
         run: R CMD INSTALL .
 
