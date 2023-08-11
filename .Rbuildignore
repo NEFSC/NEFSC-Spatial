@@ -8,3 +8,4 @@
 ^\.Rproj.user$
 ^docs$
 ^pkgdown$
+^vignettes/articles$

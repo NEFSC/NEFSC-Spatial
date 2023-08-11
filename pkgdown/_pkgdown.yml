@@ -1,74 +1,96 @@
 url: https://nefsc.github.io/NEFSC-Spatial/
-
 navbar:
   structure:
     left:
     - home
     - getting started
     - reference
-    - sourcecode
     - issue
     - articles
-    right: [search, github]
-
+    - map
+    right:
+    - search
+    - github
   components:
     home:
       icon: fas fa-home fa-lg
       href: index.html
-
     getting started:
       text: Getting Started
       icon: fas fa-solid fa-play
       href: articles/NEFSCspatial.html
-
     reference:
       text: Data
       icon: fas fa-database fa-lg
       href: reference/index.html
-
     issue:
       text: Issues
       icon: fas fa-question-circle fa-lg
       href: https://github.com/NEFSC/NEFSC-Spatial/issues
-
     articles:
       text: Articles
       icon: fas fa-file-contract fa-lg
       menu:
-        - text: Contributing to Package
-          href: articles/ContributeSpatialData.html
-        - text: Team Members
-          href: articles/teamMembers.html
-
+      - text: Contributing to Package
+        href: articles/ContributeSpatialData.html
+      - text: Team Members
+        href: articles/teamMembers.html
+    map:
+      text: Maps
+      icon: fas fa-map fa-lg
+      menu:
+      - text: BTS_Strata
+        href: articles/BTS_Strata_leaflet.html
+      - text: EcoMon_Strata
+        href: articles/EcoMon_Strata_leaflet.html
+      - text: epu_sf
+        href: articles/epu_sf_leaflet.html
+      - text: final_mass_inshore_stat
+        href: articles/final_mass_inshore_stat_leaflet.html
+      - text: GillnetClosureAreas_20211021
+        href: articles/GillnetClosureAreas_20211021_leaflet.html
+      - text: Great_South_Channel_Restricted_Trap_Pot_Area
+        href: articles/Great_South_Channel_Restricted_Trap_Pot_Area_leaflet.html
+      - text: LMA1_Restricted_Area_FR
+        href: articles/LMA1_Restricted_Area_FR_leaflet.html
+      - text: NAFO_Divisions_2021_line_enclosed
+        href: articles/NAFO_Divisions_2021_line_enclosed_leaflet.html
+      - text: NAFO_Divisions_2021_line_not_enclosed
+        href: articles/NAFO_Divisions_2021_line_not_enclosed_leaflet.html
+      - text: NAFO_Divisions_2021_poly_not_clipped
+        href: articles/NAFO_Divisions_2021_poly_not_clipped_leaflet.html
+      - text: Neus_atlantis
+        href: articles/Neus_atlantis_leaflet.html
+      - text: Shellfish_Strata
+        href: articles/Shellfish_Strata_leaflet.html
+      - text: Shrimp_Strata
+        href: articles/Shrimp_Strata_leaflet.html
 reference:
 - title: Fishing Areas / Management Areas
   desc: Areas in which fishing is reported
 - contents:
   - starts_with("Statistical_")
   - starts_with("NAFO_")
-  - "final_mass_inshore_stat"
-  - "Herring_Management_Areas"
+  - final_mass_inshore_stat
+  - Herring_Management_Areas
 - title: Closed Areas
   desc: Areas in which fishing is restricted
 - contents:
-  - starts_with("Gillnet")
-  - starts_with("LMA1_")
-  - starts_with("Great_")
+  - GillnetClosureAreas_20211021
+  - LMA1_Restricted_Area_FR
+  - Great_South_Channel_Restricted_Trap_Pot_Area
 - title: Protected Species
-- contents:
-  - starts_with("amapps_")
+- contents: amapps_grid
 - title: Survey Strata
   desc: Areas in which survey sampling is reported
 - contents:
-  - starts_with("BTS_")
-  - "EcoMon_Strata"
-  - "Shellfish_Strata"
-  - "Shrimp_Strata"
+  - BTS_Strata
+  - EcoMon_Strata
+  - Shellfish_Strata
+  - Shrimp_Strata
 - title: Models
   desc: Areas defining model boundaries
-- contents:
-  - "Neus_atlantis"
-
+- contents: Neus_atlantis
 authors:
   Andy Beet:
     href: https://github.com/andybeet
