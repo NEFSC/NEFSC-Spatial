@@ -2,10 +2,23 @@ pandoc: 2.19.2
 pkgdown: 2.0.7
 pkgdown_sha: ~
 articles:
-  ContributeSpatialData: ContributeSpatialData.html
   NEFSCspatial: NEFSCspatial.html
+  BTS_Strata_leaflet: BTS_Strata_leaflet.html
+  ContributeSpatialData: ContributeSpatialData.html
+  EcoMon_Strata_leaflet: EcoMon_Strata_leaflet.html
+  GillnetClosureAreas_20211021_leaflet: GillnetClosureAreas_20211021_leaflet.html
+  Great_South_Channel_Restricted_Trap_Pot_Area_leaflet: Great_South_Channel_Restricted_Trap_Pot_Area_leaflet.html
+  LMA1_Restricted_Area_FR_leaflet: LMA1_Restricted_Area_FR_leaflet.html
+  NAFO_Divisions_2021_line_enclosed_leaflet: NAFO_Divisions_2021_line_enclosed_leaflet.html
+  NAFO_Divisions_2021_line_not_enclosed_leaflet: NAFO_Divisions_2021_line_not_enclosed_leaflet.html
+  NAFO_Divisions_2021_poly_not_clipped_leaflet: NAFO_Divisions_2021_poly_not_clipped_leaflet.html
+  Neus_atlantis_leaflet: Neus_atlantis_leaflet.html
+  Shellfish_Strata_leaflet: Shellfish_Strata_leaflet.html
+  Shrimp_Strata_leaflet: Shrimp_Strata_leaflet.html
+  epu_sf_leaflet: epu_sf_leaflet.html
+  final_mass_inshore_stat_leaflet: final_mass_inshore_stat_leaflet.html
   teamMembers: teamMembers.html
-last_built: 2023-07-12T15:45Z
+last_built: 2023-08-11T12:21Z
 urls:
   reference: https://nefsc.github.io/NEFSC-Spatial/reference
   article: https://nefsc.github.io/NEFSC-Spatial/articles
