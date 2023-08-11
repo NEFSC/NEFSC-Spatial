@@ -44,7 +44,7 @@ jobs:
         
       - name: Create leaflet maps
         run: |
-          source("./data-raw/create_leaflet_maps.R")
+          source("./data-raw/create_leaflet_maps.R", echo = TRUE)
         shell: Rscript {0}
         
       - name: Install package
