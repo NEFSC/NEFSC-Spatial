@@ -5,6 +5,7 @@ on:
     branches:
       - main
       - master
+      - add_leaflet_ghpages
 
 jobs:
   pkgdown:
