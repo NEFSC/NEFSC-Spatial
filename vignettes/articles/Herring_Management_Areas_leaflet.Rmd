@@ -1,0 +1,13 @@
+--- 
+title: 'Herring_Management_Areas' 
+output: html_document 
+--- 
+
+```{r, echo = FALSE, warning = FALSE} 
+library(leaflet) 
+m <- readRDS(here::here('pkgdown/leaflet_maps/Herring_Management_Areas_leaflet.rds')) 
+``` 
+
+```{r, echo = FALSE} 
+m 
+```

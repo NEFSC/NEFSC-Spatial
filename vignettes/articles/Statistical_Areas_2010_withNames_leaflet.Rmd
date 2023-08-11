@@ -1,0 +1,13 @@
+--- 
+title: 'Statistical_Areas_2010_withNames' 
+output: html_document 
+--- 
+
+```{r, echo = FALSE, warning = FALSE} 
+library(leaflet) 
+m <- readRDS(here::here('pkgdown/leaflet_maps/Statistical_Areas_2010_withNames_leaflet.rds')) 
+``` 
+
+```{r, echo = FALSE} 
+m 
+```
