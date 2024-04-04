@@ -65,6 +65,8 @@ navbar:
         href: articles/NAFO_Divisions_2021_poly_clipped_leaflet.html
       - text: Neus_atlantis
         href: articles/Neus_atlantis_leaflet.html
+      - text: Scallop_Rotational_Areas_20230411
+        href: articles/Scallop_Rotational_Areas_20230411.html
       - text: Shellfish_Strata
         href: articles/Shellfish_Strata_leaflet.html
       - text: Statistical_Areas_2010
@@ -87,6 +89,7 @@ reference:
   - GillnetClosureAreas_20211021
   - LMA1_Restricted_Area_FR
   - Great_South_Channel_Restricted_Trap_Pot_Area
+  - Scallop_Rotational_Areas_20230411
 - title: Protected Species
 - contents: amapps_grid
 - title: Survey Strata
