@@ -59,22 +59,22 @@ navbar:
         href: articles/NAFO_Divisions_2021_line_enclosed_leaflet.html
       - text: NAFO_Divisions_2021_line_not_enclosed
         href: articles/NAFO_Divisions_2021_line_not_enclosed_leaflet.html
-      - text: NAFO_Divisions_2021_poly_not_clipped
-        href: articles/NAFO_Divisions_2021_poly_not_clipped_leaflet.html
       - text: NAFO_Divisions_2021_poly_clipped
         href: articles/NAFO_Divisions_2021_poly_clipped_leaflet.html
+      - text: NAFO_Divisions_2021_poly_not_clipped
+        href: articles/NAFO_Divisions_2021_poly_not_clipped_leaflet.html
       - text: Neus_atlantis
         href: articles/Neus_atlantis_leaflet.html
       - text: Scallop_Rotational_Areas_20230411
-        href: articles/Scallop_Rotational_Areas_20230411.html
+        href: articles/Scallop_Rotational_Areas_20230411_leaflet.html
       - text: Shellfish_Strata
         href: articles/Shellfish_Strata_leaflet.html
+      - text: Shrimp_Strata
+        href: articles/Shrimp_Strata_leaflet.html
       - text: Statistical_Areas_2010
         href: articles/Statistical_Areas_2010_leaflet.html
       - text: Statistical_Areas_2010_withNames
         href: articles/Statistical_Areas_2010_withNames_leaflet.html
-      - text: Shrimp_Strata
-        href: articles/Shrimp_Strata_leaflet.html
 reference:
 - title: Fishing Areas / Management Areas
   desc: Areas in which fishing is reported
