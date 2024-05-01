@@ -1,0 +1,13 @@
+--- 
+title: 'Scallop_Rotational_Areas_20230411' 
+output: html_document 
+--- 
+
+```{r, echo = FALSE, warning = FALSE} 
+library(leaflet) 
+m <- readRDS(here::here('pkgdown/leaflet_maps/Scallop_Rotational_Areas_20230411_leaflet.rds')) 
+``` 
+
+```{r, echo = FALSE} 
+m 
+```
