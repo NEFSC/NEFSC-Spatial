@@ -24,7 +24,7 @@ jobs:
         shell: Rscript {0}
 
       - name: Cache R packages
-        uses: actions/cache@v2
+        uses: actions/cache@v4
         with:
           path: ${{ env.R_LIBS_USER }}
           key: ${{ runner.os }}-${{ hashFiles('.github/R-version') }}-1-${{ hashFiles('.github/depends.Rds') }}
@@ -40,15 +40,15 @@ jobs:
         run: |
           install.packages(c("pkgdown", "yaml"), type = "binary")
         shell: Rscript {0}
-        
+
       - name: Install package
         run: R CMD INSTALL .
-        
+
       - name: Create leaflet maps
         run: |
           source("./data-raw/create_leaflet_maps.R", echo = TRUE)
         shell: Rscript {0}
-        
+
       - name: Deploy package
         run: |
           git config --local user.email "actions@github.com"
