@@ -22,11 +22,11 @@ library(NEFSCspatial)
 The spatial data bundled in this package are in `sf` format. For the data in `sf` format, you can view the fields simply by typing the name of the data set
 
 ```{r data_sf}
-NEFSCspatial::Shellfish_Strata
+NEFSCspatial::Statistical_Areas_2010
 ```
 
 To visualize the data simply use the plot function
 
 ```{r plot_sf}
-plot(NEFSCspatial::Shellfish_Strata)
+plot(NEFSCspatial::Statistical_Areas_2010)
 ```

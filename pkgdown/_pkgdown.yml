@@ -35,14 +35,12 @@ navbar:
         href: articles/ContributeSpatialData.html
       - text: Team Members
         href: articles/teamMembers.html
+      - text: Using Feature Services
+        href: articles/featureService.html
     map:
       text: Maps
       icon: fas fa-map fa-lg
       menu:
-      - text: BTS_Strata
-        href: articles/BTS_Strata_leaflet.html
-      - text: EcoMon_Strata
-        href: articles/EcoMon_Strata_leaflet.html
       - text: epu_sf
         href: articles/epu_sf_leaflet.html
       - text: final_mass_inshore_stat
@@ -67,10 +65,6 @@ navbar:
         href: articles/Neus_atlantis_leaflet.html
       - text: Scallop_Rotational_Areas_20230411
         href: articles/Scallop_Rotational_Areas_20230411_leaflet.html
-      - text: Shellfish_Strata
-        href: articles/Shellfish_Strata_leaflet.html
-      - text: Shrimp_Strata
-        href: articles/Shrimp_Strata_leaflet.html
       - text: Statistical_Areas_2010
         href: articles/Statistical_Areas_2010_leaflet.html
       - text: Statistical_Areas_2010_withNames
@@ -92,13 +86,6 @@ reference:
   - Scallop_Rotational_Areas_20230411
 - title: Protected Species
 - contents: amapps_grid
-- title: Survey Strata
-  desc: Areas in which survey sampling is reported
-- contents:
-  - BTS_Strata
-  - EcoMon_Strata
-  - Shellfish_Strata
-  - Shrimp_Strata
 - title: Models
   desc: Areas defining model boundaries
 - contents: Neus_atlantis
