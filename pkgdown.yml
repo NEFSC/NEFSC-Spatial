@@ -1,29 +1,28 @@
-pandoc: 2.19.2
-pkgdown: 2.0.7
+pandoc: 3.1.11
+pkgdown: 2.1.1
 pkgdown_sha: ~
 articles:
+  articles/BTS_Strata_leaflet: BTS_Strata_leaflet.html
+  articles/ContributeSpatialData: ContributeSpatialData.html
+  articles/EcoMon_Strata_leaflet: EcoMon_Strata_leaflet.html
+  articles/epu_sf_leaflet: epu_sf_leaflet.html
+  articles/final_mass_inshore_stat_leaflet: final_mass_inshore_stat_leaflet.html
+  articles/GillnetClosureAreas_20211021_leaflet: GillnetClosureAreas_20211021_leaflet.html
+  articles/Great_South_Channel_Restricted_Trap_Pot_Area_leaflet: Great_South_Channel_Restricted_Trap_Pot_Area_leaflet.html
+  articles/Herring_Management_Areas_leaflet: Herring_Management_Areas_leaflet.html
+  articles/LMA1_Restricted_Area_FR_leaflet: LMA1_Restricted_Area_FR_leaflet.html
+  articles/NAFO_Divisions_2021_line_enclosed_leaflet: NAFO_Divisions_2021_line_enclosed_leaflet.html
+  articles/NAFO_Divisions_2021_line_not_enclosed_leaflet: NAFO_Divisions_2021_line_not_enclosed_leaflet.html
+  articles/NAFO_Divisions_2021_poly_clipped_leaflet: NAFO_Divisions_2021_poly_clipped_leaflet.html
+  articles/NAFO_Divisions_2021_poly_not_clipped_leaflet: NAFO_Divisions_2021_poly_not_clipped_leaflet.html
   NEFSCspatial: NEFSCspatial.html
-  BTS_Strata_leaflet: BTS_Strata_leaflet.html
-  ContributeSpatialData: ContributeSpatialData.html
-  EcoMon_Strata_leaflet: EcoMon_Strata_leaflet.html
-  GillnetClosureAreas_20211021_leaflet: GillnetClosureAreas_20211021_leaflet.html
-  Great_South_Channel_Restricted_Trap_Pot_Area_leaflet: Great_South_Channel_Restricted_Trap_Pot_Area_leaflet.html
-  Herring_Management_Areas_leaflet: Herring_Management_Areas_leaflet.html
-  LMA1_Restricted_Area_FR_leaflet: LMA1_Restricted_Area_FR_leaflet.html
-  NAFO_Divisions_2021_line_enclosed_leaflet: NAFO_Divisions_2021_line_enclosed_leaflet.html
-  NAFO_Divisions_2021_line_not_enclosed_leaflet: NAFO_Divisions_2021_line_not_enclosed_leaflet.html
-  NAFO_Divisions_2021_poly_clipped_leaflet: NAFO_Divisions_2021_poly_clipped_leaflet.html
-  NAFO_Divisions_2021_poly_not_clipped_leaflet: NAFO_Divisions_2021_poly_not_clipped_leaflet.html
-  Neus_atlantis_leaflet: Neus_atlantis_leaflet.html
-  Shellfish_Strata_leaflet: Shellfish_Strata_leaflet.html
-  Shrimp_Strata_leaflet: Shrimp_Strata_leaflet.html
-  Statistical_Areas_2010_leaflet: Statistical_Areas_2010_leaflet.html
-  Statistical_Areas_2010_withNames_leaflet: Statistical_Areas_2010_withNames_leaflet.html
-  epu_sf_leaflet: epu_sf_leaflet.html
-  final_mass_inshore_stat_leaflet: final_mass_inshore_stat_leaflet.html
-  teamMembers: teamMembers.html
-last_built: 2023-12-12T22:31Z
+  articles/Neus_atlantis_leaflet: Neus_atlantis_leaflet.html
+  articles/Shellfish_Strata_leaflet: Shellfish_Strata_leaflet.html
+  articles/Shrimp_Strata_leaflet: Shrimp_Strata_leaflet.html
+  articles/Statistical_Areas_2010_leaflet: Statistical_Areas_2010_leaflet.html
+  articles/Statistical_Areas_2010_withNames_leaflet: Statistical_Areas_2010_withNames_leaflet.html
+  articles/teamMembers: teamMembers.html
+last_built: 2025-03-25T19:25Z
 urls:
   reference: https://nefsc.github.io/NEFSC-Spatial/reference
   article: https://nefsc.github.io/NEFSC-Spatial/articles
-

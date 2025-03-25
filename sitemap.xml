@@ -1,132 +1,46 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://nefsc.github.io/NEFSC-Spatial/404.html</loc>
-  </url>
-  <url>
-    <loc>https://nefsc.github.io/NEFSC-Spatial/LICENSE-text.html</loc>
-  </url>
-  <url>
-    <loc>https://nefsc.github.io/NEFSC-Spatial/articles/BTS_Strata_leaflet.html</loc>
-  </url>
-  <url>
-    <loc>https://nefsc.github.io/NEFSC-Spatial/articles/ContributeSpatialData.html</loc>
-  </url>
-  <url>
-    <loc>https://nefsc.github.io/NEFSC-Spatial/articles/EcoMon_Strata_leaflet.html</loc>
-  </url>
-  <url>
-    <loc>https://nefsc.github.io/NEFSC-Spatial/articles/GillnetClosureAreas_20211021_leaflet.html</loc>
-  </url>
-  <url>
-    <loc>https://nefsc.github.io/NEFSC-Spatial/articles/Great_South_Channel_Restricted_Trap_Pot_Area_leaflet.html</loc>
-  </url>
-  <url>
-    <loc>https://nefsc.github.io/NEFSC-Spatial/articles/Herring_Management_Areas_leaflet.html</loc>
-  </url>
-  <url>
-    <loc>https://nefsc.github.io/NEFSC-Spatial/articles/LMA1_Restricted_Area_FR_leaflet.html</loc>
-  </url>
-  <url>
-    <loc>https://nefsc.github.io/NEFSC-Spatial/articles/NAFO_Divisions_2021_line_enclosed_leaflet.html</loc>
-  </url>
-  <url>
-    <loc>https://nefsc.github.io/NEFSC-Spatial/articles/NAFO_Divisions_2021_line_not_enclosed_leaflet.html</loc>
-  </url>
-  <url>
-    <loc>https://nefsc.github.io/NEFSC-Spatial/articles/NAFO_Divisions_2021_poly_clipped_leaflet.html</loc>
-  </url>
-  <url>
-    <loc>https://nefsc.github.io/NEFSC-Spatial/articles/NAFO_Divisions_2021_poly_not_clipped_leaflet.html</loc>
-  </url>
-  <url>
-    <loc>https://nefsc.github.io/NEFSC-Spatial/articles/NEFSCspatial.html</loc>
-  </url>
-  <url>
-    <loc>https://nefsc.github.io/NEFSC-Spatial/articles/Neus_atlantis_leaflet.html</loc>
-  </url>
-  <url>
-    <loc>https://nefsc.github.io/NEFSC-Spatial/articles/Shellfish_Strata_leaflet.html</loc>
-  </url>
-  <url>
-    <loc>https://nefsc.github.io/NEFSC-Spatial/articles/Shrimp_Strata_leaflet.html</loc>
-  </url>
-  <url>
-    <loc>https://nefsc.github.io/NEFSC-Spatial/articles/Statistical_Areas_2010_leaflet.html</loc>
-  </url>
-  <url>
-    <loc>https://nefsc.github.io/NEFSC-Spatial/articles/Statistical_Areas_2010_withNames_leaflet.html</loc>
-  </url>
-  <url>
-    <loc>https://nefsc.github.io/NEFSC-Spatial/articles/epu_sf_leaflet.html</loc>
-  </url>
-  <url>
-    <loc>https://nefsc.github.io/NEFSC-Spatial/articles/final_mass_inshore_stat_leaflet.html</loc>
-  </url>
-  <url>
-    <loc>https://nefsc.github.io/NEFSC-Spatial/articles/index.html</loc>
-  </url>
-  <url>
-    <loc>https://nefsc.github.io/NEFSC-Spatial/articles/teamMembers.html</loc>
-  </url>
-  <url>
-    <loc>https://nefsc.github.io/NEFSC-Spatial/authors.html</loc>
-  </url>
-  <url>
-    <loc>https://nefsc.github.io/NEFSC-Spatial/index.html</loc>
-  </url>
-  <url>
-    <loc>https://nefsc.github.io/NEFSC-Spatial/reference/BTS_Strata.html</loc>
-  </url>
-  <url>
-    <loc>https://nefsc.github.io/NEFSC-Spatial/reference/EcoMon_Strata.html</loc>
-  </url>
-  <url>
-    <loc>https://nefsc.github.io/NEFSC-Spatial/reference/GillnetClosureAreas_20211021.html</loc>
-  </url>
-  <url>
-    <loc>https://nefsc.github.io/NEFSC-Spatial/reference/Great_South_Channel_Restricted_Trap_Pot_Area.html</loc>
-  </url>
-  <url>
-    <loc>https://nefsc.github.io/NEFSC-Spatial/reference/Herring_Management_Areas.html</loc>
-  </url>
-  <url>
-    <loc>https://nefsc.github.io/NEFSC-Spatial/reference/LMA1_Restricted_Area_FR.html</loc>
-  </url>
-  <url>
-    <loc>https://nefsc.github.io/NEFSC-Spatial/reference/NAFO_Divisions_2021_line_enclosed.html</loc>
-  </url>
-  <url>
-    <loc>https://nefsc.github.io/NEFSC-Spatial/reference/NAFO_Divisions_2021_line_not_enclosed.html</loc>
-  </url>
-  <url>
-    <loc>https://nefsc.github.io/NEFSC-Spatial/reference/NAFO_Divisions_2021_poly_clipped.html</loc>
-  </url>
-  <url>
-    <loc>https://nefsc.github.io/NEFSC-Spatial/reference/NAFO_Divisions_2021_poly_not_clipped.html</loc>
-  </url>
-  <url>
-    <loc>https://nefsc.github.io/NEFSC-Spatial/reference/Neus_atlantis.html</loc>
-  </url>
-  <url>
-    <loc>https://nefsc.github.io/NEFSC-Spatial/reference/Shellfish_Strata.html</loc>
-  </url>
-  <url>
-    <loc>https://nefsc.github.io/NEFSC-Spatial/reference/Shrimp_Strata.html</loc>
-  </url>
-  <url>
-    <loc>https://nefsc.github.io/NEFSC-Spatial/reference/Statistical_Areas_2010.html</loc>
-  </url>
-  <url>
-    <loc>https://nefsc.github.io/NEFSC-Spatial/reference/Statistical_Areas_2010_withNames.html</loc>
-  </url>
-  <url>
-    <loc>https://nefsc.github.io/NEFSC-Spatial/reference/amapps_grid.html</loc>
-  </url>
-  <url>
-    <loc>https://nefsc.github.io/NEFSC-Spatial/reference/final_mass_inshore_stat.html</loc>
-  </url>
-  <url>
-    <loc>https://nefsc.github.io/NEFSC-Spatial/reference/index.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>https://nefsc.github.io/NEFSC-Spatial/404.html</loc></url>
+<url><loc>https://nefsc.github.io/NEFSC-Spatial/LICENSE-text.html</loc></url>
+<url><loc>https://nefsc.github.io/NEFSC-Spatial/articles/BTS_Strata_leaflet.html</loc></url>
+<url><loc>https://nefsc.github.io/NEFSC-Spatial/articles/ContributeSpatialData.html</loc></url>
+<url><loc>https://nefsc.github.io/NEFSC-Spatial/articles/EcoMon_Strata_leaflet.html</loc></url>
+<url><loc>https://nefsc.github.io/NEFSC-Spatial/articles/GillnetClosureAreas_20211021_leaflet.html</loc></url>
+<url><loc>https://nefsc.github.io/NEFSC-Spatial/articles/Great_South_Channel_Restricted_Trap_Pot_Area_leaflet.html</loc></url>
+<url><loc>https://nefsc.github.io/NEFSC-Spatial/articles/Herring_Management_Areas_leaflet.html</loc></url>
+<url><loc>https://nefsc.github.io/NEFSC-Spatial/articles/LMA1_Restricted_Area_FR_leaflet.html</loc></url>
+<url><loc>https://nefsc.github.io/NEFSC-Spatial/articles/NAFO_Divisions_2021_line_enclosed_leaflet.html</loc></url>
+<url><loc>https://nefsc.github.io/NEFSC-Spatial/articles/NAFO_Divisions_2021_line_not_enclosed_leaflet.html</loc></url>
+<url><loc>https://nefsc.github.io/NEFSC-Spatial/articles/NAFO_Divisions_2021_poly_clipped_leaflet.html</loc></url>
+<url><loc>https://nefsc.github.io/NEFSC-Spatial/articles/NAFO_Divisions_2021_poly_not_clipped_leaflet.html</loc></url>
+<url><loc>https://nefsc.github.io/NEFSC-Spatial/articles/NEFSCspatial.html</loc></url>
+<url><loc>https://nefsc.github.io/NEFSC-Spatial/articles/Neus_atlantis_leaflet.html</loc></url>
+<url><loc>https://nefsc.github.io/NEFSC-Spatial/articles/Shellfish_Strata_leaflet.html</loc></url>
+<url><loc>https://nefsc.github.io/NEFSC-Spatial/articles/Shrimp_Strata_leaflet.html</loc></url>
+<url><loc>https://nefsc.github.io/NEFSC-Spatial/articles/Statistical_Areas_2010_leaflet.html</loc></url>
+<url><loc>https://nefsc.github.io/NEFSC-Spatial/articles/Statistical_Areas_2010_withNames_leaflet.html</loc></url>
+<url><loc>https://nefsc.github.io/NEFSC-Spatial/articles/epu_sf_leaflet.html</loc></url>
+<url><loc>https://nefsc.github.io/NEFSC-Spatial/articles/final_mass_inshore_stat_leaflet.html</loc></url>
+<url><loc>https://nefsc.github.io/NEFSC-Spatial/articles/index.html</loc></url>
+<url><loc>https://nefsc.github.io/NEFSC-Spatial/articles/teamMembers.html</loc></url>
+<url><loc>https://nefsc.github.io/NEFSC-Spatial/authors.html</loc></url>
+<url><loc>https://nefsc.github.io/NEFSC-Spatial/index.html</loc></url>
+<url><loc>https://nefsc.github.io/NEFSC-Spatial/reference/BTS_Strata.html</loc></url>
+<url><loc>https://nefsc.github.io/NEFSC-Spatial/reference/EcoMon_Strata.html</loc></url>
+<url><loc>https://nefsc.github.io/NEFSC-Spatial/reference/GillnetClosureAreas_20211021.html</loc></url>
+<url><loc>https://nefsc.github.io/NEFSC-Spatial/reference/Great_South_Channel_Restricted_Trap_Pot_Area.html</loc></url>
+<url><loc>https://nefsc.github.io/NEFSC-Spatial/reference/Herring_Management_Areas.html</loc></url>
+<url><loc>https://nefsc.github.io/NEFSC-Spatial/reference/LMA1_Restricted_Area_FR.html</loc></url>
+<url><loc>https://nefsc.github.io/NEFSC-Spatial/reference/NAFO_Divisions_2021_line_enclosed.html</loc></url>
+<url><loc>https://nefsc.github.io/NEFSC-Spatial/reference/NAFO_Divisions_2021_line_not_enclosed.html</loc></url>
+<url><loc>https://nefsc.github.io/NEFSC-Spatial/reference/NAFO_Divisions_2021_poly_clipped.html</loc></url>
+<url><loc>https://nefsc.github.io/NEFSC-Spatial/reference/NAFO_Divisions_2021_poly_not_clipped.html</loc></url>
+<url><loc>https://nefsc.github.io/NEFSC-Spatial/reference/Neus_atlantis.html</loc></url>
+<url><loc>https://nefsc.github.io/NEFSC-Spatial/reference/Shellfish_Strata.html</loc></url>
+<url><loc>https://nefsc.github.io/NEFSC-Spatial/reference/Shrimp_Strata.html</loc></url>
+<url><loc>https://nefsc.github.io/NEFSC-Spatial/reference/Statistical_Areas_2010.html</loc></url>
+<url><loc>https://nefsc.github.io/NEFSC-Spatial/reference/Statistical_Areas_2010_withNames.html</loc></url>
+<url><loc>https://nefsc.github.io/NEFSC-Spatial/reference/amapps_grid.html</loc></url>
+<url><loc>https://nefsc.github.io/NEFSC-Spatial/reference/final_mass_inshore_stat.html</loc></url>
+<url><loc>https://nefsc.github.io/NEFSC-Spatial/reference/index.html</loc></url>
 </urlset>
+
