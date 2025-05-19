@@ -1,5 +1,5 @@
 pandoc: 3.1.11
-pkgdown: 2.1.1
+pkgdown: 2.1.2
 pkgdown_sha: ~
 articles:
   articles/BTS_Strata_leaflet: BTS_Strata_leaflet.html
@@ -22,7 +22,7 @@ articles:
   articles/Statistical_Areas_2010_leaflet: Statistical_Areas_2010_leaflet.html
   articles/Statistical_Areas_2010_withNames_leaflet: Statistical_Areas_2010_withNames_leaflet.html
   articles/teamMembers: teamMembers.html
-last_built: 2025-03-25T19:25Z
+last_built: 2025-05-19T20:21Z
 urls:
   reference: https://nefsc.github.io/NEFSC-Spatial/reference
   article: https://nefsc.github.io/NEFSC-Spatial/articles

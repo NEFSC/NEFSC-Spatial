@@ -186,10 +186,18 @@ footer {
 footer p {
   margin-left: 3px;
   margin-right: 3px;
-  text-align: Center;
   color: #00467f;
 }
 
 footer a:link { color: #00467f; text-decoration: none; }
 footer a:visited { color: #00467f; text-decoration: none; }
 footer a:hover { color: #00467f; text-decoration: none; }
+
+/*---fix footer txt alignment---*/
+footer .pkgdown p {
+  text-align: right;
+}
+
+footer .copyright p {
+  text-align: left;
+}
