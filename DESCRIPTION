@@ -30,4 +30,5 @@ Suggests:
     dplyr,
     leaflet
 LazyData: true
+LazyDataCompression: bzip2
 VignetteBuilder: knitr
