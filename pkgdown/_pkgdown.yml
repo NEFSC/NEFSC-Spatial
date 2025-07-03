@@ -1,4 +1,13 @@
 url: https://nefsc.github.io/NEFSC-Spatial/
+
+template:
+ bootstrap: 5
+
+deploy:
+  install_metadata: true
+
+
+
 navbar:
   structure:
     left:
@@ -15,6 +24,7 @@ navbar:
     home:
       icon: fas fa-home fa-lg
       href: index.html
+      aria-label: Home
     getting started:
       text: Getting Started
       icon: fas fa-solid fa-play
@@ -105,7 +115,7 @@ reference:
 - contents: Neus_atlantis
 authors:
   Andy Beet:
-    href: https://github.com/andybeet
+    href: https://andybeet.com
   Kimberly Bastille:
     href: https://github.com/kimberly-bastille
   Joshua Hatch:
