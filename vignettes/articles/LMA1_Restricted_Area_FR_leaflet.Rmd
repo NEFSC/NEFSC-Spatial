@@ -1,0 +1,13 @@
+--- 
+title: 'LMA1_Restricted_Area_FR' 
+output: html_document 
+--- 
+
+```{r, echo = FALSE, warning = FALSE} 
+library(leaflet) 
+m <- readRDS(here::here('pkgdown/leaflet_maps/LMA1_Restricted_Area_FR_leaflet.rds')) 
+``` 
+
+```{r, echo = FALSE} 
+m 
+```

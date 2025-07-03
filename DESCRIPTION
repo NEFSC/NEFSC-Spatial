@@ -14,8 +14,7 @@ RoxygenNote: 7.3.2
 Depends: 
     R (>= 4.0)
 Imports:
-    sf,
-    raster
+    sf
 Suggests: 
     curl,
     here,
@@ -28,6 +27,7 @@ Suggests:
     magick,
     hexSticker,
     ggimage,
-    dplyr
+    dplyr,
+    leaflet
 LazyData: true
 VignetteBuilder: knitr

@@ -1,0 +1,13 @@
+--- 
+title: 'GillnetClosureAreas_20211021' 
+output: html_document 
+--- 
+
+```{r, echo = FALSE, warning = FALSE} 
+library(leaflet) 
+m <- readRDS(here::here('pkgdown/leaflet_maps/GillnetClosureAreas_20211021_leaflet.rds')) 
+``` 
+
+```{r, echo = FALSE} 
+m 
+```
