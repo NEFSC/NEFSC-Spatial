@@ -6,8 +6,6 @@ template:
 deploy:
   install_metadata: true
 
-
-
 navbar:
   structure:
     left:

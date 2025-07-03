@@ -1,6 +1,6 @@
 Package: NEFSCspatial
 Title: Spatial data package for regions in the northeast atlantic
-Version: 0.0.1
+Version: 0.1.0
 Authors@R: c(person("Andy", "Beet", email = "andrew.beet@noaa.gov", role = c("aut", "cre"), comment = c(ORCID = "0000-0001-8270-7090")),
              person("Kimberly", "Bastille", email = "kimberly.bastille@noaa.gov", role = "aut"),
              person("Joshua", "Hatch", email = "joshua.hatch@noaa.gov", role = "aut"))
