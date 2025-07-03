@@ -27,6 +27,6 @@ NEFSCspatial::Shellfish_Strata
 
 To visualize the data simply use the plot function
 
-```{r plot_sf}
+```{r plot_sf, fig.alt = "Plot of NEFSCspatial Shellfish Strata"}
 plot(NEFSCspatial::Shellfish_Strata)
 ```
