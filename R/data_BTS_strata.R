@@ -1,8 +1,9 @@
-#' @title NEFSC Bottom Trawl Survey Strata
+#' `r lifecycle::badge("deprecated")`
+#' 
+#' NEFSC Bottom Trawl Survey Strata
 #'
-#' @description An \code{sf} object containing the boundaries of the NEFSC bottom trawl survey strata.
+#' An \code{sf} object containing the boundaries of the NEFSC bottom trawl survey strata.
 #' This set of strata is considered historical. (Pre 2000).
-#'
 #'
 #' @format An \code{sf} object:
 #' \describe{

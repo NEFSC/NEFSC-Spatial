@@ -1,3 +1,5 @@
+#' `r lifecycle::badge("deprecated")`
+#' 
 #' Ecosystem Monitoring Cruise (EcoMon) strata
 #'
 #' An sf object containing the EcoMon strata

@@ -3,7 +3,7 @@
 \docType{data}
 \name{Shellfish_Strata}
 \alias{Shellfish_Strata}
-\title{Shellfish strata (Clam and Scallop surveys)}
+\title{\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#deprecated}{\figure{lifecycle-deprecated.svg}{options: alt='[Deprecated]'}}}{\strong{[Deprecated]}}}
 \format{
 A data frame/ \code{sf} object
 \describe{
@@ -22,6 +22,9 @@ A data frame/ \code{sf} object
 data("Shellfish_Strata")
 }
 \description{
+Shellfish strata (Clam and Scallop surveys)
+}
+\details{
 An sf object containing the Clam and Scallop survey strata
 }
 \keyword{datasets}

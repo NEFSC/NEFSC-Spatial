@@ -1,3 +1,5 @@
+#' `r lifecycle::badge("deprecated")`
+#' 
 #' Shellfish strata (Clam and Scallop surveys)
 #'
 #' An sf object containing the Clam and Scallop survey strata

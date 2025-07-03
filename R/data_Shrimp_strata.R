@@ -1,3 +1,5 @@
+#' `r lifecycle::badge("deprecated")`
+#' 
 #' Shrimp survey strata
 #'
 #' An sf object containing the Shrimp survey strata

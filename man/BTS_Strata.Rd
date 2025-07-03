@@ -3,7 +3,7 @@
 \docType{data}
 \name{BTS_Strata}
 \alias{BTS_Strata}
-\title{NEFSC Bottom Trawl Survey Strata}
+\title{\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#deprecated}{\figure{lifecycle-deprecated.svg}{options: alt='[Deprecated]'}}}{\strong{[Deprecated]}}}
 \format{
 An \code{sf} object:
 \describe{
@@ -24,6 +24,9 @@ An \code{sf} object:
 data("BTS_Strata")
 }
 \description{
+NEFSC Bottom Trawl Survey Strata
+}
+\details{
 An \code{sf} object containing the boundaries of the NEFSC bottom trawl survey strata.
 This set of strata is considered historical. (Pre 2000).
 }
