@@ -13,12 +13,12 @@ gis.dir <- here::here('data-raw','gis')
 get_epu_sf <- function(save_clean){
   crs <- "+proj=longlat +lat_1=35 +lat_2=45 +lat_0=40 +lon_0=-77+x_0=0
 +y_0=0 +datum=NAD83 +no_defs +ellps=GRS80 +towgs84=0,0,0"
-  epu_shp <- rgdal::readOGR(file.path(gis.dir, "EPU_Extended.shp"), verbose = F)
-  raster::crs(epu_shp) <- crs
+  epu_shp <- sf::st_as_sf(rgdal::readOGR(file.path(gis.dir, "EPU_Extended.shp"), verbose = F))
+  sf::st_crs(epu_shp) <- crs
   epu_sf <- as(epu_shp, "sf")
   
   if (save_clean){
-    usethis::use_data(epu_sf)
+    usethis::use_data(epu_sf, overwrite = TRUE)
   } else {
     return(epu_sf)
   }
