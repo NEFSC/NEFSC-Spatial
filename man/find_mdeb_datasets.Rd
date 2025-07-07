@@ -18,3 +18,9 @@ This function retrieves the names of datasets available in the
 \href{https://mdeb-nefsc-noaa.hub.arcgis.com/}{MDEB} (Marine Data and
 Environmental Biology) database.
 }
+\examples{
+# Retrieve the names of available datasets
+find_mdeb_datasets()
+
+
+}

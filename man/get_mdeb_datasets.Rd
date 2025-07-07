@@ -25,3 +25,10 @@ The suite of available data set names and associated id's are found by
 running \code{find_mdeb_datasets()}.
 }
 
+\examples{
+# Pull a dataset from MDEB. Ecomon Survey strata
+dataset <- get_mdeb_datasets(dataset_name = "Ecosystem Monitoring Survey", id = 1)
+ # Plot the dataset
+plot(dataset |> dplyr::select(NUMOFSTA))
+
+}

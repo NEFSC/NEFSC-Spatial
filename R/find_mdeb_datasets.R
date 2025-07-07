@@ -11,6 +11,11 @@
 #' \item{id}{ID of the dataset layer}
 #' \item{url}{URL of the dataset}
 #'
+#' @examples
+#' # Retrieve the names of available datasets
+#' find_mdeb_datasets()
+#'
+#'
 #' @export
 
 find_mdeb_datasets <- function() {

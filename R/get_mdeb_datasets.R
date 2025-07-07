@@ -14,6 +14,12 @@
 #'
 #' @return data.frame
 #'
+#' @examples
+#' # Pull a dataset from MDEB. Ecomon Survey strata
+#' dataset <- get_mdeb_datasets(dataset_name = "Ecosystem Monitoring Survey", id = 1)
+#'  # Plot the dataset
+#' plot(dataset |> dplyr::select(NUMOFSTA))
+#'
 #' @export
 
 get_mdeb_datasets <- function(dataset_name = NULL, id = NULL) {
