@@ -2,7 +2,7 @@
 % Please edit documentation in R/find_mdeb_datasets.R
 \name{find_mdeb_datasets}
 \alias{find_mdeb_datasets}
-\title{Get names of data sets from MDEB database}
+\title{Find names of available data sets from MDEB database}
 \usage{
 find_mdeb_datasets()
 }

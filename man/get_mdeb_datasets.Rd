@@ -2,7 +2,7 @@
 % Please edit documentation in R/get_mdeb_datasets.R
 \name{get_mdeb_datasets}
 \alias{get_mdeb_datasets}
-\title{Get names of data sets from MDEB database}
+\title{Get sf data sets from MDEB database}
 \usage{
 get_mdeb_datasets(dataset_name = NULL, id = NULL)
 }

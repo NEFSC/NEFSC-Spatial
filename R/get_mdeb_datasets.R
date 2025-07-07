@@ -1,4 +1,4 @@
-#' Get names of data sets from MDEB database
+#' Get sf data sets from MDEB database
 #'
 #' @description
 #' This function retrieves the names of datasets available in the

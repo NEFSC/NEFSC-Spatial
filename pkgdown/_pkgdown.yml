@@ -15,6 +15,7 @@ navbar:
     - issue
     - articles
     - map
+    - changelog
     right:
     - search
     - github
@@ -83,6 +84,11 @@ navbar:
         href: articles/Statistical_Areas_2010_leaflet.html
       - text: Statistical_Areas_2010_withNames
         href: articles/Statistical_Areas_2010_withNames_leaflet.html
+    changelog:
+      text: Changelog
+      #icon: fas fa-list-alt fa-lg
+      href: news/index.html
+
 reference:
 - title: Fishing Areas / Management Areas
   desc: Areas in which fishing is reported
@@ -111,6 +117,13 @@ reference:
 - title: Models
   desc: Areas defining model boundaries
 - contents: Neus_atlantis
+- title: Functions
+  desc: Functions to pull or filter data
+- contents:
+  - starts_with("get_")
+  - starts_with("find_")
+
+
 authors:
   Andy Beet:
     href: https://andybeet.com
