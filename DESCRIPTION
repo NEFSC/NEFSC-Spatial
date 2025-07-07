@@ -28,7 +28,9 @@ Suggests:
     hexSticker,
     ggimage,
     dplyr,
-    leaflet
+    leaflet,
+    jsonlite,
+    httr2
 LazyData: true
 LazyDataCompression: bzip2
 VignetteBuilder: knitr
