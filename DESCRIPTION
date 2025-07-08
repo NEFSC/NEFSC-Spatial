@@ -14,7 +14,8 @@ RoxygenNote: 7.3.2
 Depends: 
     R (>= 4.0)
 Imports:
-    sf
+    sf,
+    dplyr
 Suggests: 
     curl,
     here,
@@ -27,7 +28,6 @@ Suggests:
     magick,
     hexSticker,
     ggimage,
-    dplyr,
     leaflet
 LazyData: true
 LazyDataCompression: bzip2
