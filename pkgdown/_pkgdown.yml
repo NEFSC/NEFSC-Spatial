@@ -40,6 +40,8 @@ navbar:
       text: Articles
       icon: fas fa-file-contract fa-lg
       menu:
+      - text: MDEB datasets
+        href: articles/mdeb_datasets.html
       - text: Contributing to Package
         href: articles/ContributeSpatialData.html
       - text: Team Members

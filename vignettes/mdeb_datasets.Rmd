@@ -1,0 +1,47 @@
+---
+title: "MDEB datasets"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{MDEB datasets}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(NEFSCspatial)
+```
+
+The Northeast Fisheries Science Center Marine Development [GIS Data Hub](https://mdeb-nefsc-noaa.hub.arcgis.com/) created by the Marine Development and Ecology Branch (MDEB) host many spatial datasets. The `NEFSCspatial` package provides functions to access these datasets in R and serves them up as `sf` objects.
+
+A current list of all data sets: (see `find_mdeb_datasets()`)
+
+```{r finddatasets, eval = TRUE, echo = FALSE}
+datasets <- find_mdeb_datasets() |> 
+  dplyr::select(-url)
+datasets |> 
+  gt::gt()
+
+```
+
+As an example, lets get the Ecosystem Monitoring Survey strata and see what the data looks like.
+
+```{r getecommon, eval = TRUE, echo = TRUE}
+ecomon <- get_mdeb_datasets(dataset_name = "Ecosystem Monitoring Survey", id = 1)
+ecomon
+```
+
+We can then plot any attribute, for example the "REGION"
+
+```{r plotecomon, eval = TRUE, echo = TRUE, fig.alt="ECOMON Region plot"}
+ecomon |> 
+  ggplot2::ggplot() + 
+  ggplot2::geom_sf(ggplot2::aes(fill = REGION))
+
+```
