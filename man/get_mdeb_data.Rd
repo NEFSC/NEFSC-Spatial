@@ -5,10 +5,12 @@
 \title{Get data from the MDEB (Marine Development and Ecology Branch) GIS Data Hub
 hosted on NOAA's Geoplatform}
 \usage{
-get_mdeb_data(url = NULL)
+get_mdeb_data(dataset_name = NULL, id = NULL)
 }
 \arguments{
-\item{url}{URL of the NOAA Geoplatform feature layer.}
+\item{dataset_name}{Name of the dataset to retrieve.}
+
+\item{id}{ID of the dataset layer to retrieve.}
 }
 \value{
 An sf data.frame-like object
@@ -19,13 +21,13 @@ This function retrieves data from the \href{https://mdeb-nefsc-noaa.hub.arcgis.c
 \section{Available data}{
 
 The list of available data and corresponding REST URLs
-can be found by running \code{find_mdeb_datasets()}.
+can be found by running \code{find_mdeb_data()}.
 }
 
 \examples{
 # Pull EcoMon Survey strata from MDEB GIS Data Hub
-ecomon_strata <- get_mdeb_data(url = 'https://services2.arcgis.com/C8EMgrsFcRFL6LrL/arcgis/rest/services/Ecosystem_Monitoring_Survey/FeatureServer/1')
+ecomon_strata <- get_mdeb_data(dataset_name = "Ecosystem Monitoring Survey", id = 1)
 # Plot the data
-sf:::plot.sf(ecomon_strata['REGION'])
+plot(ecomon_strata)
 
 }

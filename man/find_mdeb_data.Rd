@@ -20,7 +20,7 @@ This function retrieves the data available on the
 }
 \examples{
 # Retrieve a list of available data
-mdeb_hub_datasets <- find_mdeb_datasets()
-mdeb_hub_datasets 
+mdeb_data <- find_mdeb_data()
+mdeb_data
 
 }

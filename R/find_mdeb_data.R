@@ -1,6 +1,6 @@
 #' Find available data hosted on the MDEB (Marine Development and Ecology Branch) GIS Data Hub
 #' hosted on NOAA's Geoplatform
-#' 
+#'
 #' @description
 #' This function retrieves the data available on the
 #' \href{https://mdeb-nefsc-noaa.hub.arcgis.com/}{MDEB GIS Data Hub}.
@@ -13,8 +13,8 @@
 #'
 #' @examples
 #' # Retrieve a list of available data
-#' mdeb_hub_datasets <- find_mdeb_datasets()
-#' mdeb_hub_datasets 
+#' mdeb_data <- find_mdeb_data()
+#' mdeb_data
 #'
 #' @export
 
