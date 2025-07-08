@@ -125,7 +125,6 @@ reference:
   - starts_with("get_")
   - starts_with("find_")
 
-
 authors:
   Andy Beet:
     href: https://andybeet.com
