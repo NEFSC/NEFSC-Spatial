@@ -30,7 +30,8 @@ Suggests:
     dplyr,
     leaflet,
     jsonlite,
-    httr2
+    httr2, 
+    gt
 LazyData: true
 LazyDataCompression: bzip2
 VignetteBuilder: knitr
