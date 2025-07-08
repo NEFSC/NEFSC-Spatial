@@ -23,7 +23,7 @@ The Northeast Fisheries Science Center Marine Development [GIS Data Hub](https:/
 A current list of all data sets: (see `find_mdeb_datasets()`)
 
 ```{r finddatasets, eval = TRUE, echo = FALSE}
-datasets <- find_mdeb_datasets() |> 
+datasets <- NEFSCspatial::find_mdeb_datasets() |> 
   dplyr::select(-url)
 datasets |> 
   gt::gt()
