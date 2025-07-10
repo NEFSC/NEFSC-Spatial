@@ -33,7 +33,7 @@ datasets |>
 As an example, lets get the Ecosystem Monitoring Survey strata and see what the data looks like.
 
 ```{r getecommon, eval = TRUE, echo = TRUE}
-ecomon <- get_mdeb_data(dataset_name = "Ecosystem Monitoring Survey", id = 1)
+ecomon <- get_mdeb_data(dataset_name = "Ecosystem Monitoring Survey", dataset_id = 1)
 ecomon
 ```
 
