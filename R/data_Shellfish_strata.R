@@ -20,4 +20,5 @@
 #' @usage data("Shellfish_Strata")
 #' @keywords datasets
 #' @source \url{https://www.fisheries.noaa.gov/inport/item/33466}
+#' @note Use \url{https://mdeb-nefsc-noaa.hub.arcgis.com/maps/noaa::atlantic-surfclam-and-ocean-quahog-survey/about} or \url{https://mdeb-nefsc-noaa.hub.arcgis.com/maps/noaa::sea-scallop-survey/about} instead.
 NULL

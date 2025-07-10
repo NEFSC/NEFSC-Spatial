@@ -27,4 +27,7 @@ Shellfish strata (Clam and Scallop surveys)
 \details{
 An sf object containing the Clam and Scallop survey strata
 }
+\note{
+Use \url{https://mdeb-nefsc-noaa.hub.arcgis.com/maps/noaa::atlantic-surfclam-and-ocean-quahog-survey/about} or \url{https://mdeb-nefsc-noaa.hub.arcgis.com/maps/noaa::sea-scallop-survey/about} instead.
+}
 \keyword{datasets}

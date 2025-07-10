@@ -20,4 +20,5 @@
 #' @usage data("Shrimp_Strata")
 #' @keywords datasets
 #' @source \url{https://www.fisheries.noaa.gov/inport/item/33470}
+#' @note Use \url{https://mdeb-nefsc-noaa.hub.arcgis.com/datasets/noaa::northern-shrimp-survey/about} instead.
 NULL

@@ -30,4 +30,7 @@ NEFSC Bottom Trawl Survey Strata
 An \code{sf} object containing the boundaries of the NEFSC bottom trawl survey strata.
 This set of strata is considered historical. (Pre 2000).
 }
+\note{
+Use \url{https://mdeb-nefsc-noaa.hub.arcgis.com/datasets/noaa::bottom-trawl-survey/about} instead.
+}
 \keyword{datasets}

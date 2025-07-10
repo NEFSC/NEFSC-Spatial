@@ -27,4 +27,7 @@ Ecosystem Monitoring Cruise (EcoMon) strata
 \details{
 An sf object containing the EcoMon strata
 }
+\note{
+Use \url{https://mdeb-nefsc-noaa.hub.arcgis.com/datasets/noaa::ecosystem-monitoring-survey/about} instead.
+}
 \keyword{datasets}

@@ -21,4 +21,5 @@
 #' @keywords datasets
 #' @source \url{https://drive.google.com/drive/folders/15s70lDwezatlNVReDMWRJadtlklMYSnC}
 #' @source \url{https://www.fisheries.noaa.gov/inport/item/33471}
+#' @note Use \url{https://mdeb-nefsc-noaa.hub.arcgis.com/datasets/noaa::bottom-trawl-survey/about} instead.
 NULL

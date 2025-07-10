@@ -27,4 +27,7 @@ Shrimp survey strata
 \details{
 An sf object containing the Shrimp survey strata
 }
+\note{
+Use \url{https://mdeb-nefsc-noaa.hub.arcgis.com/datasets/noaa::northern-shrimp-survey/about} instead.
+}
 \keyword{datasets}
