@@ -26,7 +26,7 @@ can be found by running \code{find_mdeb_data()}.
 
 \examples{
 # Pull EcoMon Survey strata from MDEB GIS Data Hub
-ecomon_strata <- get_mdeb_data(dataset_name = "Ecosystem Monitoring Survey", id = 1)
+ecomon_strata <- get_mdeb_data(dataset_name = "Ecosystem Monitoring Survey", dataset_id = 1)
 # Plot the data
 plot(ecomon_strata)
 
