@@ -5,12 +5,12 @@
 \title{Get data from the MDEB (Marine Development and Ecology Branch) GIS Data Hub
 hosted on NOAA's Geoplatform}
 \usage{
-get_mdeb_data(dataset_name = NULL, id = NULL)
+get_mdeb_data(dataset_name = NULL, dataset_id = NULL)
 }
 \arguments{
 \item{dataset_name}{Name of the dataset to retrieve.}
 
-\item{id}{ID of the dataset layer to retrieve.}
+\item{dataset_id}{ID of the dataset layer to retrieve.}
 }
 \value{
 An sf data.frame-like object
