@@ -3,7 +3,7 @@
 \docType{data}
 \name{Shrimp_Strata}
 \alias{Shrimp_Strata}
-\title{Shrimp survey strata}
+\title{\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#deprecated}{\figure{lifecycle-deprecated.svg}{options: alt='[Deprecated]'}}}{\strong{[Deprecated]}}}
 \format{
 A data frame/ \code{sf} object
 \describe{
@@ -22,6 +22,12 @@ A data frame/ \code{sf} object
 data("Shrimp_Strata")
 }
 \description{
+Shrimp survey strata
+}
+\details{
 An sf object containing the Shrimp survey strata
+}
+\note{
+Use \url{https://mdeb-nefsc-noaa.hub.arcgis.com/datasets/noaa::northern-shrimp-survey/about} instead.
 }
 \keyword{datasets}
