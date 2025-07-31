@@ -11,42 +11,42 @@
 #'
 
 library(magrittr)
-create_sf_data_from_shp <- function(filePath,overwrite=F,addCentroids=T,shapefilenm=NULL) {
-
+create_sf_data_from_shp <- function(
+  filePath,
+  overwrite = F,
+  addCentroids = T,
+  shapefilenm = NULL
+) {
   # turn off spherical geometry
   sf::sf_use_s2(F)
 
   # get filename
   #overwrite filename with custom name
-  if(!is.null(shapefilenm)) {
+  if (!is.null(shapefilenm)) {
     fileName <- shapefilenm
   } else {
-    fileName <- gsub(".shp$","",filePath)
-    fileName <- tail(unlist(strsplit(fileName,"/")),1)
+    fileName <- gsub(".shp$", "", filePath)
+    fileName <- tail(unlist(strsplit(fileName, "/")), 1)
   }
   fn <- fileName
 
   # read in shapefile
-  layer <- sf::st_read(dsn=filePath)
+  layer <- sf::st_read(dsn = filePath)
   # add XY locations for center of each polygon
-  if(addCentroids) {
-    centroids <-  sf::st_coordinates(sf::st_centroid(layer))
-    layer <- cbind(layer,centroids)
+  if (addCentroids) {
+    centroids <- sf::st_coordinates(sf::st_centroid(layer))
+    layer <- cbind(layer, centroids)
   }
   # assigns name to layer object
-  assign(fileName,layer)
+  assign(fileName, layer)
 
-
-
-  print(here::here("data",paste0(fn,".rdata")))
+  print(here::here("data", paste0(fn, ".rdata")))
   # exports
-  if(overwrite) {
-    save(list=fileName,file=here::here("data",paste0(fn,".rda")))
-
+  if (overwrite) {
+    save(list = fileName, file = here::here("data", paste0(fn, ".rda")))
   }
 
   #do.call(myfun, list(as.name(fileName), overwrite = TRUE))
 
   return(layer)
-
 }
