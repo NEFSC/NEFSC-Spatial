@@ -1,3 +1,5 @@
+#' `r lifecycle::badge("deprecated")`
+#' 
 #' Shellfish strata (Clam and Scallop surveys)
 #'
 #' An sf object containing the Clam and Scallop survey strata
@@ -18,4 +20,5 @@
 #' @usage data("Shellfish_Strata")
 #' @keywords datasets
 #' @source \url{https://www.fisheries.noaa.gov/inport/item/33466}
+#' @note Use \url{https://mdeb-nefsc-noaa.hub.arcgis.com/maps/noaa::atlantic-surfclam-and-ocean-quahog-survey/about} or \url{https://mdeb-nefsc-noaa.hub.arcgis.com/maps/noaa::sea-scallop-survey/about} instead.
 NULL

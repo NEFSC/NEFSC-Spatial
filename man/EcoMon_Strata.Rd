@@ -3,7 +3,7 @@
 \docType{data}
 \name{EcoMon_Strata}
 \alias{EcoMon_Strata}
-\title{Ecosystem Monitoring Cruise (EcoMon) strata}
+\title{\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#deprecated}{\figure{lifecycle-deprecated.svg}{options: alt='[Deprecated]'}}}{\strong{[Deprecated]}}}
 \format{
 A data frame/ \code{sf} object
 \describe{
@@ -22,6 +22,12 @@ A data frame/ \code{sf} object
 data("EcoMon_Strata")
 }
 \description{
+Ecosystem Monitoring Cruise (EcoMon) strata
+}
+\details{
 An sf object containing the EcoMon strata
+}
+\note{
+Use \url{https://mdeb-nefsc-noaa.hub.arcgis.com/datasets/noaa::ecosystem-monitoring-survey/about} instead.
 }
 \keyword{datasets}

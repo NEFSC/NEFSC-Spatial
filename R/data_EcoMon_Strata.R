@@ -1,3 +1,5 @@
+#' `r lifecycle::badge("deprecated")`
+#' 
 #' Ecosystem Monitoring Cruise (EcoMon) strata
 #'
 #' An sf object containing the EcoMon strata
@@ -18,4 +20,5 @@
 #' @usage data("EcoMon_Strata")
 #' @keywords datasets
 #' @source \url{https://www.fisheries.noaa.gov/inport/item/33468}
+#' @note Use \url{https://mdeb-nefsc-noaa.hub.arcgis.com/datasets/noaa::ecosystem-monitoring-survey/about} instead.
 NULL

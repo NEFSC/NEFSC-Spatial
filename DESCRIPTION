@@ -14,6 +14,7 @@ RoxygenNote: 7.3.2
 Depends: 
     R (>= 4.0)
 Imports:
+    lifecycle,
     sf
 Suggests: 
     curl,
