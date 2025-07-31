@@ -1,7 +1,7 @@
 url: https://nefsc.github.io/NEFSC-Spatial/
 
 template:
- bootstrap: 3
+ bootstrap: 5
 
 deploy:
   install_metadata: true

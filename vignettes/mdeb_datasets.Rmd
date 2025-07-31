@@ -14,34 +14,33 @@ knitr::opts_chunk$set(
 )
 ```
 
-```{r setup}
+```{r setup, echo = FALSE}
 library(NEFSCspatial)
+source(here::here("data-raw/find_mdeb_data.R"))
+source(here::here("data-raw/get_mdeb_data.R"))
+
 ```
 
-The Northeast Fisheries Science Center Marine Development [GIS Data Hub](https://mdeb-nefsc-noaa.hub.arcgis.com/) created by the Marine Development and Ecology Branch (MDEB) host many spatial datasets. The `NEFSCspatial` package provides functions to access these datasets in R and serves them up as `sf` objects.
+The Northeast Fisheries Science Center Marine Development [GIS Data Hub](https://mdeb-nefsc-noaa.hub.arcgis.com/) created by the Marine Development and Ecology Branch (MDEB) host many spatial datasets. The `NEFSCspatial` package provides access to these datasets and serves them up as `sf` objects.
 
-A current list of all data sets: (see `find_mdeb_data()`)
+A current list of all data sets included in the package:
 
 ```{r finddatasets, eval = TRUE, echo = FALSE}
 datasets <- find_mdeb_data() |> 
   dplyr::select(-url)
 datasets |> 
+  dplyr::mutate(dataset_name = tolower(gsub("SMIT_", "", datasets$name))) |> 
+  dplyr::select(title, dataset_name) |> 
   gt::gt()
 
 ```
 
-As an example, lets get the Ecosystem Monitoring Survey strata and see what the data looks like.
 
-```{r getecommon, eval = TRUE, echo = TRUE}
-ecomon <- get_mdeb_data(dataset_name = "Ecosystem Monitoring Survey", dataset_id = 1)
-ecomon
-```
-
-We can then plot any attribute, for example the "REGION"
+We can then plot any attribute, for example the "SUBSTRATA" attribute of the `gombll_substrata` dataset:
 
 ```{r plotecomon, eval = TRUE, echo = TRUE, fig.alt="ECOMON Region plot"}
-ecomon |> 
+gombll_substrata |> 
   ggplot2::ggplot() + 
-  ggplot2::geom_sf(ggplot2::aes(fill = REGION))
+  ggplot2::geom_sf(ggplot2::aes(fill = SUBSTRATA))
 
 ```
