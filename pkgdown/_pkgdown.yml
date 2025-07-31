@@ -118,12 +118,9 @@ reference:
   - Shrimp_Strata
 - title: Models
   desc: Areas defining model boundaries
-- contents: Neus_atlantis
-- title: Functions
-  desc: Functions to pull or filter data
 - contents:
-  - starts_with("get_")
-  - starts_with("find_")
+  - Neus_atlantis
+
 
 authors:
   Andy Beet:
