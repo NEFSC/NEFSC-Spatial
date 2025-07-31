@@ -5,7 +5,6 @@
 #'
 #'
 
-library(usethis)
 source(here::here("data-raw/find_mdeb_data.R"))
 source(here::here("data-raw/get_mdeb_data.R"))
 

@@ -1,7 +1,7 @@
 url: https://nefsc.github.io/NEFSC-Spatial/
 
 template:
- bootstrap: 5
+ bootstrap: 3
 
 deploy:
   install_metadata: true
@@ -40,8 +40,6 @@ navbar:
       menu:
       - text: MDEB datasets
         href: articles/mdeb_datasets.html
-      - text: Contributing to Package
-        href: articles/ContributeSpatialData.html
       - text: Team Members
         href: articles/teamMembers.html
 reference:
