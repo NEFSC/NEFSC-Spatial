@@ -17,8 +17,6 @@ knitr::opts_chunk$set(
 ```{r setup, echo = FALSE}
 library(NEFSCspatial)
 source(here::here("data-raw/find_mdeb_data.R"))
-source(here::here("data-raw/get_mdeb_data.R"))
-
 ```
 
 The Northeast Fisheries Science Center Marine Development [GIS Data Hub](https://mdeb-nefsc-noaa.hub.arcgis.com/) created by the Marine Development and Ecology Branch (MDEB) host many spatial datasets. The `NEFSCspatial` package provides access to these datasets and serves them up as `sf` objects.
