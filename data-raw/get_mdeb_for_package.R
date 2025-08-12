@@ -38,15 +38,25 @@ get_mdeb_for_package <- function(overwrite = FALSE) {
       dataset_description <- fs_layer$description
       # Work around for now, until the descriptions are populated for each layer in the Hub
       if (dataset_description != '') {
-        modified_dataset_description <- paste0('An \\code{sf} object containing spatial data for the ', 
-                                               dataset$title, '. ',
-                                               dataset_description
-                                               )
+        modified_dataset_description <- paste0(
+          'An \\code{sf} object containing spatial data for the ',
+          dataset$title,
+          '. ',
+          dataset_description
+        )
       } else {
-        modified_dataset_description <- paste0('An \\code{sf} object containing spatial data for the ', dataset$title, '.')
+        modified_dataset_description <- paste0(
+          'An \\code{sf} object containing spatial data for the ',
+          dataset$title,
+          '.'
+        )
       }
       # Generate Roxygen data doc
-      generate_roxygen_mdeb(dataset_name = paste0(dataset_name, '.rda'), title = dataset$title, description = modified_dataset_description)
+      generate_roxygen_mdeb(
+        dataset_name = paste0(dataset_name, '.rda'),
+        title = dataset$title,
+        description = modified_dataset_description
+      )
       # save(data, file = here::here("data",))
     } else {
       message("No data found for: ", dataset$name)

@@ -67,6 +67,10 @@ reference:
   - EcoMon_Strata
   - Shellfish_Strata
   - Shrimp_Strata
+  - contains("strata")
+  - ends_with("stations")
+  - ends_with("deployments")
+  - ends_with("lines")
 - title: Models
   desc: Areas defining model boundaries
 - contents:

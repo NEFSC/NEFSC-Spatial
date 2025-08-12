@@ -36,7 +36,7 @@ datasets |>
 
 We can then plot any attribute, for example the "SUBSTRATA" attribute of the `gombll_substrata` dataset:
 
-```{r plotecomon, eval = TRUE, echo = TRUE, fig.alt="ECOMON Region plot"}
+```{r plotecomon, eval = TRUE, echo = TRUE, fig.alt="Gulf of Maine Bottom Longline Survey substrata plot"}
 gombll_substrata |> 
   ggplot2::ggplot() + 
   ggplot2::geom_sf(ggplot2::aes(fill = SUBSTRATA))
