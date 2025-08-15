@@ -3,11 +3,10 @@ name: pull data from MDEB data hub
 on:
   push:
     branches:
-      - main
+      - main2
   pull_request:
     branches:
-      - main
-      - dev
+      - main2
   #schedule:
     # uses UTC/GMT time (+ 5 hrs)
     ## put on HOLD temporarily
