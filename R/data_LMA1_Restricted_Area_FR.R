@@ -17,4 +17,12 @@
 #' @usage data("LMA1_Restricted_Area_FR")
 #' @keywords datasets
 #' @source \url{https://www.fisheries.noaa.gov/resource/map/lma-1-restricted-area}
+#' @examples
+#' \dontrun{
+#' # Load the dataset
+#' data(LMA1_Restricted_Area_FR)
+#'
+#' # Plot the geometry
+#' plot(sf::st_geometry(LMA1_Restricted_Area_FR))
+#' }
 NULL

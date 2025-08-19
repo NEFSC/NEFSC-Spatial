@@ -5,7 +5,7 @@
 \alias{Statistical_Areas_2010_withNames}
 \title{Greater Atlantic Region Statistical Areas}
 \format{
-A data frame/ sf object (135 x 6)
+A \code{sf} object:
 \describe{
 \item{Geometry type}{MULTIPOLYGON}
 \item{Dimension}{XY}
@@ -22,8 +22,16 @@ A data frame/ sf object (135 x 6)
 data("Statistical_Areas_2010_withNames")
 }
 \description{
-An sf object containing the Greater Atlantic Region Statistical Areas.
-With name labels
+An \code{sf} object containing the Greater Atlantic Region Statistical Areas with name labels
 Pulled from ftp://ftp.nefsc.noaa.gov/pub/gis/
+}
+\examples{
+\dontrun{
+# Load the dataset
+data(Statistical_Areas_2010_withNames)
+
+# Plot the geometry
+plot(sf::st_geometry(Statistical_Areas_2010_withNames))
+}
 }
 \keyword{datasets}

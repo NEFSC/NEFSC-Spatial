@@ -24,4 +24,13 @@ data("NAFO_Divisions_2021_poly_not_clipped")
 \description{
 An \code{sf} object that depicts the boundaries of the NAFO regions
 }
+\examples{
+\dontrun{
+# Load the dataset
+data(NAFO_Divisions_2021_poly_not_clipped)
+
+# Plot the geometry
+plot(sf::st_geometry(NAFO_Divisions_2021_poly_not_clipped))
+}
+}
 \keyword{datasets}

@@ -1,6 +1,6 @@
 #' Northeast US (NEUS) atlantis model domain
 #'
-#' An sf object containing the box level boundaries used in the Northeast Atlantis ecosystem end to end model
+#' @description An \code{sf} object containing the box level boundaries used in the Northeast Atlantis ecosystem end to end model
 #'
 #' @format An \code{sf} object:
 #' \describe{
@@ -18,4 +18,12 @@
 #' @keywords datasets
 #'
 #' @source \url{https://github.com/NOAA-EDAB/neus-atlantis/wiki/Spatial-extent-of-model}
+#' @examples
+#' \dontrun{
+#' # Load the dataset
+#' data(Neus_atlantis)
+#'
+#' # Plot the geometry
+#' plot(sf::st_geometry(Neus_atlantis))
+#' }
 NULL

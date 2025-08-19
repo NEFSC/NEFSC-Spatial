@@ -17,4 +17,12 @@
 #' @usage data("NAFO_Divisions_2021_line_not_enclosed")
 #' @keywords datasets
 #' @source \url{https://www.nafo.int/Data/GIS}
+#' @examples
+#' \dontrun{
+#' # Load the dataset
+#' data(NAFO_Divisions_2021_line_not_enclosed)
+#'
+#' # Plot the geometry
+#' plot(sf::st_geometry(NAFO_Divisions_2021_line_not_enclosed))
+#' }
 NULL

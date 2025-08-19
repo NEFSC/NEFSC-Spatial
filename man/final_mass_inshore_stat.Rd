@@ -24,4 +24,13 @@ data("final_mass_inshore_stat")
 \description{
 An \code{sf} object containing the boundaries of the Massachusetts Inshore statistical areas.
 }
+\examples{
+\dontrun{
+# Load the dataset
+data(final_mass_inshore_stat)
+
+# Plot the geometry
+plot(sf::st_geometry(final_mass_inshore_stat))
+}
+}
 \keyword{datasets}

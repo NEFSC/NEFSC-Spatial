@@ -18,4 +18,12 @@
 #' @usage data("final_mass_inshore_stat")
 #' @keywords datasets
 #' @source \url{https://www.fisheries.noaa.gov/inport/item/33467}
+#' @examples
+#' \dontrun{
+#' # Load the dataset
+#' data(final_mass_inshore_stat)
+#'
+#' # Plot the geometry
+#' plot(sf::st_geometry(final_mass_inshore_stat))
+#' }
 NULL

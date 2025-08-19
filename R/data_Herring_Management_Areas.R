@@ -18,4 +18,12 @@
 #' @usage data("Herring_Management_Areas")
 #' @keywords datasets
 #' @source \url{https://www.fisheries.noaa.gov/resource/map/herring-management-areas}
+#' @examples
+#' \dontrun{
+#' # Load the dataset
+#' data(Herring_Management_Areas)
+#'
+#' # Plot the geometry
+#' plot(sf::st_geometry(Herring_Management_Areas))
+#' }
 NULL

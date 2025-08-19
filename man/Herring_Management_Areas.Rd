@@ -24,4 +24,13 @@ data("Herring_Management_Areas")
 \description{
 An \code{sf} object depicting the boundaries of the Herring Management Areas
 }
+\examples{
+\dontrun{
+# Load the dataset
+data(Herring_Management_Areas)
+
+# Plot the geometry
+plot(sf::st_geometry(Herring_Management_Areas))
+}
+}
 \keyword{datasets}

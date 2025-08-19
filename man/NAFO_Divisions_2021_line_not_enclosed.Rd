@@ -24,4 +24,13 @@ data("NAFO_Divisions_2021_line_not_enclosed")
 \description{
 An \code{sf} object that depicts the boundaries of the NAFO regions
 }
+\examples{
+\dontrun{
+# Load the dataset
+data(NAFO_Divisions_2021_line_not_enclosed)
+
+# Plot the geometry
+plot(sf::st_geometry(NAFO_Divisions_2021_line_not_enclosed))
+}
+}
 \keyword{datasets}

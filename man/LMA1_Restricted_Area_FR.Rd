@@ -24,4 +24,13 @@ data("LMA1_Restricted_Area_FR")
 \description{
 An \code{sf} object that depicts the boundaries of the Lobster Management Area One Restricted Area in effect annually from October 1 to January 30 for the NOAA Fisheries Service’s Greater Atlantic Regional Fisheries Office (GARFO).
 }
+\examples{
+\dontrun{
+# Load the dataset
+data(LMA1_Restricted_Area_FR)
+
+# Plot the geometry
+plot(sf::st_geometry(LMA1_Restricted_Area_FR))
+}
+}
 \keyword{datasets}
