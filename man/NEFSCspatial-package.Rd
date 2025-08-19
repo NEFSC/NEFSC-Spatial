@@ -4,22 +4,23 @@
 \name{NEFSCspatial-package}
 \alias{NEFSCspatial}
 \alias{NEFSCspatial-package}
-\title{NEFSCspatial: Spatial data package}
+\title{NEFSCspatial: Spatial data package for regions in the northeast atlantic}
 \description{
 \if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
 
-Provides spatial data as sf objects
+Provides spatial data as sf or raster objects for the Northeast Fisheries Science Center
 }
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://github.com/NEFSC/NEFSC-Spatial}
+  \item \url{https://github.com/NEFSC/NEFSC-Spatial/}
+  \item \url{https://nefsc.github.io/NEFSC-Spatial/}
   \item Report bugs at \url{https://github.com/NEFSC/NEFSC-Spatial/issues}
 }
 
 }
 \author{
-\strong{Maintainer}: Andy Beet \email{andrew.beet@noaa.gov}
+\strong{Maintainer}: Andy Beet \email{andrew.beet@noaa.gov} (\href{https://orcid.org/0000-0001-8270-7090}{ORCID})
 
 Authors:
 \itemize{

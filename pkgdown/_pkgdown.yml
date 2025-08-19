@@ -38,8 +38,8 @@ navbar:
       text: Articles
       icon: fas fa-file-contract fa-lg
       menu:
-      - text: Contributing to Package
-        href: articles/ContributeSpatialData.html
+      - text: MDEB datasets
+        href: articles/mdeb_datasets.html
       - text: Team Members
         href: articles/teamMembers.html
 reference:
@@ -67,9 +67,16 @@ reference:
   - EcoMon_Strata
   - Shellfish_Strata
   - Shrimp_Strata
+  - contains("strata")
+  - ends_with("stations")
+  - ends_with("deployments")
+  - ends_with("lines")
 - title: Models
   desc: Areas defining model boundaries
-- contents: Neus_atlantis
+- contents:
+  - Neus_atlantis
+
+
 authors:
   Andy Beet:
     href: https://andybeet.com

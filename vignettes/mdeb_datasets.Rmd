@@ -1,0 +1,78 @@
+---
+title: "MDEB datasets"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{MDEB datasets}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup, echo = FALSE}
+library(NEFSCspatial)
+```
+
+The Northeast Fisheries Science Center Marine Development [GIS Data Hub](https://mdeb-nefsc-noaa.hub.arcgis.com/) created by the Marine Development and Ecology Branch (MDEB) host many spatial datasets. The `NEFSCspatial` package provides access to these datasets and serves them up as `sf` objects.
+
+A current list of all data sets included in the package:
+
+```{r finddatasets, eval = TRUE, echo = FALSE}
+# url of the MDEB GIS Data Hub search API
+mdeb_hub = "https://mdeb-nefsc-noaa.hub.arcgis.com/api/search/v1/collections/all/items"
+# scrape json to get all feature services
+catalog_items <- mdeb_hub |>
+  jsonlite::fromJSON()
+# count the number of available services
+num_items <- catalog_items$numberMatched
+# pull all feature service items (API default = 10)
+catalog_items_v2 <- paste0(mdeb_hub, "?limit=", num_items) |>
+  jsonlite::fromJSON()
+# extract metadata properties
+available_datasets <- catalog_items_v2$features$properties |>
+  dplyr::filter(grepl("FeatureServer", url)) |>
+  dplyr::select(title, url)
+# format metadata for each feature service as json
+available_dataset_layers <- available_datasets |>
+  dplyr::mutate(layerurl = paste0(url, "?f=pjson"))
+# create a new data frame to store the results
+dataset_metadata <- NULL
+# find if there are multiple feature layers per service
+for (idataset in 1:nrow(available_dataset_layers)) {
+  dataset_url <- available_dataset_layers[idataset, ]
+  dataset_json_url <- dataset_url$layerurl
+  # request the json format for the metadata
+  wp <- dataset_json_url |>
+    jsonlite::fromJSON()
+  # create tibble for output
+  av = wp$layers |>
+    dplyr::mutate(dataset_url) |>
+    dplyr::mutate(url = paste0(url, '/', id)) |>
+    dplyr::select(title, name, id, url) |>
+    dplyr::as_tibble()
+  dataset_metadata <- dplyr::bind_rows(dataset_metadata, av)
+}
+
+  
+dataset_metadata |>
+  dplyr::select(-url) |> 
+  dplyr::mutate(dataset_name = tolower(gsub("SMIT_", "", dataset_metadata$name))) |>
+  dplyr::select(title, dataset_name) |>
+  gt::gt()
+
+```
+
+
+We can then plot any attribute, for example the "SUBSTRATA" attribute of the `gombll_substrata` dataset:
+
+```{r plotecomon, eval = TRUE, echo = TRUE, fig.alt="Gulf of Maine Bottom Longline Survey substrata plot"}
+gombll_substrata |> 
+  ggplot2::ggplot() + 
+  ggplot2::geom_sf(ggplot2::aes(fill = SUBSTRATA))
+
+```
