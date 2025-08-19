@@ -29,6 +29,7 @@ Suggests:
     hexSticker,
     ggimage,
     dplyr,
+    ggplot2,
     jsonlite,
     httr2, 
     gt
