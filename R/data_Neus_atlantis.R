@@ -8,7 +8,7 @@
 #'   \item{Dimension}{XY}
 #'   \item{Bounding box}{xmin: -76.45919 ymin: 34.76128 xmax: -63.42171 ymax: 46.11478}
 #'   \item{Geodetic CRS}{WGS 83}
-#'   \item{Features}{30 x 10}
+#'   \item{Features}{30 x 11}
 #'   \item{Metadata}{See source}
 #' }
 #'

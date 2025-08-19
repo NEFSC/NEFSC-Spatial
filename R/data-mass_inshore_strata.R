@@ -8,7 +8,7 @@
 #'   \item{Dimension}{XY}
 #'   \item{Bounding box}{xmin: 231326.1 ymin: 772098.2 xmax: 336448.2 ymax: 958709}
 #'   \item{Projected CRS}{NAD83 / Massachusetts Mainland}
-#'   \item{Features}{42 x 12}
+#'   \item{Features}{42 x 8}
 #'   \item{Metadata}{See source}
 #' }
 #'

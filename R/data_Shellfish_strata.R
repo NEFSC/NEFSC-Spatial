@@ -10,7 +10,7 @@
 #'   \item{Dimension}{XY}
 #'   \item{Bounding box}{xmin: -75.95982 ymin: 35.50142 xmax: -65.89944 ymax: 42.16817}
 #'   \item{Geodetic CRS}{NAD83}
-#'   \item{Features}{97 x 9}
+#'   \item{Features}{97 x 10}
 #'   \item{Metadata}{See source}
 #' }
 #'

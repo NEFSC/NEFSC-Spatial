@@ -9,7 +9,7 @@
 #'   \item{Dimension}{XY}
 #'   \item{Bounding box}{xmin: -77 ymin: 35.8327 xmax: -65.66667 ymax: 44.66667}
 #'   \item{Geodetic CRS}{ +proj=longlat +lat_0=40 +lon_0=-77+x_0=0 +y_0=0 +datum=NAD83 +no_defs +ellps=GRS80 +towgs84=0,0,0}
-#'   \item{Features}{4 x 3}
+#'   \item{Features}{4 x 4}
 #'   \item{Metadata}{See source}
 #' }
 #'
