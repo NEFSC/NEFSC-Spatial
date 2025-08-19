@@ -11,7 +11,7 @@ A data frame / sf object (6 x 25)
 \item{Dimension}{XY}
 \item{Bounding box}{xmin: -8274749 ymin: 4602998 xmax: -7333888 ymax: 5087139}
 \item{Geodetic CRS}{WGS 84 / Pseudo-Mercator}
-\item{Features}{6 x 25}
+\item{Features}{6 x 26}
 \item{Metadata}{See source}
 }
 }

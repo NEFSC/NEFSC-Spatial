@@ -11,7 +11,7 @@ A data frame/ sf object (2 x 25)
 \item{Dimension}{XY}
 \item{Bounding box}{xmin: -70.33333 ymin: 40.33333 xmax: -68.5 ymax: 41.5}
 \item{Geodetic CRS}{NAD83}
-\item{Features}{2 x 25}
+\item{Features}{2 x 26}
 \item{Metadata}{See source}
 
 \item{GARFO_ID}{A unique identifier used to identify and track this feature;
