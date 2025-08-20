@@ -1,6 +1,6 @@
 #' @title NAFO Divisions (Polygon not clipped to coastline)
 #'
-#' @description An \code{sf} object that depicts the boundaries of the NAFO regions
+#' @description An \code{sf} object that depicts the boundaries of the NAFO regions.
 #'
 #' @format An \code{sf} object:
 #' \describe{

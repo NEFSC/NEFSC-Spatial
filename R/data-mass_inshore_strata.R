@@ -17,7 +17,7 @@
 #' @usage data('mass_inshore_strata')
 #' @keywords {datasets}
 #' @source {https://www.mass.gov/info-details/review-trawl-survey-updates. Division of Marine Fisheries - New Bedford Office. For more info contact the
-#' [Resource Assessment Project Leader](https://www.mass.gov/info-details/dmf-staff-directory#fisheries-biology-recreational-fishing-survey-and-assessment)  }
+#' [Resource Assessment Project Leader](https://www.mass.gov/info-details/dmf-staff-directory#fisheries-biology-recreational-fishing-survey-and-assessment).  }
 #' @examples
 #' \dontrun{
 #' # Load the dataset

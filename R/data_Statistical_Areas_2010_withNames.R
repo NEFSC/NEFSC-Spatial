@@ -1,7 +1,7 @@
 #' Greater Atlantic Region Statistical Areas
 #'
-#' @description An \code{sf} object containing the Greater Atlantic Region Statistical Areas with name labels
-#' Pulled from ftp://ftp.nefsc.noaa.gov/pub/gis/
+#' @description An \code{sf} object containing the Greater Atlantic Region Statistical Areas with name labels.
+#' Pulled from ftp://ftp.nefsc.noaa.gov/pub/gis/.
 #'
 #' @format A \code{sf} object:
 #' \describe{

@@ -1,6 +1,6 @@
 #' @title Herring Management Areas
 #'
-#' @description An \code{sf} object depicting the boundaries of the Herring Management Areas
+#' @description An \code{sf} object depicting the boundaries of the Herring Management Areas.
 #'
 #' @format An \code{sf} object:
 #' \describe{

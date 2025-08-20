@@ -1,7 +1,7 @@
 #' Gillnet Closure Areas
 #'
-#' @description An \code{sf} object containing the Closure areas for Gillnets
-#' Specifically Closed Area 1 and Nantucket Lightship Closure Area
+#' @description An \code{sf} object containing the closure areas for gillnets.
+#' Specifically Closed Area 1 and Nantucket Lightship Closure Area.
 #'
 #' @format An \code{sf} object
 #' \describe{
