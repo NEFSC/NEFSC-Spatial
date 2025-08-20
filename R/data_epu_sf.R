@@ -19,7 +19,7 @@
 #' @usage data("epu_sf")
 #' @keywords {datasets}
 #' @source \url{https://noaa-edab.github.io/tech-doc/epu.html}
-#' #' @examples
+#' @examples
 #' \dontrun{
 #' # Load the dataset
 #' data(epu_sf)
