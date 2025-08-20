@@ -22,8 +22,8 @@ A \code{sf} object:
 data("Statistical_Areas_2010_withNames")
 }
 \description{
-An \code{sf} object containing the Greater Atlantic Region Statistical Areas with name labels
-Pulled from ftp://ftp.nefsc.noaa.gov/pub/gis/
+An \code{sf} object containing the Greater Atlantic Region Statistical Areas with name labels.
+Pulled from ftp://ftp.nefsc.noaa.gov/pub/gis/.
 }
 \examples{
 \dontrun{

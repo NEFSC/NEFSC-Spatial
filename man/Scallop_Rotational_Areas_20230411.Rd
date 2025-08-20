@@ -22,8 +22,8 @@ An \code{sf} object
 data("Scallop_Rotational_Areas_20230411")
 }
 \description{
-An \code{sf} object containing the Scallop Restricted Areas
-Specifically Area I, II, Nantucket Lightship North, Nantucket Lightship West, New York Bight, Elephant Trunk
+An \code{sf} object containing the Scallop Restricted Areas.
+Specifically Area I, II, Nantucket Lightship North, Nantucket Lightship West, New York Bight, and Elephant Trunk.
 }
 \examples{
 \dontrun{

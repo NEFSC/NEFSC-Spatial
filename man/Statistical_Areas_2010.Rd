@@ -23,7 +23,7 @@ data("Statistical_Areas_2010")
 }
 \description{
 An \code{sf} object containing the Greater Atlantic Region Statistical Areas.
-Pulled from ftp://ftp.nefsc.noaa.gov/pub/gis/
+Pulled from ftp://ftp.nefsc.noaa.gov/pub/gis/.
 }
 \examples{
 \dontrun{

@@ -22,7 +22,7 @@ An \code{sf} object:
 data("Herring_Management_Areas")
 }
 \description{
-An \code{sf} object depicting the boundaries of the Herring Management Areas
+An \code{sf} object depicting the boundaries of the Herring Management Areas.
 }
 \examples{
 \dontrun{

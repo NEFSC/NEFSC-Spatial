@@ -22,7 +22,7 @@ An \code{sf} object:
 data("Neus_atlantis")
 }
 \description{
-An \code{sf} object containing the box level boundaries used in the Northeast Atlantis ecosystem end to end model
+An \code{sf} object containing the box level boundaries used in the Northeast Atlantis ecosystem end to end model.
 }
 \examples{
 \dontrun{

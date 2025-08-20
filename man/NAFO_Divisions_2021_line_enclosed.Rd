@@ -22,7 +22,7 @@ An \code{sf} object:
 data("NAFO_Divisions_2021_line_enclosed")
 }
 \description{
-An \code{sf} object that depicts the boundaries of the NAFO regions
+An \code{sf} object that depicts the boundaries of the NAFO regions.
 }
 \examples{
 \dontrun{

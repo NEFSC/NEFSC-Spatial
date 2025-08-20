@@ -22,8 +22,8 @@ An \code{sf} object
 data("GillnetClosureAreas_20211021")
 }
 \description{
-An \code{sf} object containing the Closure areas for Gillnets
-Specifically Closed Area 1 and Nantucket Lightship Closure Area
+An \code{sf} object containing the closure areas for gillnets.
+Specifically Closed Area 1 and Nantucket Lightship Closure Area.
 }
 \examples{
 \dontrun{
