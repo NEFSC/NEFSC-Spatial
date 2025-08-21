@@ -5,13 +5,13 @@
 \alias{Statistical_Areas_2010}
 \title{Greater Atlantic Region Statistical Areas}
 \format{
-A data frame/ sf object (135 x 1)
+An \code{sf} object:
 \describe{
 \item{Geometry type}{MULTIPOLYGON}
 \item{Dimension}{XY}
 \item{Bounding box}{xmin: -81.53406 ymin: 24 xmax: -42 ymax: 52.25}
 \item{Geodetic CRS}{NAD83}
-\item{Features}{135 x 1}
+\item{Features}{135 x 4}
 \item{Metadata}{See source}
 }
 }
@@ -22,7 +22,16 @@ A data frame/ sf object (135 x 1)
 data("Statistical_Areas_2010")
 }
 \description{
-An sf object containing the Greater Atlantic Region Statistical Areas.
-Pulled from ftp://ftp.nefsc.noaa.gov/pub/gis/
+An \code{sf} object containing the Greater Atlantic Region Statistical Areas.
+Pulled from ftp://ftp.nefsc.noaa.gov/pub/gis/.
+}
+\examples{
+\dontrun{
+# Load the dataset
+data(Statistical_Areas_2010)
+
+# Plot the geometry
+plot(sf::st_geometry(Statistical_Areas_2010))
+}
 }
 \keyword{datasets}

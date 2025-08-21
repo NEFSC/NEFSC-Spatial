@@ -17,4 +17,12 @@
 #' @usage data("Great_South_Channel_Restricted_Trap_Pot_Area")
 #' @keywords datasets
 #' @source \url{https://www.fisheries.noaa.gov/resource/map/great-south-channel-restricted-area}
+#' @examples
+#' \dontrun{
+#' # Load the dataset
+#' data(Great_South_Channel_Restricted_Trap_Pot_Area)
+#'
+#' # Plot the geometry
+#' plot(sf::st_geometry(Great_South_Channel_Restricted_Trap_Pot_Area))
+#' }
 NULL

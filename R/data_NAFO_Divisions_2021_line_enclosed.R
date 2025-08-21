@@ -1,6 +1,6 @@
 #' @title NAFO Divisions (Bounded)
 #'
-#' @description An \code{sf} object that depicts the boundaries of the NAFO regions
+#' @description An \code{sf} object that depicts the boundaries of the NAFO regions.
 #'
 #' @format An \code{sf} object:
 #' \describe{
@@ -17,4 +17,12 @@
 #' @usage data("NAFO_Divisions_2021_line_enclosed")
 #' @keywords datasets
 #' @source \url{https://www.nafo.int/Data/GIS}
+#' @examples
+#' \dontrun{
+#' # Load the dataset
+#' data(NAFO_Divisions_2021_line_enclosed)
+#'
+#' # Plot the geometry
+#' plot(sf::st_geometry(NAFO_Divisions_2021_line_enclosed))
+#' }
 NULL

@@ -24,8 +24,8 @@ Useful links:
 
 Authors:
 \itemize{
-  \item Kimberly Bastille \email{kimberly.bastille@noaa.gov}
   \item Joshua Hatch \email{joshua.hatch@noaa.gov}
+  \item Kimberly Bastille \email{kimberly.bastille@noaa.gov}
 }
 
 }

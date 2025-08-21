@@ -1,9 +1,9 @@
 #' Scallop Restricted Area
 #'
-#' An sf object containing the Scallop Restricted Areas
-#' Specifically Area I, II, Nantucket Lightship North, Nantucket Lightship West, New York Bight, Elephant Trunk
+#' @description An \code{sf} object containing the Scallop Restricted Areas.
+#' Specifically Area I, II, Nantucket Lightship North, Nantucket Lightship West, New York Bight, and Elephant Trunk.
 #'
-#' @format A data frame / sf object (6 x 25)
+#' @format An \code{sf} object
 #' \describe{
 #'   \item{Geometry type}{POLYGON}
 #'   \item{Dimension}{XY}
@@ -11,10 +11,8 @@
 #'   \item{Geodetic CRS}{WGS 84 / Pseudo-Mercator}
 #'   \item{Features}{6 x 26}
 #'   \item{Metadata}{See source}
-#'   }
+#'  }
 #'
-#'@section Contact:
-#'andrew.beet at noaa.gov
 #'
 #'
 #' @docType data
@@ -22,4 +20,12 @@
 #' @usage data("Scallop_Rotational_Areas_20230411")
 #' @keywords datasets
 #' @source \url{https://www.fisheries.noaa.gov/resource/map/atlantic-sea-scallop-managed-waters-fishing-year-2023}
+#' @examples
+#' \dontrun{
+#' # Load the dataset
+#' data(Scallop_Rotational_Areas_20230411)
+#'
+#' # Plot the geometry
+#' plot(sf::st_geometry(Scallop_Rotational_Areas_20230411))
+#' }
 NULL

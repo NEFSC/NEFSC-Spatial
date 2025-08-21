@@ -19,14 +19,24 @@ library(sf)
 library(NEFSCspatial)
 ```
 
-The spatial data bundled in this package are in `sf` format. For the data in `sf` format, you can view the fields simply by typing the name of the data set
+The spatial data bundled in this package are in `sf` format. For the data in `sf` format, you can view the fields simply by typing the name of the data set. For example, lets look at the [`mass_inshore_strata`](../reference/mass_inshore_strata.html) data set
 
 ```{r data_sf}
-NEFSCspatial::Shellfish_Strata
+NEFSCspatial::mass_inshore_strata
 ```
 
-To visualize the data simply use the plot function
+## The footprint 
 
-```{r plot_sf, fig.alt = "Plot of NEFSCspatial Shellfish Strata"}
-plot(NEFSCspatial::Shellfish_Strata)
+```{r plot_geom, fig.alt="Footprint"}
+plot(sf::st_geometry(NEFSCspatial::mass_inshore_strata))
 ```
+
+## Footprint by fields
+
+To visualize the fields in data simply use the plot function
+
+```{r plot_sf, fig.alt = "Plot of NEFSCspatial massacusetts inshore survey strata"}
+plot(NEFSCspatial::mass_inshore_strata)
+```
+
+
