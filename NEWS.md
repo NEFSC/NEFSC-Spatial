@@ -1,5 +1,19 @@
 # NEFSCspatial 0.1.0
 
+## Data set additions/removals
+
+- Data sets from [MDEB](Marine Development GIS Data Hub) data hub (Marine Development GIS Data Hub)
+- Scallop restricted areas
+- Massachusetts inshore survey strata
+- Deprecation warnings for data sets due to be replaced by MDEB data
+- Added bzip2 data set compression
+
+## Minor fixes
+
+- Removed leaflet documentation
+- Standardized data set documentation with added examples
+
+
 # NEFSCspatial 0.0.1
 
 Initial release of sf objects
