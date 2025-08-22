@@ -38,7 +38,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">NEFSCspatial</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.0.1</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.1.0</span>
       </span>
     </div>
 
@@ -81,72 +81,10 @@
   </a>
   <ul class="dropdown-menu" role="menu">
 <li>
-      <a href="../articles/ContributeSpatialData.html">Contributing to Package</a>
+      <a href="../articles/mdeb_datasets.html">MDEB datasets</a>
     </li>
     <li>
       <a href="../articles/teamMembers.html">Team Members</a>
-    </li>
-  </ul>
-</li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-    <span class="fas fa-map fa-lg"></span>
-
-    Maps
-
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-<li>
-      <a href="../articles/BTS_Strata_leaflet.html">BTS_Strata</a>
-    </li>
-    <li>
-      <a href="../articles/EcoMon_Strata_leaflet.html">EcoMon_Strata</a>
-    </li>
-    <li>
-      <a href="../articles/epu_sf_leaflet.html">epu_sf</a>
-    </li>
-    <li>
-      <a href="../articles/final_mass_inshore_stat_leaflet.html">final_mass_inshore_stat</a>
-    </li>
-    <li>
-      <a href="../articles/GillnetClosureAreas_20211021_leaflet.html">GillnetClosureAreas_20211021</a>
-    </li>
-    <li>
-      <a href="../articles/Great_South_Channel_Restricted_Trap_Pot_Area_leaflet.html">Great_South_Channel_Restricted_Trap_Pot_Area</a>
-    </li>
-    <li>
-      <a href="../articles/Herring_Management_Areas_leaflet.html">Herring_Management_Areas</a>
-    </li>
-    <li>
-      <a href="../articles/LMA1_Restricted_Area_FR_leaflet.html">LMA1_Restricted_Area_FR</a>
-    </li>
-    <li>
-      <a href="../articles/NAFO_Divisions_2021_line_enclosed_leaflet.html">NAFO_Divisions_2021_line_enclosed</a>
-    </li>
-    <li>
-      <a href="../articles/NAFO_Divisions_2021_line_not_enclosed_leaflet.html">NAFO_Divisions_2021_line_not_enclosed</a>
-    </li>
-    <li>
-      <a href="../articles/NAFO_Divisions_2021_poly_clipped_leaflet.html">NAFO_Divisions_2021_poly_clipped</a>
-    </li>
-    <li>
-      <a href="../articles/NAFO_Divisions_2021_poly_not_clipped_leaflet.html">NAFO_Divisions_2021_poly_not_clipped</a>
-    </li>
-    <li>
-      <a href="../articles/Neus_atlantis_leaflet.html">Neus_atlantis</a>
-    </li>
-    <li>
-      <a href="../articles/Shellfish_Strata_leaflet.html">Shellfish_Strata</a>
-    </li>
-    <li>
-      <a href="../articles/Shrimp_Strata_leaflet.html">Shrimp_Strata</a>
-    </li>
-    <li>
-      <a href="../articles/Statistical_Areas_2010_leaflet.html">Statistical_Areas_2010</a>
-    </li>
-    <li>
-      <a href="../articles/Statistical_Areas_2010_withNames_leaflet.html">Statistical_Areas_2010_withNames</a>
     </li>
   </ul>
 </li>
@@ -183,44 +121,57 @@
     
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://r-spatial.github.io/sf/" class="external-link">sf</a></span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/NEFSC/NEFSC-Spatial" class="external-link">NEFSCspatial</a></span><span class="op">)</span></span></code></pre></div>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/NEFSC/NEFSC-Spatial/" class="external-link">NEFSCspatial</a></span><span class="op">)</span></span></code></pre></div>
 <p>The spatial data bundled in this package are in <code>sf</code>
 format. For the data in <code>sf</code> format, you can view the fields
-simply by typing the name of the data set</p>
+simply by typing the name of the data set. For example, lets look at the
+<a href="../reference/mass_inshore_strata.html"><code>mass_inshore_strata</code></a>
+data set</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">NEFSCspatial</span><span class="fu">::</span><span class="va"><a href="../reference/Shellfish_Strata.html">Shellfish_Strata</a></span></span>
-<span><span class="co">#&gt; Simple feature collection with 97 features and 9 fields</span></span>
-<span><span class="co">#&gt; Geometry type: POLYGON</span></span>
+<code class="sourceCode R"><span><span class="fu">NEFSCspatial</span><span class="fu">::</span><span class="va"><a href="../reference/mass_inshore_strata.html">mass_inshore_strata</a></span></span>
+<span><span class="co">#&gt; Simple feature collection with 42 features and 7 fields</span></span>
+<span><span class="co">#&gt; Geometry type: MULTIPOLYGON</span></span>
 <span><span class="co">#&gt; Dimension:     XY</span></span>
-<span><span class="co">#&gt; Bounding box:  xmin: -75.95982 ymin: 35.50142 xmax: -65.89944 ymax: 42.16817</span></span>
-<span><span class="co">#&gt; Geodetic CRS:  NAD83</span></span>
+<span><span class="co">#&gt; Bounding box:  xmin: 231326.1 ymin: 772098.2 xmax: 336448.2 ymax: 958709</span></span>
+<span><span class="co">#&gt; Projected CRS: NAD83 / Massachusetts Mainland</span></span>
 <span><span class="co">#&gt; First 10 features:</span></span>
-<span><span class="co">#&gt;     AREA PERIMETER STRATA_ STRATA_ID   A2 STRATUM DEPTH_CODE         X        Y</span></span>
-<span><span class="co">#&gt; 1  0.059     2.265       2      6662  589    6662          0 -66.51778 42.10263</span></span>
-<span><span class="co">#&gt; 2  0.044     2.869       3      6661  438    6661          0 -67.83246 41.94479</span></span>
-<span><span class="co">#&gt; 3  0.030     0.950       4      6652  297    6652          0 -66.90404 42.09048</span></span>
-<span><span class="co">#&gt; 4  0.040     2.961       5      6651  398    6651          0 -67.78587 41.92387</span></span>
-<span><span class="co">#&gt; 5  0.063     2.392       6      6710  632    6710          0 -67.38822 41.99469</span></span>
-<span><span class="co">#&gt; 6  0.347     2.487       7      6640 3481    6640          0 -66.26606 41.78001</span></span>
-<span><span class="co">#&gt; 7  0.129     1.563       8      6632 1293    6632          0 -66.73147 41.86695</span></span>
-<span><span class="co">#&gt; 8  0.165     3.043       9      6740 1647    6740          0 -67.17305 41.64897</span></span>
-<span><span class="co">#&gt; 9  0.128     3.305      10      6520 1274    6520          0 -69.31613 41.39498</span></span>
-<span><span class="co">#&gt; 10 0.176     1.914      11      6720 1766    6720          0 -67.68407 41.80817</span></span>
+<span><span class="co">#&gt;    Region Depth_Str Shape_Leng Shape_Area ntows subregion stratum</span></span>
+<span><span class="co">#&gt; 1    &lt;NA&gt;   Deleted 2565669.49  759405174     0      &lt;NA&gt;       0</span></span>
+<span><span class="co">#&gt; 2       1   0 to 30  430636.02  191525256     3        1a      11</span></span>
+<span><span class="co">#&gt; 3       1  31 to 60  612911.73  441891444     5        1a      12</span></span>
+<span><span class="co">#&gt; 4       1  61 to 90  334155.14  190358433     3        1a      13</span></span>
+<span><span class="co">#&gt; 5       1 91 to 120   72158.96   38431717     1        1a      14</span></span>
+<span><span class="co">#&gt; 6       1   0 to 30  221661.49  152637234     2        1b      11</span></span>
+<span><span class="co">#&gt; 7       1  31 to 60  222055.47  135715330     2        1b      12</span></span>
+<span><span class="co">#&gt; 8       1  61 to 90  140738.77  111814595     2        1b      13</span></span>
+<span><span class="co">#&gt; 9       1 91 to 120   58645.41   30844938     1        1b      14</span></span>
+<span><span class="co">#&gt; 10      2   0 to 30  749831.33  658166333    10         2      15</span></span>
 <span><span class="co">#&gt;                          geometry</span></span>
-<span><span class="co">#&gt; 1  POLYGON ((-67.11948 42.1301...</span></span>
-<span><span class="co">#&gt; 2  POLYGON ((-67.11948 42.1301...</span></span>
-<span><span class="co">#&gt; 3  POLYGON ((-67.07465 42.0782...</span></span>
-<span><span class="co">#&gt; 4  POLYGON ((-67.07465 42.0782...</span></span>
-<span><span class="co">#&gt; 5  POLYGON ((-67.07465 42.0782...</span></span>
-<span><span class="co">#&gt; 6  POLYGON ((-66.04611 42.0563...</span></span>
-<span><span class="co">#&gt; 7  POLYGON ((-66.67874 42.0522...</span></span>
-<span><span class="co">#&gt; 8  POLYGON ((-67.02715 42.0232...</span></span>
-<span><span class="co">#&gt; 9  POLYGON ((-69.83389 42.0467...</span></span>
-<span><span class="co">#&gt; 10 POLYGON ((-67.29691 41.8896...</span></span></code></pre></div>
-<p>To visualize the data simply use the plot function</p>
+<span><span class="co">#&gt; 1  MULTIPOLYGON (((261470.4 78...</span></span>
+<span><span class="co">#&gt; 2  MULTIPOLYGON (((264475.6 79...</span></span>
+<span><span class="co">#&gt; 3  MULTIPOLYGON (((252198.2 78...</span></span>
+<span><span class="co">#&gt; 4  MULTIPOLYGON (((249940.2 78...</span></span>
+<span><span class="co">#&gt; 5  MULTIPOLYGON (((252837.9 78...</span></span>
+<span><span class="co">#&gt; 6  MULTIPOLYGON (((256001.6 77...</span></span>
+<span><span class="co">#&gt; 7  MULTIPOLYGON (((254794.5 77...</span></span>
+<span><span class="co">#&gt; 8  MULTIPOLYGON (((286035.6 78...</span></span>
+<span><span class="co">#&gt; 9  MULTIPOLYGON (((257938.4 77...</span></span>
+<span><span class="co">#&gt; 10 MULTIPOLYGON (((296081.3 79...</span></span></code></pre></div>
+<div class="section level2">
+<h2 id="the-footprint">The footprint<a class="anchor" aria-label="anchor" href="#the-footprint"></a>
+</h2>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="https://rspatial.github.io/terra/reference/plot.html" class="external-link">plot</a></span><span class="op">(</span><span class="fu">NEFSCspatial</span><span class="fu">::</span><span class="va"><a href="../reference/Shellfish_Strata.html">Shellfish_Strata</a></span><span class="op">)</span></span></code></pre></div>
-<p><img src="NEFSCspatial_files/figure-html/plot_sf-1.png" width="700"></p>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="fu">sf</span><span class="fu">::</span><span class="fu"><a href="https://r-spatial.github.io/sf/reference/st_geometry.html" class="external-link">st_geometry</a></span><span class="op">(</span><span class="fu">NEFSCspatial</span><span class="fu">::</span><span class="va"><a href="../reference/mass_inshore_strata.html">mass_inshore_strata</a></span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
+<p><img src="NEFSCspatial_files/figure-html/plot_geom-1.png" alt="Footprint" width="700"></p>
+</div>
+<div class="section level2">
+<h2 id="footprint-by-fields">Footprint by fields<a class="anchor" aria-label="anchor" href="#footprint-by-fields"></a>
+</h2>
+<p>To visualize the fields in data simply use the plot function</p>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="fu">NEFSCspatial</span><span class="fu">::</span><span class="va"><a href="../reference/mass_inshore_strata.html">mass_inshore_strata</a></span><span class="op">)</span></span></code></pre></div>
+<p><img src="NEFSCspatial_files/figure-html/plot_sf-1.png" alt="Plot of NEFSCspatial massacusetts inshore survey strata" width="700"></p>
+</div>
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
@@ -233,7 +184,7 @@ simply by typing the name of the data set</p>
 
       <footer><div class="copyright">
   <p></p>
-<p>Developed by <a href="https://github.com/andybeet" class="external-link">Andy Beet</a>, <a href="https://github.com/kimberly-bastille" class="external-link">Kimberly Bastille</a>, <a href="https://github.com/jmhatch-NOAA" class="external-link">Joshua Hatch</a>.</p>
+<p>Developed by <a href="https://andybeet.com" class="external-link">Andy Beet</a>, <a href="https://github.com/jmhatch-NOAA" class="external-link">Joshua Hatch</a>, <a href="https://github.com/kimberly-bastille" class="external-link">Kimberly Bastille</a>.</p>
 </div>
 
 <div class="pkgdown">

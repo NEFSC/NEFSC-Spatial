@@ -17,7 +17,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">NEFSCspatial</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.0.1</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.1.0</span>
       </span>
     </div>
 
@@ -58,70 +58,10 @@
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu"><li>
-      <a href="../articles/ContributeSpatialData.html">Contributing to Package</a>
+      <a href="../articles/mdeb_datasets.html">MDEB datasets</a>
     </li>
     <li>
       <a href="../articles/teamMembers.html">Team Members</a>
-    </li>
-  </ul></li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-    <span class="fas fa-map fa-lg"></span>
-
-    Maps
-
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu"><li>
-      <a href="../articles/BTS_Strata_leaflet.html">BTS_Strata</a>
-    </li>
-    <li>
-      <a href="../articles/EcoMon_Strata_leaflet.html">EcoMon_Strata</a>
-    </li>
-    <li>
-      <a href="../articles/epu_sf_leaflet.html">epu_sf</a>
-    </li>
-    <li>
-      <a href="../articles/final_mass_inshore_stat_leaflet.html">final_mass_inshore_stat</a>
-    </li>
-    <li>
-      <a href="../articles/GillnetClosureAreas_20211021_leaflet.html">GillnetClosureAreas_20211021</a>
-    </li>
-    <li>
-      <a href="../articles/Great_South_Channel_Restricted_Trap_Pot_Area_leaflet.html">Great_South_Channel_Restricted_Trap_Pot_Area</a>
-    </li>
-    <li>
-      <a href="../articles/Herring_Management_Areas_leaflet.html">Herring_Management_Areas</a>
-    </li>
-    <li>
-      <a href="../articles/LMA1_Restricted_Area_FR_leaflet.html">LMA1_Restricted_Area_FR</a>
-    </li>
-    <li>
-      <a href="../articles/NAFO_Divisions_2021_line_enclosed_leaflet.html">NAFO_Divisions_2021_line_enclosed</a>
-    </li>
-    <li>
-      <a href="../articles/NAFO_Divisions_2021_line_not_enclosed_leaflet.html">NAFO_Divisions_2021_line_not_enclosed</a>
-    </li>
-    <li>
-      <a href="../articles/NAFO_Divisions_2021_poly_clipped_leaflet.html">NAFO_Divisions_2021_poly_clipped</a>
-    </li>
-    <li>
-      <a href="../articles/NAFO_Divisions_2021_poly_not_clipped_leaflet.html">NAFO_Divisions_2021_poly_not_clipped</a>
-    </li>
-    <li>
-      <a href="../articles/Neus_atlantis_leaflet.html">Neus_atlantis</a>
-    </li>
-    <li>
-      <a href="../articles/Shellfish_Strata_leaflet.html">Shellfish_Strata</a>
-    </li>
-    <li>
-      <a href="../articles/Shrimp_Strata_leaflet.html">Shrimp_Strata</a>
-    </li>
-    <li>
-      <a href="../articles/Statistical_Areas_2010_leaflet.html">Statistical_Areas_2010</a>
-    </li>
-    <li>
-      <a href="../articles/Statistical_Areas_2010_withNames_leaflet.html">Statistical_Areas_2010_withNames</a>
     </li>
   </ul></li>
       </ul><ul class="nav navbar-nav navbar-right"><li>
@@ -167,7 +107,7 @@
 <dd><p>NAD83</p></dd>
 
 <dt>Features</dt>
-<dd><p>14 x 4</p></dd>
+<dd><p>14 x 5</p></dd>
 
 <dt>Metadata</dt>
 <dd><p>See source</p></dd>
@@ -179,6 +119,17 @@
     <p><a href="https://www.fisheries.noaa.gov/inport/item/33467" class="external-link">https://www.fisheries.noaa.gov/inport/item/33467</a></p>
     </div>
 
+    <div id="ref-examples">
+    <h2>Examples</h2>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="op">{</span> <span class="co"># \dontrun{</span></span></span>
+<span class="r-in"><span><span class="co"># Load the dataset</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="va">final_mass_inshore_stat</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># Plot the geometry</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="fu">sf</span><span class="fu">::</span><span class="fu"><a href="https://r-spatial.github.io/sf/reference/st_geometry.html" class="external-link">st_geometry</a></span><span class="op">(</span><span class="va">final_mass_inshore_stat</span><span class="op">)</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="op">}</span> <span class="co"># }</span></span></span>
+</code></pre></div>
+    </div>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top"><h2 data-toc-skip>Contents</h2>
@@ -187,7 +138,7 @@
 
 
       <footer><div class="copyright">
-  <p></p><p>Developed by <a href="https://github.com/andybeet" class="external-link">Andy Beet</a>, <a href="https://github.com/kimberly-bastille" class="external-link">Kimberly Bastille</a>, <a href="https://github.com/jmhatch-NOAA" class="external-link">Joshua Hatch</a>.</p>
+  <p></p><p>Developed by <a href="https://andybeet.com" class="external-link">Andy Beet</a>, <a href="https://github.com/jmhatch-NOAA" class="external-link">Joshua Hatch</a>, <a href="https://github.com/kimberly-bastille" class="external-link">Kimberly Bastille</a>.</p>
 </div>
 
 <div class="pkgdown">

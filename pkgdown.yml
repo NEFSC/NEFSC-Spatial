@@ -2,27 +2,10 @@ pandoc: 3.1.11
 pkgdown: 2.1.3
 pkgdown_sha: ~
 articles:
-  articles/BTS_Strata_leaflet: BTS_Strata_leaflet.html
-  articles/ContributeSpatialData: ContributeSpatialData.html
-  articles/EcoMon_Strata_leaflet: EcoMon_Strata_leaflet.html
-  articles/epu_sf_leaflet: epu_sf_leaflet.html
-  articles/final_mass_inshore_stat_leaflet: final_mass_inshore_stat_leaflet.html
-  articles/GillnetClosureAreas_20211021_leaflet: GillnetClosureAreas_20211021_leaflet.html
-  articles/Great_South_Channel_Restricted_Trap_Pot_Area_leaflet: Great_South_Channel_Restricted_Trap_Pot_Area_leaflet.html
-  articles/Herring_Management_Areas_leaflet: Herring_Management_Areas_leaflet.html
-  articles/LMA1_Restricted_Area_FR_leaflet: LMA1_Restricted_Area_FR_leaflet.html
-  articles/NAFO_Divisions_2021_line_enclosed_leaflet: NAFO_Divisions_2021_line_enclosed_leaflet.html
-  articles/NAFO_Divisions_2021_line_not_enclosed_leaflet: NAFO_Divisions_2021_line_not_enclosed_leaflet.html
-  articles/NAFO_Divisions_2021_poly_clipped_leaflet: NAFO_Divisions_2021_poly_clipped_leaflet.html
-  articles/NAFO_Divisions_2021_poly_not_clipped_leaflet: NAFO_Divisions_2021_poly_not_clipped_leaflet.html
+  mdeb_datasets: mdeb_datasets.html
   NEFSCspatial: NEFSCspatial.html
-  articles/Neus_atlantis_leaflet: Neus_atlantis_leaflet.html
-  articles/Shellfish_Strata_leaflet: Shellfish_Strata_leaflet.html
-  articles/Shrimp_Strata_leaflet: Shrimp_Strata_leaflet.html
-  articles/Statistical_Areas_2010_leaflet: Statistical_Areas_2010_leaflet.html
-  articles/Statistical_Areas_2010_withNames_leaflet: Statistical_Areas_2010_withNames_leaflet.html
-  articles/teamMembers: teamMembers.html
-last_built: 2025-07-03T11:50Z
+  teamMembers: teamMembers.html
+last_built: 2025-08-22T13:41Z
 urls:
   reference: https://nefsc.github.io/NEFSC-Spatial/reference
   article: https://nefsc.github.io/NEFSC-Spatial/articles

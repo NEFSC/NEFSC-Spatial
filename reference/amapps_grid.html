@@ -19,7 +19,7 @@ Grid cell values represent grid cell IDs."><meta property="og:image" content="ht
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">NEFSCspatial</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.0.1</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.1.0</span>
       </span>
     </div>
 
@@ -60,70 +60,10 @@ Grid cell values represent grid cell IDs."><meta property="og:image" content="ht
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu"><li>
-      <a href="../articles/ContributeSpatialData.html">Contributing to Package</a>
+      <a href="../articles/mdeb_datasets.html">MDEB datasets</a>
     </li>
     <li>
       <a href="../articles/teamMembers.html">Team Members</a>
-    </li>
-  </ul></li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-    <span class="fas fa-map fa-lg"></span>
-
-    Maps
-
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu"><li>
-      <a href="../articles/BTS_Strata_leaflet.html">BTS_Strata</a>
-    </li>
-    <li>
-      <a href="../articles/EcoMon_Strata_leaflet.html">EcoMon_Strata</a>
-    </li>
-    <li>
-      <a href="../articles/epu_sf_leaflet.html">epu_sf</a>
-    </li>
-    <li>
-      <a href="../articles/final_mass_inshore_stat_leaflet.html">final_mass_inshore_stat</a>
-    </li>
-    <li>
-      <a href="../articles/GillnetClosureAreas_20211021_leaflet.html">GillnetClosureAreas_20211021</a>
-    </li>
-    <li>
-      <a href="../articles/Great_South_Channel_Restricted_Trap_Pot_Area_leaflet.html">Great_South_Channel_Restricted_Trap_Pot_Area</a>
-    </li>
-    <li>
-      <a href="../articles/Herring_Management_Areas_leaflet.html">Herring_Management_Areas</a>
-    </li>
-    <li>
-      <a href="../articles/LMA1_Restricted_Area_FR_leaflet.html">LMA1_Restricted_Area_FR</a>
-    </li>
-    <li>
-      <a href="../articles/NAFO_Divisions_2021_line_enclosed_leaflet.html">NAFO_Divisions_2021_line_enclosed</a>
-    </li>
-    <li>
-      <a href="../articles/NAFO_Divisions_2021_line_not_enclosed_leaflet.html">NAFO_Divisions_2021_line_not_enclosed</a>
-    </li>
-    <li>
-      <a href="../articles/NAFO_Divisions_2021_poly_clipped_leaflet.html">NAFO_Divisions_2021_poly_clipped</a>
-    </li>
-    <li>
-      <a href="../articles/NAFO_Divisions_2021_poly_not_clipped_leaflet.html">NAFO_Divisions_2021_poly_not_clipped</a>
-    </li>
-    <li>
-      <a href="../articles/Neus_atlantis_leaflet.html">Neus_atlantis</a>
-    </li>
-    <li>
-      <a href="../articles/Shellfish_Strata_leaflet.html">Shellfish_Strata</a>
-    </li>
-    <li>
-      <a href="../articles/Shrimp_Strata_leaflet.html">Shrimp_Strata</a>
-    </li>
-    <li>
-      <a href="../articles/Statistical_Areas_2010_leaflet.html">Statistical_Areas_2010</a>
-    </li>
-    <li>
-      <a href="../articles/Statistical_Areas_2010_withNames_leaflet.html">Statistical_Areas_2010_withNames</a>
     </li>
   </ul></li>
       </ul><ul class="nav navbar-nav navbar-right"><li>
@@ -171,7 +111,7 @@ Grid cell values represent grid cell IDs.</p>
 <dd><p>unnamed</p></dd>
 
 <dt>Features</dt>
-<dd><p>78720 x 1</p></dd>
+<dd><p>78720 x 2</p></dd>
 
 <dt>Source</dt>
 <dd><p>data-raw/gis/AMAPPS_10km_grid.tif</p></dd>
@@ -193,13 +133,13 @@ Grid cell values represent grid cell IDs.</p>
 <span class="r-in"><span><span class="va">amapps_vec</span> <span class="op">&lt;-</span> <span class="fu">NEFSCspatial</span><span class="fu">::</span><span class="va">amapps_grid</span> <span class="op">|&gt;</span> <span class="fu">as</span><span class="op">(</span><span class="st">'SpatVector'</span><span class="op">)</span> </span></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># empty raster from amapps_vec</span></span></span>
-<span class="r-in"><span><span class="va">amapps_ras</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rspatial.github.io/terra/reference/rast.html" class="external-link">rast</a></span><span class="op">(</span><span class="va">amapps_vec</span>, nrow <span class="op">=</span> <span class="fl">328</span>, ncol <span class="op">=</span> <span class="fl">240</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">amapps_ras</span> <span class="op">&lt;-</span> <span class="fu">rast</span><span class="op">(</span><span class="va">amapps_vec</span>, nrow <span class="op">=</span> <span class="fl">328</span>, ncol <span class="op">=</span> <span class="fl">240</span><span class="op">)</span></span></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># rasterize</span></span></span>
-<span class="r-in"><span><span class="va">amapps</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rspatial.github.io/terra/reference/rasterize.html" class="external-link">rasterize</a></span><span class="op">(</span><span class="va">amapps_vec</span>, <span class="va">amapps_ras</span>, field <span class="op">=</span> <span class="st">'AMAPPS_10km_grid'</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">amapps</span> <span class="op">&lt;-</span> <span class="fu">rasterize</span><span class="op">(</span><span class="va">amapps_vec</span>, <span class="va">amapps_ras</span>, field <span class="op">=</span> <span class="st">'AMAPPS_10km_grid'</span><span class="op">)</span></span></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># visualize</span></span></span>
-<span class="r-in"><span><span class="fu"><a href="https://rspatial.github.io/terra/reference/plot.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">amapps</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">amapps</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="op">}</span> <span class="co"># }</span></span></span>
 </code></pre></div>
     </div>
@@ -211,7 +151,7 @@ Grid cell values represent grid cell IDs.</p>
 
 
       <footer><div class="copyright">
-  <p></p><p>Developed by <a href="https://github.com/andybeet" class="external-link">Andy Beet</a>, <a href="https://github.com/kimberly-bastille" class="external-link">Kimberly Bastille</a>, <a href="https://github.com/jmhatch-NOAA" class="external-link">Joshua Hatch</a>.</p>
+  <p></p><p>Developed by <a href="https://andybeet.com" class="external-link">Andy Beet</a>, <a href="https://github.com/jmhatch-NOAA" class="external-link">Joshua Hatch</a>, <a href="https://github.com/kimberly-bastille" class="external-link">Kimberly Bastille</a>.</p>
 </div>
 
 <div class="pkgdown">
