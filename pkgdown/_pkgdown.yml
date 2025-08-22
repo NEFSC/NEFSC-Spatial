@@ -1,4 +1,11 @@
 url: https://nefsc.github.io/NEFSC-Spatial/
+
+template:
+ bootstrap: 3
+
+deploy:
+  install_metadata: true
+
 navbar:
   structure:
     left:
@@ -7,7 +14,6 @@ navbar:
     - reference
     - issue
     - articles
-    - map
     right:
     - search
     - github
@@ -15,6 +21,7 @@ navbar:
     home:
       icon: fas fa-home fa-lg
       href: index.html
+      aria-label: Home
     getting started:
       text: Getting Started
       icon: fas fa-solid fa-play
@@ -31,48 +38,10 @@ navbar:
       text: Articles
       icon: fas fa-file-contract fa-lg
       menu:
-      - text: Contributing to Package
-        href: articles/ContributeSpatialData.html
+      - text: MDEB datasets
+        href: articles/mdeb_datasets.html
       - text: Team Members
         href: articles/teamMembers.html
-    map:
-      text: Maps
-      icon: fas fa-map fa-lg
-      menu:
-      - text: BTS_Strata
-        href: articles/BTS_Strata_leaflet.html
-      - text: EcoMon_Strata
-        href: articles/EcoMon_Strata_leaflet.html
-      - text: epu_sf
-        href: articles/epu_sf_leaflet.html
-      - text: final_mass_inshore_stat
-        href: articles/final_mass_inshore_stat_leaflet.html
-      - text: GillnetClosureAreas_20211021
-        href: articles/GillnetClosureAreas_20211021_leaflet.html
-      - text: Great_South_Channel_Restricted_Trap_Pot_Area
-        href: articles/Great_South_Channel_Restricted_Trap_Pot_Area_leaflet.html
-      - text: Herring_Management_Areas
-        href: articles/Herring_Management_Areas_leaflet.html
-      - text: LMA1_Restricted_Area_FR
-        href: articles/LMA1_Restricted_Area_FR_leaflet.html
-      - text: NAFO_Divisions_2021_line_enclosed
-        href: articles/NAFO_Divisions_2021_line_enclosed_leaflet.html
-      - text: NAFO_Divisions_2021_line_not_enclosed
-        href: articles/NAFO_Divisions_2021_line_not_enclosed_leaflet.html
-      - text: NAFO_Divisions_2021_poly_not_clipped
-        href: articles/NAFO_Divisions_2021_poly_not_clipped_leaflet.html
-      - text: NAFO_Divisions_2021_poly_clipped
-        href: articles/NAFO_Divisions_2021_poly_clipped_leaflet.html
-      - text: Neus_atlantis
-        href: articles/Neus_atlantis_leaflet.html
-      - text: Shellfish_Strata
-        href: articles/Shellfish_Strata_leaflet.html
-      - text: Statistical_Areas_2010
-        href: articles/Statistical_Areas_2010_leaflet.html
-      - text: Statistical_Areas_2010_withNames
-        href: articles/Statistical_Areas_2010_withNames_leaflet.html
-      - text: Shrimp_Strata
-        href: articles/Shrimp_Strata_leaflet.html
 reference:
 - title: Fishing Areas / Management Areas
   desc: Areas in which fishing is reported
@@ -85,24 +54,32 @@ reference:
 - title: Closed Areas
   desc: Areas in which fishing is restricted
 - contents:
-  - GillnetClosureAreas_20211021
-  - LMA1_Restricted_Area_FR
-  - Great_South_Channel_Restricted_Trap_Pot_Area
+  - "GillnetClosureAreas_20211021"
+  - "LMA1_Restricted_Area_FR"
+  - "Great_South_Channel_Restricted_Trap_Pot_Area"
+  - "Scallop_Rotational_Areas_20230411"
 - title: Protected Species
 - contents: amapps_grid
 - title: Survey Strata
   desc: Areas in which survey sampling is reported
 - contents:
-  - BTS_Strata
-  - EcoMon_Strata
-  - Shellfish_Strata
-  - Shrimp_Strata
+  - "BTS_Strata"
+  - "EcoMon_Strata"
+  - "Shellfish_Strata"
+  - "Shrimp_Strata"
+  - contains("strata")
+  - ends_with("stations")
+  - ends_with("deployments")
+  - ends_with("lines")
 - title: Models
   desc: Areas defining model boundaries
-- contents: Neus_atlantis
+- contents:
+  - "Neus_atlantis"
+
+
 authors:
   Andy Beet:
-    href: https://github.com/andybeet
+    href: https://andybeet.com
   Kimberly Bastille:
     href: https://github.com/kimberly-bastille
   Joshua Hatch:

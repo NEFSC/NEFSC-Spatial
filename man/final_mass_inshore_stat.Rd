@@ -11,7 +11,7 @@ An \code{sf} object:
 \item{Dimension}{XY}
 \item{Bounding box}{xmin: -71.12554 ymin: 41.18887 xmax: -69.86013 ymax: 42.87647}
 \item{Geodetic CRS}{NAD83}
-\item{Features}{14 x 4}
+\item{Features}{14 x 5}
 \item{Metadata}{See source}
 }
 }
@@ -23,5 +23,14 @@ data("final_mass_inshore_stat")
 }
 \description{
 An \code{sf} object containing the boundaries of the Massachusetts Inshore statistical areas.
+}
+\examples{
+\dontrun{
+# Load the dataset
+data(final_mass_inshore_stat)
+
+# Plot the geometry
+plot(sf::st_geometry(final_mass_inshore_stat))
+}
 }
 \keyword{datasets}

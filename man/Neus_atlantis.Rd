@@ -11,7 +11,7 @@ An \code{sf} object:
 \item{Dimension}{XY}
 \item{Bounding box}{xmin: -76.45919 ymin: 34.76128 xmax: -63.42171 ymax: 46.11478}
 \item{Geodetic CRS}{WGS 83}
-\item{Features}{30 x 10}
+\item{Features}{30 x 11}
 \item{Metadata}{See source}
 }
 }
@@ -22,6 +22,15 @@ An \code{sf} object:
 data("Neus_atlantis")
 }
 \description{
-An sf object containing the box level boundaries used in the Northeast Atlantis ecosystem end to end model
+An \code{sf} object containing the box level boundaries used in the Northeast Atlantis ecosystem end to end model.
+}
+\examples{
+\dontrun{
+# Load the dataset
+data(Neus_atlantis)
+
+# Plot the geometry
+plot(sf::st_geometry(Neus_atlantis))
+}
 }
 \keyword{datasets}

@@ -3,7 +3,7 @@
 \docType{data}
 \name{Shellfish_Strata}
 \alias{Shellfish_Strata}
-\title{Shellfish strata (Clam and Scallop surveys)}
+\title{\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#deprecated}{\figure{lifecycle-deprecated.svg}{options: alt='[Deprecated]'}}}{\strong{[Deprecated]}}}
 \format{
 A data frame/ \code{sf} object
 \describe{
@@ -11,7 +11,7 @@ A data frame/ \code{sf} object
 \item{Dimension}{XY}
 \item{Bounding box}{xmin: -75.95982 ymin: 35.50142 xmax: -65.89944 ymax: 42.16817}
 \item{Geodetic CRS}{NAD83}
-\item{Features}{97 x 9}
+\item{Features}{97 x 10}
 \item{Metadata}{See source}
 }
 }
@@ -22,6 +22,12 @@ A data frame/ \code{sf} object
 data("Shellfish_Strata")
 }
 \description{
+Shellfish strata (Clam and Scallop surveys)
+}
+\details{
 An sf object containing the Clam and Scallop survey strata
+}
+\note{
+Use \url{https://mdeb-nefsc-noaa.hub.arcgis.com/maps/noaa::atlantic-surfclam-and-ocean-quahog-survey/about} or \url{https://mdeb-nefsc-noaa.hub.arcgis.com/maps/noaa::sea-scallop-survey/about} instead.
 }
 \keyword{datasets}

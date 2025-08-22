@@ -12,7 +12,7 @@ An \code{sf} object:
 \item{Dimension}{XY}
 \item{Bounding box}{xmin: -69.75 ymin: 41 xmax: -68.21667 ymax: 42.16667}
 \item{Geodetic CRS}{NAD83}
-\item{Features}{1 x 25}
+\item{Features}{1 x 26}
 \item{Metadata}{See source}
 }
 }
@@ -24,5 +24,14 @@ data("Great_South_Channel_Restricted_Trap_Pot_Area")
 }
 \description{
 An \code{sf} object that depicts the boundaries of the Great South Channel Restricted Area in effect from April 1 to June 30 annually for the NOAA Fisheries Service’s Greater Atlantic Regional Fisheries Office (GARFO).
+}
+\examples{
+\dontrun{
+# Load the dataset
+data(Great_South_Channel_Restricted_Trap_Pot_Area)
+
+# Plot the geometry
+plot(sf::st_geometry(Great_South_Channel_Restricted_Trap_Pot_Area))
+}
 }
 \keyword{datasets}

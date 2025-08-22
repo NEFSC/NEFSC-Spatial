@@ -8,4 +8,7 @@
 ^\.Rproj.user$
 ^docs$
 ^pkgdown$
+^\.github$
+other
 ^vignettes/articles$
+

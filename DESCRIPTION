@@ -1,17 +1,20 @@
 Package: NEFSCspatial
-Title: Spatial data package
-Version: 0.0.1
-Authors@R: c(person("Andy", "Beet", , "andrew.beet@noaa.gov", role = c("aut", "cre")), person("Kimberly", "Bastille", , "kimberly.bastille@noaa.gov", role = "aut"), person("Joshua", "Hatch", , "joshua.hatch@noaa.gov", role = "aut"))
-URL: https://github.com/NEFSC/NEFSC-Spatial
+Title: Spatial data package for regions in the northeast atlantic
+Version: 0.1.0
+Authors@R: c(person("Andy", "Beet", email = "andrew.beet@noaa.gov", role = c("aut", "cre"), comment = c(ORCID = "0000-0001-8270-7090")),
+             person("Joshua", "Hatch", email = "joshua.hatch@noaa.gov", role = "aut"),
+             person("Kimberly", "Bastille", email = "kimberly.bastille@noaa.gov", role = "aut"))
+URL: https://github.com/NEFSC/NEFSC-Spatial/, https://nefsc.github.io/NEFSC-Spatial/
 BugReports: https://github.com/NEFSC/NEFSC-Spatial/issues
-Description: Provides spatial data as sf objects
+Description: Provides spatial data as sf or raster objects for the Northeast Fisheries Science Center
 License: file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.2
 Depends: 
-    R (>= 3.5.0)
+    R (>= 4.0)
 Imports:
+    lifecycle,
     sf
 Suggests: 
     curl,
@@ -26,6 +29,10 @@ Suggests:
     hexSticker,
     ggimage,
     dplyr,
-    leaflet
+    ggplot2,
+    jsonlite,
+    httr2, 
+    gt
 LazyData: true
+LazyDataCompression: bzip2
 VignetteBuilder: knitr

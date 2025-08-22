@@ -11,7 +11,7 @@ An \code{sf} object:
 \item{Dimension}{XY}
 \item{Bounding box}{xmin: -69.6128 ymin: 42.89198 xmax: -68.28787 ymax: 43.73333}
 \item{Geodetic CRS}{WGS 84}
-\item{Features}{1 x 25}
+\item{Features}{1 x 26}
 \item{Metadata}{See source}
 }
 }
@@ -23,5 +23,14 @@ data("LMA1_Restricted_Area_FR")
 }
 \description{
 An \code{sf} object that depicts the boundaries of the Lobster Management Area One Restricted Area in effect annually from October 1 to January 30 for the NOAA Fisheries Service’s Greater Atlantic Regional Fisheries Office (GARFO).
+}
+\examples{
+\dontrun{
+# Load the dataset
+data(LMA1_Restricted_Area_FR)
+
+# Plot the geometry
+plot(sf::st_geometry(LMA1_Restricted_Area_FR))
+}
 }
 \keyword{datasets}

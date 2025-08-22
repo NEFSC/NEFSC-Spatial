@@ -3,7 +3,7 @@
 \docType{data}
 \name{BTS_Strata}
 \alias{BTS_Strata}
-\title{NEFSC Bottom Trawl Survey Strata}
+\title{\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#deprecated}{\figure{lifecycle-deprecated.svg}{options: alt='[Deprecated]'}}}{\strong{[Deprecated]}}}
 \format{
 An \code{sf} object:
 \describe{
@@ -11,7 +11,7 @@ An \code{sf} object:
 \item{dimension}{XY}
 \item{Bounding box}{xmin: -79.18422 ymin: 32.50221 xmax: -65.16869 ymax: 44.83202}
 \item{Geodetic CRS}{NAD 83}
-\item{Features}{185 x 9}
+\item{Features}{185 x 10}
 \item{Metadata}{See source}
 }
 }
@@ -24,7 +24,13 @@ An \code{sf} object:
 data("BTS_Strata")
 }
 \description{
+NEFSC Bottom Trawl Survey Strata
+}
+\details{
 An \code{sf} object containing the boundaries of the NEFSC bottom trawl survey strata.
 This set of strata is considered historical. (Pre 2000).
+}
+\note{
+Use \url{https://mdeb-nefsc-noaa.hub.arcgis.com/datasets/noaa::bottom-trawl-survey/about} instead.
 }
 \keyword{datasets}

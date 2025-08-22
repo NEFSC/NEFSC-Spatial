@@ -10,7 +10,7 @@
 #'   \item{Dimension}{XY}
 #'   \item{Bounding box}{xmin: -820443.2 ymin: -1234728 xmax: 1579557 ymax: 2045272}
 #'   \item{Projected CRS}{unnamed}
-#'   \item{Features}{78720 x 1}
+#'   \item{Features}{78720 x 2}
 #'   \item{Source}{data-raw/gis/AMAPPS_10km_grid.tif}
 #' }
 #'
