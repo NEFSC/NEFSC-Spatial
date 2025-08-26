@@ -1,3 +1,10 @@
+# NEFSCspatial 0.1.1
+
+## Minor fixes
+
+- Migrated to Bootstrap 5
+- Updated Team Members vignette
+
 # NEFSCspatial 0.1.0
 
 ## Data set additions/removals
@@ -12,7 +19,6 @@
 
 - Removed leaflet documentation
 - Standardized data set documentation with added examples
-
 
 # NEFSCspatial 0.0.1
 
