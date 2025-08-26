@@ -1,4 +1,4 @@
-# NEFSCspatial 0.X.X
+# NEFSCspatial 0.1.1
 
 ## Minor fixes
 
