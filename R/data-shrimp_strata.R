@@ -1,6 +1,6 @@
 #' Northern Shrimp Survey
 #'
-#' @description An \code{sf} object containing spatial data for the Northern Shrimp Survey.
+#' @description An \code{sf} object containing spatial data for the Northern Shrimp Survey. Scientific survey strata for the Northern Shrimp Survey.
 #'
 #' @format An \code{sf} object:
 #' \describe{
@@ -8,7 +8,7 @@
 #'   \item{Dimension}{XY}
 #'   \item{Bounding box}{xmin: -70.7 ymin: 41.1 xmax: -68 ymax: 44.1}
 #'   \item{Projected CRS}{WGS 84}
-#'   \item{Features}{12 x 8}
+#'   \item{Features}{12 x 9}
 #'   \item{Metadata}{See source}
 #' }
 #'
