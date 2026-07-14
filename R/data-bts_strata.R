@@ -1,6 +1,6 @@
 #' Bottom Trawl Survey
 #'
-#' @description An \code{sf} object containing spatial data for the Bottom Trawl Survey.
+#' @description An \code{sf} object containing spatial data for the Bottom Trawl Survey. Scientific survey strata for the Bottom Trawl Survey.
 #'
 #' @format An \code{sf} object:
 #' \describe{
@@ -8,7 +8,7 @@
 #'   \item{Dimension}{XY}
 #'   \item{Bounding box}{xmin: -76.2 ymin: 34.4 xmax: -65.6 ymax: 44.5}
 #'   \item{Projected CRS}{WGS 84}
-#'   \item{Features}{82 x 15}
+#'   \item{Features}{82 x 16}
 #'   \item{Metadata}{See source}
 #' }
 #'
