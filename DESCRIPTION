@@ -10,7 +10,7 @@ Description: Provides spatial data as sf or raster objects for the Northeast Fis
 License: file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.2
+RoxygenNote: 7.3.3
 Depends: 
     R (>= 4.0)
 Imports:
