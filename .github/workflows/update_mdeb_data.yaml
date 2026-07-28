@@ -1,16 +1,11 @@
 name: pull data from MDEB data hub
 
 on:
-  push:
-    branches:
-      - main2
-  pull_request:
-    branches:
-      - main2
-  #schedule:
+  workflow_dispatch:
+  schedule:
     # uses UTC/GMT time (+ 5 hrs)
     ## put on HOLD temporarily
-    #- cron: "0 17 * * 3" # Every Wednesday at 1200 hrs = 1700 UTC
+    - cron: "0 17 * * 6" # Every Saturday at 1200 hrs = 1700 UTC
 
 
 jobs:
@@ -23,7 +18,7 @@ jobs:
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
 
@@ -55,7 +50,7 @@ jobs:
           get_mdeb_for_package()
         shell: Rscript {0}
 
-   - name: Make Comparisons for commit
+      - name: Make Comparisons for commit
       # check for new data added or data omitted. Not concerned with data fixes
       # update NEWS.md, DESCRIPTION with version/notes
       # increments package version in description
@@ -73,49 +68,41 @@ jobs:
           saveRDS(version,here::here("data-raw/version.rds"))
         shell: Rscript {0}
 
-      - name: render readme.rmd
-        run: |
-          options(timeout = 60 * 60 * 6)
-          rmarkdown::render(here::here("README.Rmd"))
-        shell: Rscript {0}
-
       # Send email indicating if anything has changed
-      # - name: Send email
-      #   uses: dawidd6/action-send-mail@v3
-      #
-      #   with:
-      #     server_address: smtp.gmail.com
-      #     server_port: 465
-      #
-      #     username: ${{ secrets.MAIL_USERNAME }}
-      #     password: ${{ secrets.MAIL_PASSWORD }}
-      #
-      #     subject: Github Actions job result
-      #     to: andrew.beet@noaa.gov
-      #
-      #     from: NEFSCspatial GitHub
-      #
-      #     #body: file://${{github.workspace}}/data-raw/datapull.txt
-      #
-      #     html_body: file://${{github.workspace}}/data-raw/sendAsEmail.html
-      #
-      #     #attachments: ./data-raw/sendAsEmail.html
-      #
-      # - name: commit data files
-      #   run: |
-      #     git config user.name github-actions
-      #     git config user.email github-actions@github.com
-      #     git add data/*
-      #     git add README.md
-      #     git add NEWS.md
-      #     git add DESCRIPTION
-      #     git commit -m "automated mdeb pull from update_mdeb_data yml"
-      #     git push
-      #
-      # - name: create gh-release
-      #   run: |
-      #       version <- readRDS(here::here("data-raw/version.rds"))
-      #       if(!is.null(version)){
-      #       usethis::use_github_release(publish = TRUE)
-      #       }
-      #   shell: Rscript {0}
+      - name: Send email
+        uses: dawidd6/action-send-mail@v17
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+
+          subject: auto MDEB data pull
+          to: andrew.beet@noaa.gov
+
+          from: 'NEFSCspatial updater <noreply@gmail.com>'
+          envelope_from: ${{ secrets.MAIL_USERNAME }}
+
+          html_body: file://${{github.workspace}}/data-raw/sendAsEmail.html
+
+
+      - name: commit data files
+        run: |
+           git config user.name github-actions
+           git config user.email github-actions@github.com
+           git add data/*
+           git add R/data-*
+           git add README.md
+           git add NEWS.md
+           git add DESCRIPTION
+           git commit -m "automated mdeb pull from update_mdeb_data.yml"
+           git push
+
+      - name: create gh-release
+        run: |
+             version <- readRDS(here::here("data-raw/version.rds"))
+             if(!is.null(version)){
+             usethis::use_github_release(publish = FALSE)
+             }
+         shell: Rscript {0}
