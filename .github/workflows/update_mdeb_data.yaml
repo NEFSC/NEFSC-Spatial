@@ -105,4 +105,4 @@ jobs:
              if(!is.null(version)){
              usethis::use_github_release(publish = FALSE)
              }
-         shell: Rscript {0}
+        shell: Rscript {0}
