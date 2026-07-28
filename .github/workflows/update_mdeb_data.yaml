@@ -1,4 +1,4 @@
-name: pull data from MDEB data hub
+name: pull-data-from-MDEB-data-hub
 
 on:
   workflow_dispatch:
