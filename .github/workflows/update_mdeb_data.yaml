@@ -47,7 +47,7 @@ jobs:
       - name: Install packages
         run: |
           install.packages(c("remotes","here","httr2","jsonlite","dplyr","glue"))
-          remotes::install_github("andybeet/testnefscspatial")
+          remotes::install_github("NEFSC/NEFSC-Spatial")
         shell: Rscript {0}
 
       - name: Pull MDEB data and save to repo
