@@ -12,6 +12,8 @@ jobs:
 
   build:
     runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     permissions:
       contents: write
       pull-requests: write
@@ -25,29 +27,34 @@ jobs:
       - name: set up pandoc
         uses: r-lib/actions/setup-pandoc@v2
 
-      - name: Install command line packages
-        run: |
-          sudo apt update
-          sudo apt-get install libcurl4-openssl-dev libgit2-dev
-#          sudo apt-get install  libgdal-dev libcurl4-gnutls-dev libgit2-dev libudunits2-dev libharfbuzz-dev libfribidi-dev
-        shell: bash
-
       - name: Set up R
         uses: r-lib/actions/setup-r@v2
         with:
           r-version: '4.2.0'
 
+
+      - name: Install system dependencies
+        uses: r-lib/actions/setup-r-dependencies@v2
+
+      - name: Install command line packages
+        run: |
+          sudo apt update
+          sudo apt-get install libcurl4-openssl-dev libgit2-dev libudunits2-dev
+#          sudo apt-get install  libgdal-dev libcurl4-gnutls-dev libgit2-dev libudunits2-dev libharfbuzz-dev libfribidi-dev
+        shell: bash
+
+
       - name: Install packages
         run: |
-          install.packages("remotes")
-          remotes::install_github("NEFSC/NEFSC-Spatial")
+          install.packages(c("remotes","here","httr2","jsonlite","dplyr","glue"))
+          remotes::install_github("andybeet/testnefscspatial")
         shell: Rscript {0}
 
       - name: Pull MDEB data and save to repo
         run: |
           options(timeout = 60 * 60 * 6)
           source(here::here("data-raw/get_mdeb_for_package.R"))
-          get_mdeb_for_package(overwite = TRUE)
+          get_mdeb_for_package(overwrite = TRUE)
         shell: Rscript {0}
 
       # Create the Pull Request from dev if changes are detected
@@ -63,60 +70,3 @@ jobs:
           branch: automated-data-update
           base: dev
           delete-branch: false
-
-      # - name: Make Comparisons for commit
-      # # check for new data added or data omitted. Not concerned with data fixes
-      # # update NEWS.md, DESCRIPTION with version/notes
-      # # increments package version in description
-      #   run: |
-      #     options(timeout = 60 * 60 * 6)
-      #     source(here::here("data-raw/compare_data.r"))
-      #     source(here::here("data-raw/update_description.R"))
-      #     source(here::here("data-raw/update_news.R"))
-      #     diffs <- compare_data()
-      #     version <- update_description(diffs, digit=3)
-      #     update_news(version, diffs)
-      #     rmarkdown::render(here::here("data-raw/sendAsEmail.Rmd"),
-      #               params = diffs)
-      #
-      #     saveRDS(version,here::here("data-raw/version.rds"))
-      #   shell: Rscript {0}
-
-      # # Send email indicating if anything has changed
-      # - name: Send email
-      #   uses: dawidd6/action-send-mail@v17
-      #   with:
-      #     server_address: smtp.gmail.com
-      #     server_port: 465
-      #
-      #     username: ${{ secrets.MAIL_USERNAME }}
-      #     password: ${{ secrets.MAIL_PASSWORD }}
-      #
-      #     subject: auto MDEB data pull
-      #     to: andrew.beet@noaa.gov
-      #
-      #     from: 'NEFSCspatial updater <noreply@gmail.com>'
-      #     envelope_from: ${{ secrets.MAIL_USERNAME }}
-      #
-      #     html_body: file://${{github.workspace}}/data-raw/sendAsEmail.html
-      #
-      #
-      # - name: commit data files
-      #   run: |
-      #      git config user.name github-actions
-      #      git config user.email github-actions@github.com
-      #      git add data/*
-      #      git add R/data-*
-      #      git add README.md
-      #      git add NEWS.md
-      #      git add DESCRIPTION
-      #      git commit -m "automated mdeb pull from update_mdeb_data.yml"
-      #      git push
-      #
-      # - name: create gh-release
-      #   run: |
-      #        version <- readRDS(here::here("data-raw/version.rds"))
-      #        if(!is.null(version)){
-      #        usethis::use_github_release(publish = FALSE)
-      #        }
-      #   shell: Rscript {0}
