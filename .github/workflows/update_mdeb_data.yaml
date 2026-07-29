@@ -12,9 +12,9 @@ jobs:
 
   build:
     runs-on: ubuntu-latest
-    env:
-      GITHUB_PAT: ${{ secrets.GH_RELEASE }}
-      R_REMOTES_NO_ERRORS_FROM_WARNINGS: false
+    permissions:
+      contents: write
+      pull-requests: write
 
     steps:
       - name: Checkout repo
@@ -47,62 +47,76 @@ jobs:
         run: |
           options(timeout = 60 * 60 * 6)
           source(here::here("data-raw/get_mdeb_for_package.R"))
-          get_mdeb_for_package()
+          get_mdeb_for_package(overwite = TRUE)
         shell: Rscript {0}
 
-      - name: Make Comparisons for commit
-      # check for new data added or data omitted. Not concerned with data fixes
-      # update NEWS.md, DESCRIPTION with version/notes
-      # increments package version in description
-        run: |
-          options(timeout = 60 * 60 * 6)
-          source(here::here("data-raw/compare_data.r"))
-          source(here::here("data-raw/update_description.R"))
-          source(here::here("data-raw/update_news.R"))
-          diffs <- compare_data()
-          version <- update_description(diffs, digit=3)
-          update_news(version, diffs)
-          rmarkdown::render(here::here("data-raw/sendAsEmail.Rmd"),
-                    params = diffs)
-
-          saveRDS(version,here::here("data-raw/version.rds"))
-        shell: Rscript {0}
-
-      # Send email indicating if anything has changed
-      - name: Send email
-        uses: dawidd6/action-send-mail@v17
+      # Create the Pull Request from dev if changes are detected
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v8.1.1
         with:
-          server_address: smtp.gmail.com
-          server_port: 465
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "chore: update external data"
+          title: "Automated Data Update"
+          body: |
+            This is an automated pull request containing the latest fetched data.
+            Please review the changes before merging.
+          branch: automated-data-update
+          base: dev
+          delete-branch: false
 
-          username: ${{ secrets.MAIL_USERNAME }}
-          password: ${{ secrets.MAIL_PASSWORD }}
+      # - name: Make Comparisons for commit
+      # # check for new data added or data omitted. Not concerned with data fixes
+      # # update NEWS.md, DESCRIPTION with version/notes
+      # # increments package version in description
+      #   run: |
+      #     options(timeout = 60 * 60 * 6)
+      #     source(here::here("data-raw/compare_data.r"))
+      #     source(here::here("data-raw/update_description.R"))
+      #     source(here::here("data-raw/update_news.R"))
+      #     diffs <- compare_data()
+      #     version <- update_description(diffs, digit=3)
+      #     update_news(version, diffs)
+      #     rmarkdown::render(here::here("data-raw/sendAsEmail.Rmd"),
+      #               params = diffs)
+      #
+      #     saveRDS(version,here::here("data-raw/version.rds"))
+      #   shell: Rscript {0}
 
-          subject: auto MDEB data pull
-          to: andrew.beet@noaa.gov
-
-          from: 'NEFSCspatial updater <noreply@gmail.com>'
-          envelope_from: ${{ secrets.MAIL_USERNAME }}
-
-          html_body: file://${{github.workspace}}/data-raw/sendAsEmail.html
-
-
-      - name: commit data files
-        run: |
-           git config user.name github-actions
-           git config user.email github-actions@github.com
-           git add data/*
-           git add R/data-*
-           git add README.md
-           git add NEWS.md
-           git add DESCRIPTION
-           git commit -m "automated mdeb pull from update_mdeb_data.yml"
-           git push
-
-      - name: create gh-release
-        run: |
-             version <- readRDS(here::here("data-raw/version.rds"))
-             if(!is.null(version)){
-             usethis::use_github_release(publish = FALSE)
-             }
-        shell: Rscript {0}
+      # # Send email indicating if anything has changed
+      # - name: Send email
+      #   uses: dawidd6/action-send-mail@v17
+      #   with:
+      #     server_address: smtp.gmail.com
+      #     server_port: 465
+      #
+      #     username: ${{ secrets.MAIL_USERNAME }}
+      #     password: ${{ secrets.MAIL_PASSWORD }}
+      #
+      #     subject: auto MDEB data pull
+      #     to: andrew.beet@noaa.gov
+      #
+      #     from: 'NEFSCspatial updater <noreply@gmail.com>'
+      #     envelope_from: ${{ secrets.MAIL_USERNAME }}
+      #
+      #     html_body: file://${{github.workspace}}/data-raw/sendAsEmail.html
+      #
+      #
+      # - name: commit data files
+      #   run: |
+      #      git config user.name github-actions
+      #      git config user.email github-actions@github.com
+      #      git add data/*
+      #      git add R/data-*
+      #      git add README.md
+      #      git add NEWS.md
+      #      git add DESCRIPTION
+      #      git commit -m "automated mdeb pull from update_mdeb_data.yml"
+      #      git push
+      #
+      # - name: create gh-release
+      #   run: |
+      #        version <- readRDS(here::here("data-raw/version.rds"))
+      #        if(!is.null(version)){
+      #        usethis::use_github_release(publish = FALSE)
+      #        }
+      #   shell: Rscript {0}
