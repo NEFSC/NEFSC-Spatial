@@ -39,7 +39,7 @@ jobs:
 
       - name: Install packages
         run: |
-          install.packages(c("remotes","jsonlite", "dplyr", "httr2", "here", "sf","rmarkdown"))
+          install.packages("remotes")
           remotes::install_github("NEFSC/NEFSC-Spatial")
         shell: Rscript {0}
 
