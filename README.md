@@ -1,6 +1,5 @@
 # NEFSCspatial  <img src="man/figures/logo.png" align="right" height="200" alt = "package logo"/>
 
-[![gitleaks](https://github.com/NEFSC/NEFSC-Spatial/actions/workflows/secretScan.yml/badge.svg)](https://github.com/NEFSC/NEFSC-Spatial/actions/workflows/secretScan.yml) 
 [![gh-pages](https://github.com/NEFSC/NEFSC-Spatial/actions/workflows/pkgdown.yml/badge.svg)](https://github.com/NEFSC/NEFSC-Spatial/actions/workflows/pkgdown.yml)
 [![R-CMD-check](https://github.com/NEFSC/NEFSC-Spatial/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/NEFSC/NEFSC-Spatial/actions/workflows/R-CMD-check.yaml)
 
