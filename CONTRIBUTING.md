@@ -25,7 +25,7 @@ Please review our [Code of Conduct](CODE_OF_CONDUCT.md). It is in effect at all 
 
 ## :paperclip: Asking Questions
 
-GitHub issues are not the appropriate place to debug your specific project, but should be reserved for filing bugs and feature requests.
+GitHub issues are not the appropriate place to debug your specific project, but should be reserved for filing bugs and feature requests. For general questions please use the Discussion section of the repository.
 
 ## :whale: Acceptable Types
 
@@ -138,6 +138,7 @@ We appreciate pull requests! Before [forking the repo](https://help.github.com/e
 ## :shark: Coding Style
 
 Consistent formatting is an essential part of effective collaboration and communication. Reading, writing and reviewing code all benefit from following the standards and conventions of a project. Failure to do so will result in a prolonged review process that has to focus on updating the superficial aspects of your code, rather than improving its functionality and performance. This repo uses and adheres to the [tidyverse style guide](https://style.tidyverse.org/) and the [Air autoformatting tool](https://posit-dev.github.io/air/) that follows it. Please read and follow these guides as you make contributions to the project.
+`NEFSCspatial` is primarily a data package. All documentation of data objects should be added to the `R` folder with the name `data-[data-name].R` (using a hyphen). Any functions names should use snake_case
 
 ## :crab: Certificate of Origin
 
