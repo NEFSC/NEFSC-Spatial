@@ -1,6 +1,5 @@
 # NEFSCspatial  <img src="man/figures/logo.png" align="right" height="200" alt = "package logo"/>
 
-[![gitleaks](https://github.com/NEFSC/NEFSC-Spatial/actions/workflows/secretScan.yml/badge.svg)](https://github.com/NEFSC/NEFSC-Spatial/actions/workflows/secretScan.yml) 
 [![gh-pages](https://github.com/NEFSC/NEFSC-Spatial/actions/workflows/pkgdown.yml/badge.svg)](https://github.com/NEFSC/NEFSC-Spatial/actions/workflows/pkgdown.yml)
 [![R-CMD-check](https://github.com/NEFSC/NEFSC-Spatial/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/NEFSC/NEFSC-Spatial/actions/workflows/R-CMD-check.yaml)
 
@@ -20,4 +19,4 @@ This repository is a scientific product and is not official communication of the
 
 <img src="https://raw.githubusercontent.com/nmfs-fish-tools/nmfspalette/main/man/figures/noaa-fisheries-rgb-2line-horizontal-small.png" width="185" alt="NOAA Fisheries">
 
-[U.S. Department of Commerce](https://www.commerce.gov/) | [National Oceanographic and Atmospheric Administration](https://www.noaa.gov) | [NOAA Fisheries](https://www.fisheries.noaa.gov/) | [NEFSC](https://www.fisheries.noaa.gov/about/northeast-fisheries-science-center)
+[U.S. Department of Commerce](https://www.commerce.gov/) | [NOAA](https://www.noaa.gov) | [NOAA Fisheries](https://www.fisheries.noaa.gov/) | [NEFSC](https://www.fisheries.noaa.gov/about/northeast-fisheries-science-center)
