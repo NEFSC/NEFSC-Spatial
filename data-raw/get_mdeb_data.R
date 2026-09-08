@@ -49,7 +49,7 @@ get_mdeb_data <- function(dataset_name = NULL, dataset_id = NULL) {
     httr2::req_url_query(where = "1=1", outFields = "*", f = "geoJSON") |>
     httr2::req_perform()
   if (dataset$status_code == 200) {
-    dataset_sf = dataset |>
+    dataset_sf <- dataset |>
       httr2::resp_body_string() |>
       sf::read_sf()
     return(dataset_sf)

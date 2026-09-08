@@ -1,7 +1,7 @@
 #' @title AMAPPS 10 km Grid
 #'
-#' @description An \code{sf} object containing the Atlantic Marine Assessment Program for Protected Species (AMAPPS) 10 km grid. 
-#' The AMAPPS grid has a cell size of 10 km x 10 km, with an oblique Mercator projection. 
+#' @description An \code{sf} object containing the Atlantic Marine Assessment Program for Protected Species (AMAPPS) 10 km grid.
+#' The AMAPPS grid has a cell size of 10 km x 10 km, with an oblique Mercator projection.
 #' Grid cell values represent grid cell IDs.
 #'
 #' @format An \code{sf} object:
@@ -23,18 +23,17 @@
 #' \dontrun{
 #' # load terra
 #' library(terra)
-#' 
+#'
 #' # convert sf to SpatVector
-#' amapps_vec <- NEFSCspatial::amapps_grid |> as('SpatVector') 
-#' 
+#' amapps_vec <- NEFSCspatial::amapps_grid |> as('SpatVector')
+#'
 #' # empty raster from amapps_vec
 #' amapps_ras <- rast(amapps_vec, nrow = 328, ncol = 240)
-#' 
+#'
 #' # rasterize
 #' amapps <- rasterize(amapps_vec, amapps_ras, field = 'AMAPPS_10km_grid')
-#' 
+#'
 #' # visualize
 #' plot(amapps)
 #' }
 NULL
-
