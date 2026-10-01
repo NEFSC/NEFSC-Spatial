@@ -20,7 +20,7 @@
 
 find_mdeb_data <- function() {
   # url of the MDEB GIS Data Hub search API
-  mdeb_hub = "https://mdeb-nefsc-noaa.hub.arcgis.com/api/search/v1/collections/all/items"
+  mdeb_hub <- "https://mdeb-nefsc-noaa.hub.arcgis.com/api/search/v1/collections/all/items"
   # scrape json to get all feature services
   catalog_items <- mdeb_hub |>
     jsonlite::fromJSON()
@@ -46,7 +46,7 @@ find_mdeb_data <- function() {
     wp <- dataset_json_url |>
       jsonlite::fromJSON()
     # create tibble for output
-    av = wp$layers |>
+    av <- wp$layers |>
       dplyr::mutate(dataset_url) |>
       dplyr::mutate(url = paste0(url, '/', id)) |>
       dplyr::select(title, name, id, url) |>
