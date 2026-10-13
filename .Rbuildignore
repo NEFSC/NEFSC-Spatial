@@ -12,3 +12,5 @@
 other
 ^vignettes/articles$
 
+^\.positai$
+^\.claude$

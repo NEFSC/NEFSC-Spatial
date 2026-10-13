@@ -1,4 +1,4 @@
-name: pull data from MDEB data hub
+name: pull data from MDAT data hub
 
 on:
   push:
@@ -34,7 +34,6 @@ jobs:
         run: |
           sudo apt update
           sudo apt-get install libcurl4-openssl-dev libgit2-dev
-#          sudo apt-get install  libgdal-dev libcurl4-gnutls-dev libgit2-dev libudunits2-dev libharfbuzz-dev libfribidi-dev
         shell: bash
 
       - name: Set up R
@@ -48,11 +47,11 @@ jobs:
           remotes::install_github("NEFSC/NEFSC-Spatial")
         shell: Rscript {0}
 
-      - name: Pull MDEB data and save to repo
+      - name: Pull MDAT data and save to repo
         run: |
           options(timeout = 60 * 60 * 6)
-          source(here::here("data-raw/get_mdeb_for_package.R"))
-          get_mdeb_for_package()
+          source(here::here("data-raw/get_mdat_for_package.R"))
+          get_mdat_for_package()
         shell: Rscript {0}
 
    - name: Make Comparisons for commit
@@ -109,7 +108,7 @@ jobs:
       #     git add README.md
       #     git add NEWS.md
       #     git add DESCRIPTION
-      #     git commit -m "automated mdeb pull from update_mdeb_data yml"
+      #     git commit -m "automated mdat pull from update_mdat_data yml"
       #     git push
       #
       # - name: create gh-release
