@@ -1,4 +1,4 @@
-name: pull-data-from-MDEB-data-hub
+name: pull data from MDAT data hub
 
 on:
   workflow_dispatch:
@@ -32,7 +32,6 @@ jobs:
         with:
           r-version: '4.2.0'
 
-
       - name: Install system dependencies
         uses: r-lib/actions/setup-r-dependencies@v2
 
@@ -40,21 +39,19 @@ jobs:
         run: |
           sudo apt update
           sudo apt-get install libcurl4-openssl-dev libgit2-dev libudunits2-dev
-#          sudo apt-get install  libgdal-dev libcurl4-gnutls-dev libgit2-dev libudunits2-dev libharfbuzz-dev libfribidi-dev
         shell: bash
-
-
+        
       - name: Install packages
         run: |
           install.packages(c("remotes","here","httr2","jsonlite","dplyr","glue"))
           remotes::install_github("NEFSC/NEFSC-Spatial")
         shell: Rscript {0}
 
-      - name: Pull MDEB data and save to repo
+      - name: Pull MDAT data and save to repo
         run: |
           options(timeout = 60 * 60 * 6)
-          source(here::here("data-raw/get_mdeb_for_package.R"))
-          get_mdeb_for_package(overwrite = TRUE)
+          source(here::here("data-raw/get_mdat_for_package.R"))
+          get_mdat_for_package()
         shell: Rscript {0}
 
       # Create the Pull Request from dev if changes are detected

@@ -42,8 +42,8 @@ navbar:
     articles:
       text: Articles
       menu:
-      - text: MDEB Datasets
-        href: articles/mdeb_datasets.html
+      - text: MDAT Datasets
+        href: articles/mdat_datasets.html
       - text: Team Members
         href: articles/teamMembers.html
 
