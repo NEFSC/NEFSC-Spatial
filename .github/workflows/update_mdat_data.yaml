@@ -51,7 +51,7 @@ jobs:
         run: |
           options(timeout = 60 * 60 * 6)
           source(here::here("data-raw/get_mdat_for_package.R"))
-          get_mdat_for_package()
+          get_mdat_for_package(overwrite = TRUE)
         shell: Rscript {0}
 
       # Create the Pull Request from dev if changes are detected
