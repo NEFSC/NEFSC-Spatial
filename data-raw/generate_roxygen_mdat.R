@@ -1,17 +1,17 @@
 # function to generate a consistent Roxygen file for data documentation
 generate_roxygen_mdat <- function(dataset_name, title, description) {
-  
+
   # check that dataset_name has an *.rda ext
   stopifnot(endsWith(dataset_name, '.rda'))
-  
+
   # load data
   load(here::here('data', dataset_name))
-  
+
   # re-assign
   mdat_obj <- dataset_name |>
     tools::file_path_sans_ext() |>
     get()
-  
+
   # extract metadata
   geometry_type <- sf::st_geometry_type(mdat_obj) |> 
     unique() |> 
@@ -25,10 +25,14 @@ generate_roxygen_mdat <- function(dataset_name, title, description) {
   num_columns <- ncol(mdat_obj)
   
   # build the file path
-  file_path <- file.path("R", paste0("data-", tools::file_path_sans_ext(dataset_name), ".R"))
-  
+  file_path <- file.path(
+    "R",
+    paste0("data-", tools::file_path_sans_ext(dataset_name), ".R")
+  )
+
   # substitute values into the template
-  roxygen_content <- glue::glue("
+  roxygen_content <- glue::glue(
+    "
 #' { title }
 #'
 #' @description { description }
@@ -57,10 +61,12 @@ generate_roxygen_mdat <- function(dataset_name, title, description) {
 #' plot(sf::st_geometry({ tools::file_path_sans_ext(dataset_name) }))
 #' }}
 NULL
-")
-  
+"
+  )
+
   # write content to file
   writeLines(roxygen_content, con = file_path)
-  message(glue::glue("Generated Roxygen file for '{ tools::file_path_sans_ext(dataset_name) }' at: { file_path }"))
-  
+  message(glue::glue(
+    "Generated Roxygen file for '{ tools::file_path_sans_ext(dataset_name) }' at: { file_path }"
+  ))
 }

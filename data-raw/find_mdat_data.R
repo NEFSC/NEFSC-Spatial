@@ -46,7 +46,7 @@ find_mdat_data <- function() {
     wp <- dataset_json_url |>
       jsonlite::fromJSON()
     # create tibble for output
-    av = wp$layers |>
+    av <- wp$layers |>
       dplyr::mutate(dataset_url) |>
       dplyr::mutate(url = paste0(url, '/', id)) |>
       dplyr::select(title, name, id, url) |>
