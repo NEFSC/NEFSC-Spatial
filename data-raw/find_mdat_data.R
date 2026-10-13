@@ -1,9 +1,9 @@
-#' Find available data hosted on the MDEB (Marine Development and Ecology Branch) GIS Data Hub
+#' Find available data hosted on the MDAT (Marine Development and Advanced Technology Program) GIS Data Hub
 #' hosted on NOAA's Geoplatform
 #'
 #' @description
 #' This function retrieves the data available on the
-#' \href{https://mdeb-nefsc-noaa.hub.arcgis.com/}{MDEB GIS Data Hub}.
+#' \href{https://mdeb-nefsc-noaa.hub.arcgis.com/}{MDAT GIS Data Hub}.
 #'
 #' @return A tibble with the following columns:
 #' \item{title}{Name of the NOAA Geoplatform feature service}
@@ -13,21 +13,21 @@
 #'
 #' @examples
 #' # Retrieve a list of available data
-#' mdeb_data <- find_mdeb_data()
-#' mdeb_data
+#' mdat_data <- find_mdat_data()
+#' mdat_data
 #'
 #' @export
 
-find_mdeb_data <- function() {
-  # url of the MDEB GIS Data Hub search API
-  mdeb_hub <- "https://mdeb-nefsc-noaa.hub.arcgis.com/api/search/v1/collections/all/items"
+find_mdat_data <- function() {
+  # url of the MDAT GIS Data Hub search API
+  mdat_hub <- "https://mdeb-nefsc-noaa.hub.arcgis.com/api/search/v1/collections/all/items"
   # scrape json to get all feature services
-  catalog_items <- mdeb_hub |>
+  catalog_items <- mdat_hub |>
     jsonlite::fromJSON()
   # count the number of available services
   num_items <- catalog_items$numberMatched
   # pull all feature service items (API default = 10)
-  catalog_items_v2 <- paste0(mdeb_hub, "?limit=", num_items) |>
+  catalog_items_v2 <- paste0(mdat_hub, "?limit=", num_items) |>
     jsonlite::fromJSON()
   # extract metadata properties
   available_datasets <- catalog_items_v2$features$properties |>
