@@ -20,7 +20,7 @@
 
 find_mdat_data <- function() {
   # url of the MDAT GIS Data Hub search API
-  mdat_hub = "https://mdeb-nefsc-noaa.hub.arcgis.com/api/search/v1/collections/all/items"
+  mdat_hub <- "https://mdeb-nefsc-noaa.hub.arcgis.com/api/search/v1/collections/all/items"
   # scrape json to get all feature services
   catalog_items <- mdat_hub |>
     jsonlite::fromJSON()
