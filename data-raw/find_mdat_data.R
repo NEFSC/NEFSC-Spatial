@@ -6,10 +6,10 @@
 #' \href{https://mdeb-nefsc-noaa.hub.arcgis.com/}{MDAT GIS Data Hub}.
 #'
 #' @return A tibble with the following columns:
-#' \item{title}{Name of the NOAA Geoplatform feature service}
+#' \item{title}{Name of the NOAA GeoPlatform feature service}
 #' \item{name}{Name of the hosted feature layer in the feature service}
 #' \item{id}{Feature layer ID, a unique identifier assigned to layers within a feature service}
-#' \item{url}{URL of the NOAA Geoplatform feature layer}
+#' \item{url}{URL of the NOAA GeoPlatform feature layer}
 #'
 #' @examples
 #' # Retrieve a list of available data
