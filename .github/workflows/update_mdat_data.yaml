@@ -24,7 +24,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: set up pandoc
+      - name: Set up pandoc
         uses: r-lib/actions/setup-pandoc@v2
 
       - name: Set up R
