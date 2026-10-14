@@ -1,5 +1,5 @@
 #' Find available data hosted on the MDAT (Marine Development and Advanced Technology Program) GIS Data Hub
-#' hosted on NOAA's Geoplatform
+#' hosted on NOAA's GeoPlatform
 #'
 #' @description
 #' This function retrieves the data available on the
