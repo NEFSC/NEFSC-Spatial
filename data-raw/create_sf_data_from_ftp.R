@@ -15,13 +15,16 @@
 #'
 
 library(magrittr)
-source(here::here("data-raw","list_files_ftp.r"))
+source(here::here("data-raw", "list_files_ftp.r"))
 # list files found on ftp site
 ftpsite <- "ftp://ftp.nefsc.noaa.gov/pub/gis"
 #fileList <- NEFSCspatial::list_files_ftp(ftpsite)
 
-create_sf_data_from_ftp <- function(ftpsite,file = NULL,tempDir=here::here("data-raw/temp")) {
-
+create_sf_data_from_ftp <- function(
+  ftpsite,
+  file = NULL,
+  tempDir = here::here("data-raw/temp")
+) {
   # create temp dir if not already present
   if (!dir.exists(tempDir)) {
     dir.create(tempDir)
@@ -37,43 +40,39 @@ create_sf_data_from_ftp <- function(ftpsite,file = NULL,tempDir=here::here("data
   allFiles <- list_files_ftp(ftpsite)
 
   # filter shape files
-  shpFiles <- grep("shp$",allFiles,value=T)
+  shpFiles <- grep("shp$", allFiles, value = T)
 
   if (is.null(file)) {
     # process all files
   } else {
-    isPresent <- grepl(file,shpFiles)
+    isPresent <- grepl(file, shpFiles)
     if (any(isPresent)) {
       # process single file
       shpFiles <- shpFiles[isPresent]
     } else {
-      stop(paste0("Shapefile: ",file, " doesnt seem to be on the ftp server"))
+      stop(paste0("Shapefile: ", file, " doesnt seem to be on the ftp server"))
     }
   }
-
 
   # now create sf object for each shpfile
   # first find all files associated with shapefile, download, then make sf
-  for (afile in shpFiles){
-    shp <- tail(unlist(strsplit(afile,split = "\\/")),1)
-    fstr <- gsub(".shp","",shp)
-    message(paste0("Processing files related to  = ",shp))
+  for (afile in shpFiles) {
+    shp <- tail(unlist(strsplit(afile, split = "\\/")), 1)
+    fstr <- gsub(".shp", "", shp)
+    message(paste0("Processing files related to  = ", shp))
     # select all files to download for this shapefile
-    filesToDownload <- allFiles[grepl(fstr,allFiles)]
+    filesToDownload <- allFiles[grepl(fstr, allFiles)]
     for (ashp in filesToDownload) {
-      ashpfile <- gsub(paste0(ftpsite,"/"),"",ashp)
-      curl::curl_download(ashp,destfile = paste0(tempDir,"/",ashpfile))
+      ashpfile <- gsub(paste0(ftpsite, "/"), "", ashp)
+      curl::curl_download(ashp, destfile = paste0(tempDir, "/", ashpfile))
     }
 
-    layer <- sf::st_read(dsn=paste0(tempDir,"/",shp))
+    layer <- sf::st_read(dsn = paste0(tempDir, "/", shp))
 
-    centroids <-  sf::st_coordinates(sf::st_centroid(layer))
-    layer <- cbind(layer,centroids)
+    centroids <- sf::st_coordinates(sf::st_centroid(layer))
+    layer <- cbind(layer, centroids)
 
-    assign(fstr,layer)
+    assign(fstr, layer)
     do.call(myfun, list(as.name(fstr), overwrite = TRUE))
-
   }
-
-
 }

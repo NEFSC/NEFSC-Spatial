@@ -1,0 +1,69 @@
+name: pull data from MDAT data hub
+
+on:
+  workflow_dispatch:
+  schedule:
+    # uses UTC/GMT time (+ 5 hrs)
+    ## put on HOLD temporarily
+    - cron: "0 17 * * 6" # Every Saturday at 1200 hrs = 1700 UTC
+
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Set up pandoc
+        uses: r-lib/actions/setup-pandoc@v2
+
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: '4.2.0'
+
+      - name: Install system dependencies
+        uses: r-lib/actions/setup-r-dependencies@v2
+
+      - name: Install command line packages
+        run: |
+          sudo apt update
+          sudo apt-get install libcurl4-openssl-dev libgit2-dev libudunits2-dev
+        shell: bash
+        
+      - name: Install packages
+        run: |
+          install.packages(c("remotes","here","httr2","jsonlite","dplyr","glue"))
+          remotes::install_github("NEFSC/NEFSC-Spatial")
+        shell: Rscript {0}
+
+      - name: Pull MDAT data and save to repo
+        run: |
+          options(timeout = 60 * 60 * 6)
+          source(here::here("data-raw/get_mdat_for_package.R"))
+          get_mdat_for_package(overwrite = TRUE)
+        shell: Rscript {0}
+
+      # Create the Pull Request from dev if changes are detected
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v8.1.1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "chore: update external data"
+          title: "Automated Data Update"
+          body: |
+            This is an automated pull request containing the latest fetched data.
+            Please review the changes before merging.
+          branch: automated-data-update
+          base: dev
+          delete-branch: false

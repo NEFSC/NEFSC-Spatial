@@ -1,24 +1,24 @@
-#' Pull all content from MDEB data hub and create sf objects
+#' Pull all content from MDAT data hub and create sf objects
 #'
 #' Pulls the data and converts to sf, then saves as part of the package
 #'
 #'
 #'
 
-source(here::here("data-raw/find_mdeb_data.R"))
-source(here::here("data-raw/get_mdeb_data.R"))
-source(here::here("data-raw/generate_roxygen_mdeb.R"))
+source(here::here("data-raw/find_mdat_data.R"))
+source(here::here("data-raw/get_mdat_data.R"))
+source(here::here("data-raw/generate_roxygen_mdat.R"))
 
-get_mdeb_for_package <- function(overwrite = FALSE) {
-  # find all the data set on the MDEB HUB
-  datasets <- find_mdeb_data()
+get_mdat_for_package <- function(overwrite = FALSE) {
+  # find all the data set on the MDAT HUB
+  datasets <- find_mdat_data()
 
   # loop through each and save as rda file.
   # also create documentation for each dataset
   for (ids in 1:nrow(datasets)) {
     dataset <- datasets[ids, ]
     message("Processing: ", dataset$title)
-    data <- get_mdeb_data(dataset$title, dataset$id)
+    data <- get_mdat_data(dataset$title, dataset$id)
     if (!is.null(data)) {
       # Save the data as an R object in the package
       dataset_name <- tolower(gsub("SMIT_", "", dataset$name))
@@ -52,7 +52,7 @@ get_mdeb_for_package <- function(overwrite = FALSE) {
         )
       }
       # Generate Roxygen data doc
-      generate_roxygen_mdeb(
+      generate_roxygen_mdat(
         dataset_name = paste0(dataset_name, '.rda'),
         title = dataset$title,
         description = modified_dataset_description
