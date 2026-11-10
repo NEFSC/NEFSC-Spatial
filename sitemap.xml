@@ -1,5 +1,7 @@
 <urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
 <url><loc>https://nefsc.github.io/NEFSC-Spatial/404.html</loc></url>
+<url><loc>https://nefsc.github.io/NEFSC-Spatial/CODE_OF_CONDUCT.html</loc></url>
+<url><loc>https://nefsc.github.io/NEFSC-Spatial/CONTRIBUTING.html</loc></url>
 <url><loc>https://nefsc.github.io/NEFSC-Spatial/LICENSE-text.html</loc></url>
 <url><loc>https://nefsc.github.io/NEFSC-Spatial/articles/NEFSCspatial.html</loc></url>
 <url><loc>https://nefsc.github.io/NEFSC-Spatial/articles/index.html</loc></url>
@@ -8,8 +10,6 @@
 <url><loc>https://nefsc.github.io/NEFSC-Spatial/authors.html</loc></url>
 <url><loc>https://nefsc.github.io/NEFSC-Spatial/index.html</loc></url>
 <url><loc>https://nefsc.github.io/NEFSC-Spatial/news/index.html</loc></url>
-<url><loc>https://nefsc.github.io/NEFSC-Spatial/reference/BTS_Strata.html</loc></url>
-<url><loc>https://nefsc.github.io/NEFSC-Spatial/reference/EcoMon_Strata.html</loc></url>
 <url><loc>https://nefsc.github.io/NEFSC-Spatial/reference/GillnetClosureAreas_20211021.html</loc></url>
 <url><loc>https://nefsc.github.io/NEFSC-Spatial/reference/Great_South_Channel_Restricted_Trap_Pot_Area.html</loc></url>
 <url><loc>https://nefsc.github.io/NEFSC-Spatial/reference/Herring_Management_Areas.html</loc></url>
@@ -21,14 +21,15 @@
 <url><loc>https://nefsc.github.io/NEFSC-Spatial/reference/NEFSCspatial-package.html</loc></url>
 <url><loc>https://nefsc.github.io/NEFSC-Spatial/reference/Neus_atlantis.html</loc></url>
 <url><loc>https://nefsc.github.io/NEFSC-Spatial/reference/Scallop_Rotational_Areas_20230411.html</loc></url>
-<url><loc>https://nefsc.github.io/NEFSC-Spatial/reference/Shellfish_Strata.html</loc></url>
-<url><loc>https://nefsc.github.io/NEFSC-Spatial/reference/Shrimp_Strata.html</loc></url>
 <url><loc>https://nefsc.github.io/NEFSC-Spatial/reference/Statistical_Areas_2010.html</loc></url>
 <url><loc>https://nefsc.github.io/NEFSC-Spatial/reference/Statistical_Areas_2010_withNames.html</loc></url>
 <url><loc>https://nefsc.github.io/NEFSC-Spatial/reference/amapps_grid.html</loc></url>
+<url><loc>https://nefsc.github.io/NEFSC-Spatial/reference/bts_strata.html</loc></url>
 <url><loc>https://nefsc.github.io/NEFSC-Spatial/reference/coastspan_strata.html</loc></url>
 <url><loc>https://nefsc.github.io/NEFSC-Spatial/reference/csbll_stations.html</loc></url>
 <url><loc>https://nefsc.github.io/NEFSC-Spatial/reference/csbll_strata.html</loc></url>
+<url><loc>https://nefsc.github.io/NEFSC-Spatial/reference/ecomon_stations.html</loc></url>
+<url><loc>https://nefsc.github.io/NEFSC-Spatial/reference/ecomon_strata.html</loc></url>
 <url><loc>https://nefsc.github.io/NEFSC-Spatial/reference/edna_stations.html</loc></url>
 <url><loc>https://nefsc.github.io/NEFSC-Spatial/reference/edna_strata.html</loc></url>
 <url><loc>https://nefsc.github.io/NEFSC-Spatial/reference/epu_sf.html</loc></url>
@@ -47,6 +48,7 @@
 <url><loc>https://nefsc.github.io/NEFSC-Spatial/reference/scallop_strata.html</loc></url>
 <url><loc>https://nefsc.github.io/NEFSC-Spatial/reference/scallop_strata_historic.html</loc></url>
 <url><loc>https://nefsc.github.io/NEFSC-Spatial/reference/seal_stations.html</loc></url>
+<url><loc>https://nefsc.github.io/NEFSC-Spatial/reference/shrimp_strata.html</loc></url>
 <url><loc>https://nefsc.github.io/NEFSC-Spatial/reference/turtle_strata.html</loc></url>
 </urlset>
 

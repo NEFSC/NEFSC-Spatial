@@ -1,0 +1,100 @@
+# Package index
+
+## Fishing Areas / Management Areas
+
+Areas in which fishing is reported
+
+- [`Statistical_Areas_2010`](https://nefsc.github.io/NEFSC-Spatial/reference/Statistical_Areas_2010.md)
+  : Greater Atlantic Region Statistical Areas
+- [`Statistical_Areas_2010_withNames`](https://nefsc.github.io/NEFSC-Spatial/reference/Statistical_Areas_2010_withNames.md)
+  : Greater Atlantic Region Statistical Areas
+- [`NAFO_Divisions_2021_line_enclosed`](https://nefsc.github.io/NEFSC-Spatial/reference/NAFO_Divisions_2021_line_enclosed.md)
+  : NAFO Divisions (Bounded)
+- [`NAFO_Divisions_2021_line_not_enclosed`](https://nefsc.github.io/NEFSC-Spatial/reference/NAFO_Divisions_2021_line_not_enclosed.md)
+  : NAFO Divisions (Not Bounded)
+- [`NAFO_Divisions_2021_poly_clipped`](https://nefsc.github.io/NEFSC-Spatial/reference/NAFO_Divisions_2021_poly_clipped.md)
+  : NAFO Divisions (Polygon clipped to coastline)
+- [`NAFO_Divisions_2021_poly_not_clipped`](https://nefsc.github.io/NEFSC-Spatial/reference/NAFO_Divisions_2021_poly_not_clipped.md)
+  : NAFO Divisions (Polygon not clipped to coastline)
+- [`final_mass_inshore_stat`](https://nefsc.github.io/NEFSC-Spatial/reference/final_mass_inshore_stat.md)
+  : Massachusetts Inshore Statistical Areas
+- [`Herring_Management_Areas`](https://nefsc.github.io/NEFSC-Spatial/reference/Herring_Management_Areas.md)
+  : Herring Management Areas
+- [`epu_sf`](https://nefsc.github.io/NEFSC-Spatial/reference/epu_sf.md)
+  : Ecological Production Units
+
+## Closed Areas
+
+Areas in which fishing is restricted
+
+- [`GillnetClosureAreas_20211021`](https://nefsc.github.io/NEFSC-Spatial/reference/GillnetClosureAreas_20211021.md)
+  : Gillnet Closure Areas
+- [`LMA1_Restricted_Area_FR`](https://nefsc.github.io/NEFSC-Spatial/reference/LMA1_Restricted_Area_FR.md)
+  : LMA 1 Restricted Area
+- [`Great_South_Channel_Restricted_Trap_Pot_Area`](https://nefsc.github.io/NEFSC-Spatial/reference/Great_South_Channel_Restricted_Trap_Pot_Area.md)
+  : Great South Channel Restricted Area
+- [`Scallop_Rotational_Areas_20230411`](https://nefsc.github.io/NEFSC-Spatial/reference/Scallop_Rotational_Areas_20230411.md)
+  : Scallop Restricted Area
+
+## Protected Species
+
+- [`amapps_grid`](https://nefsc.github.io/NEFSC-Spatial/reference/amapps_grid.md)
+  : AMAPPS 10 km Grid
+
+## Survey Strata
+
+Areas in which survey sampling is reported
+
+- [`bts_strata`](https://nefsc.github.io/NEFSC-Spatial/reference/bts_strata.md)
+  : Bottom Trawl Survey
+- [`coastspan_strata`](https://nefsc.github.io/NEFSC-Spatial/reference/coastspan_strata.md)
+  : Cooperative Atlantic States Shark Pupping and Nursery Survey
+- [`csbll_strata`](https://nefsc.github.io/NEFSC-Spatial/reference/csbll_strata.md)
+  : Coastal Shark Bottom Longline Survey
+- [`ecomon_strata`](https://nefsc.github.io/NEFSC-Spatial/reference/ecomon_strata.md)
+  : Ecosystem Monitoring Survey
+- [`edna_strata`](https://nefsc.github.io/NEFSC-Spatial/reference/edna_strata.md)
+  : eDNA Survey
+- [`gombll_strata`](https://nefsc.github.io/NEFSC-Spatial/reference/gombll_strata.md)
+  : Gulf of Maine Bottom Longline Survey
+- [`gombll_substrata`](https://nefsc.github.io/NEFSC-Spatial/reference/gombll_substrata.md)
+  : Gulf of Maine Bottom Longline Survey
+- [`hl_strata`](https://nefsc.github.io/NEFSC-Spatial/reference/hl_strata.md)
+  : Hook and Line Survey
+- [`mass_inshore_strata`](https://nefsc.github.io/NEFSC-Spatial/reference/mass_inshore_strata.md)
+  : Massachusetts Inshore State Survey
+- [`mmst_strata`](https://nefsc.github.io/NEFSC-Spatial/reference/mmst_strata.md)
+  : Marine Mammal and Sea Turtle Survey
+- [`narw_strata`](https://nefsc.github.io/NEFSC-Spatial/reference/narw_strata.md)
+  : North Atlantic Right Whale Aerial Survey
+- [`oq_strata`](https://nefsc.github.io/NEFSC-Spatial/reference/oq_strata.md)
+  : Atlantic Surfclam and Ocean Quahog Survey
+- [`sc_strata`](https://nefsc.github.io/NEFSC-Spatial/reference/sc_strata.md)
+  : Atlantic Surfclam and Ocean Quahog Survey
+- [`scallop_strata`](https://nefsc.github.io/NEFSC-Spatial/reference/scallop_strata.md)
+  : Sea Scallop Survey
+- [`scallop_strata_historic`](https://nefsc.github.io/NEFSC-Spatial/reference/scallop_strata_historic.md)
+  : Sea Scallop Survey
+- [`shrimp_strata`](https://nefsc.github.io/NEFSC-Spatial/reference/shrimp_strata.md)
+  : Northern Shrimp Survey
+- [`turtle_strata`](https://nefsc.github.io/NEFSC-Spatial/reference/turtle_strata.md)
+  : Turtle Ecology Survey
+- [`csbll_stations`](https://nefsc.github.io/NEFSC-Spatial/reference/csbll_stations.md)
+  : Coastal Shark Bottom Longline Survey
+- [`ecomon_stations`](https://nefsc.github.io/NEFSC-Spatial/reference/ecomon_stations.md)
+  : Ecosystem Monitoring Survey
+- [`edna_stations`](https://nefsc.github.io/NEFSC-Spatial/reference/edna_stations.md)
+  : eDNA Survey
+- [`seal_stations`](https://nefsc.github.io/NEFSC-Spatial/reference/seal_stations.md)
+  : Seal Aerial Survey
+- [`pam_deployments`](https://nefsc.github.io/NEFSC-Spatial/reference/pam_deployments.md)
+  : Passive Acoustic Monitoring Survey
+- [`narw_lines`](https://nefsc.github.io/NEFSC-Spatial/reference/narw_lines.md)
+  : North Atlantic Right Whale Aerial Survey
+
+## Models
+
+Areas defining model boundaries
+
+- [`Neus_atlantis`](https://nefsc.github.io/NEFSC-Spatial/reference/Neus_atlantis.md)
+  : Northeast US (NEUS) atlantis model domain
