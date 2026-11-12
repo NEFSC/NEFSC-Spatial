@@ -1,19 +1,16 @@
-# MDEB datasets
+# MDAT datasets
 
 The Northeast Fisheries Science Center Marine Development [GIS Data
 Hub](https://mdeb-nefsc-noaa.hub.arcgis.com/) created by the Marine
-Development and Ecology Branch (MDEB) host many spatial datasets. The
-`NEFSCspatial` package provides access to these datasets and serves them
-up as `sf` objects.
+Development and Advanced Technology (MDAT) program host many spatial
+datasets. The `NEFSCspatial` package provides access to these datasets
+and serves them up as `sf` objects.
 
 A current list of all data sets included in the package:
 
 | title | dataset_name |
 |----|----|
 | Passive Acoustic Monitoring Survey | pam_deployments |
-| Cooperative Atlantic States Shark Pupping and Nursery Survey | coastspan_strata |
-| Marine Mammal and Sea Turtle Survey | mmst_strata |
-| Gulf of Maine Bottom Longline Survey | gombll_strata |
 | Sea Scallop Survey | scallop_strata |
 | Sea Scallop Survey | scallop_strata_historic |
 | North Atlantic Right Whale Aerial Survey | narw_lines |
@@ -25,6 +22,9 @@ A current list of all data sets included in the package:
 | Seal Aerial Survey | seal_stations |
 | Atlantic Surfclam and Ocean Quahog Survey | oq_strata |
 | Atlantic Surfclam and Ocean Quahog Survey | sc_strata |
+| Cooperative Atlantic States Shark Pupping and Nursery Survey | coastspan_strata |
+| Marine Mammal and Sea Turtle Survey | mmst_strata |
+| Gulf of Maine Bottom Longline Survey | gombll_strata |
 | Hook and Line Survey | hl_strata |
 | eDNA Survey | edna_stations |
 | eDNA Survey | edna_strata |
@@ -43,4 +43,4 @@ gombll_substrata |>
 ```
 
 ![Gulf of Maine Bottom Longline Survey substrata
-plot](mdeb_datasets_files/figure-html/plotecomon-1.png)
+plot](mdat_datasets_files/figure-html/plotecomon-1.png)

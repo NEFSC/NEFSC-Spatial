@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>MDEB datasets • NEFSCspatial</title>
+<title>MDAT datasets • NEFSCspatial</title>
 <!-- favicons --><link rel="icon" type="image/png" sizes="96x96" href="../favicon-96x96.png">
 <link rel="icon" type="”image/svg+xml”" href="../favicon.svg">
 <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
@@ -22,7 +22,7 @@
 <script src="../deps/bootstrap-5.3.8/bootstrap.bundle.min.js"></script><link href="../deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
 <link href="../deps/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet">
 <script src="../deps/headroom-0.11.0/headroom.min.js"></script><script src="../deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="../deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="../deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="../deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="../deps/search-1.0.0/fuse.min.js"></script><script src="../deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="../pkgdown.js"></script><link href="../extra.css" rel="stylesheet">
-<meta property="og:title" content="MDEB datasets">
+<meta property="og:title" content="MDAT datasets">
 </head>
 <body>
     <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
@@ -70,19 +70,20 @@
 
 <div class="row">
   <main id="main" class="col-md-9"><div class="page-header">
-      <img src="../logo.png" class="logo" alt=""><h1>MDEB datasets</h1>
+      <img src="../logo.png" class="logo" alt=""><h1>MDAT datasets</h1>
             
       
-      <small class="dont-index">Source: <a href="https://github.com/NEFSC/NEFSC-Spatial/blob/main/vignettes/mdeb_datasets.Rmd" class="external-link"><code>vignettes/mdeb_datasets.Rmd</code></a></small>
-      <div class="d-none name"><code>mdeb_datasets.Rmd</code></div>
+      <small class="dont-index">Source: <a href="https://github.com/NEFSC/NEFSC-Spatial/blob/main/vignettes/mdat_datasets.Rmd" class="external-link"><code>vignettes/mdat_datasets.Rmd</code></a></small>
+      <div class="d-none name"><code>mdat_datasets.Rmd</code></div>
     </div>
 
     
     
 <p>The Northeast Fisheries Science Center Marine Development <a href="https://mdeb-nefsc-noaa.hub.arcgis.com/" class="external-link">GIS Data Hub</a> created
-by the Marine Development and Ecology Branch (MDEB) host many spatial
-datasets. The <code>NEFSCspatial</code> package provides access to these
-datasets and serves them up as <code>sf</code> objects.</p>
+by the Marine Development and Advanced Technology (MDAT) program host
+many spatial datasets. The <code>NEFSCspatial</code> package provides
+access to these datasets and serves them up as <code>sf</code>
+objects.</p>
 <p>A current list of all data sets included in the package:</p>
 <div id="mwlefoodfi" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>#mwlefoodfi table {
@@ -544,18 +545,6 @@ datasets and serves them up as <code>sf</code> objects.</p>
 <td headers="dataset_name" class="gt_row gt_left">pam_deployments</td>
 </tr>
 <tr>
-<td headers="title" class="gt_row gt_left">Cooperative Atlantic States Shark Pupping and Nursery Survey</td>
-<td headers="dataset_name" class="gt_row gt_left">coastspan_strata</td>
-</tr>
-<tr>
-<td headers="title" class="gt_row gt_left">Marine Mammal and Sea Turtle Survey</td>
-<td headers="dataset_name" class="gt_row gt_left">mmst_strata</td>
-</tr>
-<tr>
-<td headers="title" class="gt_row gt_left">Gulf of Maine Bottom Longline Survey</td>
-<td headers="dataset_name" class="gt_row gt_left">gombll_strata</td>
-</tr>
-<tr>
 <td headers="title" class="gt_row gt_left">Sea Scallop Survey</td>
 <td headers="dataset_name" class="gt_row gt_left">scallop_strata</td>
 </tr>
@@ -600,6 +589,18 @@ datasets and serves them up as <code>sf</code> objects.</p>
 <td headers="dataset_name" class="gt_row gt_left">sc_strata</td>
 </tr>
 <tr>
+<td headers="title" class="gt_row gt_left">Cooperative Atlantic States Shark Pupping and Nursery Survey</td>
+<td headers="dataset_name" class="gt_row gt_left">coastspan_strata</td>
+</tr>
+<tr>
+<td headers="title" class="gt_row gt_left">Marine Mammal and Sea Turtle Survey</td>
+<td headers="dataset_name" class="gt_row gt_left">mmst_strata</td>
+</tr>
+<tr>
+<td headers="title" class="gt_row gt_left">Gulf of Maine Bottom Longline Survey</td>
+<td headers="dataset_name" class="gt_row gt_left">gombll_strata</td>
+</tr>
+<tr>
 <td headers="title" class="gt_row gt_left">Hook and Line Survey</td>
 <td headers="dataset_name" class="gt_row gt_left">hl_strata</td>
 </tr>
@@ -632,7 +633,7 @@ of the <code>gombll_substrata</code> dataset:</p>
 <code class="sourceCode R"><span><span class="va">gombll_substrata</span> <span class="op">|&gt;</span> </span>
 <span>  <span class="fu">ggplot2</span><span class="fu">::</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span> </span>
 <span>  <span class="fu">ggplot2</span><span class="fu">::</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggsf.html" class="external-link">geom_sf</a></span><span class="op">(</span><span class="fu">ggplot2</span><span class="fu">::</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>fill <span class="op">=</span> <span class="va">SUBSTRATA</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
-<p><img src="mdeb_datasets_files/figure-html/plotecomon-1.png" class="r-plt" alt="Gulf of Maine Bottom Longline Survey substrata plot" width="700"></p>
+<p><img src="mdat_datasets_files/figure-html/plotecomon-1.png" class="r-plt" alt="Gulf of Maine Bottom Longline Survey substrata plot" width="700"></p>
   </main>
 </div>
 
