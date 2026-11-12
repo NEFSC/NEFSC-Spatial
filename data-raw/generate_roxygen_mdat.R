@@ -1,5 +1,5 @@
 # function to generate a consistent Roxygen file for data documentation
-generate_roxygen_mdeb <- function(dataset_name, title, description) {
+generate_roxygen_mdat <- function(dataset_name, title, description) {
   # check that dataset_name has an *.rda ext
   stopifnot(endsWith(dataset_name, '.rda'))
 

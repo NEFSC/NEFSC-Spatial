@@ -1,8 +1,8 @@
 ---
-title: "MDEB datasets"
+title: "MDAT datasets"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{MDEB datasets}
+  %\VignetteIndexEntry{MDAT datasets}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -18,7 +18,7 @@ knitr::opts_chunk$set(
 library(NEFSCspatial)
 ```
 
-The Northeast Fisheries Science Center Marine Development [GIS Data Hub](https://mdeb-nefsc-noaa.hub.arcgis.com/) created by the Marine Development and Ecology Branch (MDEB) host many spatial datasets. The `NEFSCspatial` package provides access to these datasets and serves them up as `sf` objects.
+The Northeast Fisheries Science Center Marine Development [GIS Data Hub](https://mdeb-nefsc-noaa.hub.arcgis.com/) created by the Marine Development and Advanced Technology (MDAT) program host many spatial datasets. The `NEFSCspatial` package provides access to these datasets and serves them up as `sf` objects.
 
 A current list of all data sets included in the package:
 
