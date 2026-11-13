@@ -5,7 +5,7 @@ all_data <- data(package = 'NEFSCspatial')
 
 ## extract names
 data_names <- all_data$results[, 'Item']
-data_names <- data_names[!data_names %in% c('ecomon_stations')]
+# data_names <- data_names[!data_names %in% c('ecomon_stations')]
 
 ## loop through each dataset
 for (i in data_names) {
@@ -19,8 +19,9 @@ for (i in data_names) {
   # dimensions
   num_features <- nrow(data_obj)
   num_columns <- ncol(data_obj)
+  num_geoms <- sum(vapply(data_obj, function(col) inherits(col, 'sfc'), TRUE)) # from sf:::print.sf()
   data_dim <- glue::glue(
-    "#'   \\item{{Features}}{{{ num_features } x { num_columns }}"
+    "#'   \\item{{Features}}{{{ num_features } x { num_columns - num_geoms }}"
   )
 
   # build the file path
