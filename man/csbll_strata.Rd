@@ -11,7 +11,7 @@ An \code{sf} object:
 \item{Dimension}{XY}
 \item{Bounding box}{xmin: -81.7 ymin: 24.4 xmax: -74.4 ymax: 38.5}
 \item{Projected CRS}{WGS 84}
-\item{Features}{1 x 5}
+\item{Features}{1 x 4}
 \item{Metadata}{See source}
 }
 }

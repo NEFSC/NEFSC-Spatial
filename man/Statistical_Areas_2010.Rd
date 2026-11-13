@@ -11,7 +11,7 @@ An \code{sf} object:
 \item{Dimension}{XY}
 \item{Bounding box}{xmin: -81.53406 ymin: 24 xmax: -42 ymax: 52.25}
 \item{Geodetic CRS}{NAD83}
-\item{Features}{135 x 4}
+\item{Features}{135 x 3}
 \item{Metadata}{See source}
 }
 }
