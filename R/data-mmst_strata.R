@@ -1,6 +1,6 @@
 #' Marine Mammal and Sea Turtle Survey
 #'
-#' @description An \code{sf} object containing spatial data for the Marine Mammal and Sea Turtle Survey.
+#' @description An \code{sf} object containing spatial data for the Marine Mammal and Sea Turtle Survey. Scientific survey footprint for the Marine Mammal and Sea Turtle Survey.
 #'
 #' @format An \code{sf} object:
 #' \describe{

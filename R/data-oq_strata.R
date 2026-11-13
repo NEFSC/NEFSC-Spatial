@@ -1,6 +1,6 @@
 #' Atlantic Surfclam and Ocean Quahog Survey
 #'
-#' @description An \code{sf} object containing spatial data for the Atlantic Surfclam and Ocean Quahog Survey. Scientific survey strata for Ocean Quahog Survey.
+#' @description An \code{sf} object containing spatial data for the Atlantic Surfclam and Ocean Quahog Survey. Scientific survey strata for the Ocean Quahog Survey.
 #'
 #' @format An \code{sf} object:
 #' \describe{

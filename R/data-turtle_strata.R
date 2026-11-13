@@ -1,6 +1,6 @@
 #' Turtle Ecology Survey
 #'
-#' @description An \code{sf} object containing spatial data for the Turtle Ecology Survey.
+#' @description An \code{sf} object containing spatial data for the Turtle Ecology Survey. Scientific survey footprint for the Turtle Ecology Survey.
 #'
 #' @format An \code{sf} object:
 #' \describe{

@@ -1,6 +1,6 @@
 #' North Atlantic Right Whale Aerial Survey
 #'
-#' @description An \code{sf} object containing spatial data for the North Atlantic Right Whale Aerial Survey. Scientific survey strata for the North Atlantic Right Whale Aerial Survey.
+#' @description An \code{sf} object containing spatial data for the North Atlantic Right Whale Aerial Survey. Scientific survey footprint for the North Atlantic Right Whale Aerial Survey.
 #'
 #' @format An \code{sf} object:
 #' \describe{

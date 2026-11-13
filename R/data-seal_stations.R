@@ -1,6 +1,6 @@
 #' Seal Aerial Survey
 #'
-#' @description An \code{sf} object containing spatial data for the Seal Aerial Survey.
+#' @description An \code{sf} object containing spatial data for the Seal Aerial Survey. Sampling stations for the Seal Aerial Survey.
 #'
 #' @format An \code{sf} object:
 #' \describe{

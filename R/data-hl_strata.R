@@ -1,6 +1,6 @@
 #' Hook and Line Survey
 #'
-#' @description An \code{sf} object containing spatial data for the Hook and Line Survey.
+#' @description An \code{sf} object containing spatial data for the Hook and Line Survey. Scientific survey strata for the Hook and Line Survey. Note that the survey strata are still under review and the geographic extent displayed here is tentative.
 #'
 #' @format An \code{sf} object:
 #' \describe{

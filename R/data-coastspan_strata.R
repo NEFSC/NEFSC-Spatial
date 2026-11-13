@@ -1,6 +1,6 @@
 #' Cooperative Atlantic States Shark Pupping and Nursery Survey
 #'
-#' @description An \code{sf} object containing spatial data for the Cooperative Atlantic States Shark Pupping and Nursery Survey.
+#' @description An \code{sf} object containing spatial data for the Cooperative Atlantic States Shark Pupping and Nursery Survey. Scientific survey footprint for the Cooperative Atlantic States Shark Pupping and Nursery Survey.
 #'
 #' @format An \code{sf} object:
 #' \describe{
