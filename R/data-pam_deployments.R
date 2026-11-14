@@ -1,6 +1,6 @@
 #' Passive Acoustic Monitoring Survey
 #'
-#' @description An \code{sf} object containing spatial data for the Passive Acoustic Monitoring Survey.
+#' @description An \code{sf} object containing spatial data for the Passive Acoustic Monitoring Survey. Locations and details for devices deployed as part of the Passive Acoustic Monitoring Survey.
 #'
 #' @format An \code{sf} object:
 #' \describe{
@@ -8,7 +8,7 @@
 #'   \item{Dimension}{NA}
 #'   \item{Bounding box}{xmin: -75.7 ymin: 36.5 xmax: -66.9 ymax: 44.8}
 #'   \item{Projected CRS}{WGS 84}
-#'   \item{Features}{82 x 23}
+#'   \item{Features}{81 x 25}
 #'   \item{Metadata}{See source}
 #' }
 #'

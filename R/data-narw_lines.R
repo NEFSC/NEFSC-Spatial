@@ -8,7 +8,7 @@
 #'   \item{Dimension}{NA}
 #'   \item{Bounding box}{xmin: -76 ymin: 36.7 xmax: -66.9 ymax: 44.8}
 #'   \item{Projected CRS}{WGS 84}
-#'   \item{Features}{80 x 6}
+#'   \item{Features}{17 x 7}
 #'   \item{Metadata}{See source}
 #' }
 #'

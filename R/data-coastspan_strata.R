@@ -1,6 +1,6 @@
 #' Cooperative Atlantic States Shark Pupping and Nursery Survey
 #'
-#' @description An \code{sf} object containing spatial data for the Cooperative Atlantic States Shark Pupping and Nursery Survey.
+#' @description An \code{sf} object containing spatial data for the Cooperative Atlantic States Shark Pupping and Nursery Survey. Scientific survey footprint for the Cooperative Atlantic States Shark Pupping and Nursery Survey.
 #'
 #' @format An \code{sf} object:
 #' \describe{
@@ -8,7 +8,7 @@
 #'   \item{Dimension}{XY}
 #'   \item{Bounding box}{xmin: -81.6 ymin: 27.1 xmax: -74.9 ymax: 39.2}
 #'   \item{Projected CRS}{WGS 84}
-#'   \item{Features}{7 x 5}
+#'   \item{Features}{7 x 6}
 #'   \item{Metadata}{See source}
 #' }
 #'

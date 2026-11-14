@@ -4,11 +4,11 @@
 #'
 #' @format An \code{sf} object:
 #' \describe{
-#'   \item{Geometry type}{MULTIPOLYGON}
+#'   \item{Geometry type}{POLYGON}
 #'   \item{Dimension}{XY}
-#'   \item{Bounding box}{xmin: -76 ymin: 35.1 xmax: -65.2 ymax: 44.5}
+#'   \item{Bounding box}{xmin: -76.2 ymin: 34.4 xmax: -65.2 ymax: 44.5}
 #'   \item{Projected CRS}{WGS 84}
-#'   \item{Features}{48 x 11}
+#'   \item{Features}{1 x 6}
 #'   \item{Metadata}{See source}
 #' }
 #'

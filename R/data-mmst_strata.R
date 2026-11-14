@@ -1,6 +1,6 @@
 #' Marine Mammal and Sea Turtle Survey
 #'
-#' @description An \code{sf} object containing spatial data for the Marine Mammal and Sea Turtle Survey.
+#' @description An \code{sf} object containing spatial data for the Marine Mammal and Sea Turtle Survey. Scientific survey footprint for the Marine Mammal and Sea Turtle Survey.
 #'
 #' @format An \code{sf} object:
 #' \describe{
@@ -8,7 +8,7 @@
 #'   \item{Dimension}{XY}
 #'   \item{Bounding box}{xmin: -82.1 ymin: 24.2 xmax: -61.8 ymax: 45.2}
 #'   \item{Projected CRS}{WGS 84}
-#'   \item{Features}{7 x 6}
+#'   \item{Features}{7 x 7}
 #'   \item{Metadata}{See source}
 #' }
 #'

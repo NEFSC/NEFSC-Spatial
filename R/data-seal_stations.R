@@ -1,6 +1,6 @@
 #' Seal Aerial Survey
 #'
-#' @description An \code{sf} object containing spatial data for the Seal Aerial Survey.
+#' @description An \code{sf} object containing spatial data for the Seal Aerial Survey. Sampling stations for the Seal Aerial Survey.
 #'
 #' @format An \code{sf} object:
 #' \describe{
@@ -8,7 +8,7 @@
 #'   \item{Dimension}{NA}
 #'   \item{Bounding box}{xmin: -70.9 ymin: 41.3 xmax: -67 ymax: 44.9}
 #'   \item{Projected CRS}{WGS 84}
-#'   \item{Features}{1026 x 14}
+#'   \item{Features}{1026 x 15}
 #'   \item{Metadata}{See source}
 #' }
 #'
