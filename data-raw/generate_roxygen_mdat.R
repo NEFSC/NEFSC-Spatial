@@ -7,21 +7,22 @@ generate_roxygen_mdat <- function(dataset_name, title, description) {
   load(here::here('data', dataset_name))
 
   # re-assign
-  mdeb_obj <- dataset_name |>
+  mdat_obj <- dataset_name |>
     tools::file_path_sans_ext() |>
     get()
 
   # extract metadata
-  geometry_type <- sf::st_geometry_type(mdeb_obj) |>
+  geometry_type <- sf::st_geometry_type(mdat_obj) |>
     unique() |>
     as.character()
-  dimension <- sf::st_dimension(mdeb_obj) |>
+  dimension <- sf::st_dimension(mdat_obj) |>
     unique()
   dimension_type <- ifelse(dimension == 2, 'XY', NA_character_)
-  bbox <- sf::st_bbox(mdeb_obj)
-  projection <- sf::st_crs(mdeb_obj, parameters = TRUE)$Name
-  num_features <- nrow(mdeb_obj)
-  num_columns <- ncol(mdeb_obj)
+  bbox <- sf::st_bbox(mdat_obj)
+  projection <- sf::st_crs(mdat_obj, parameters = TRUE)$Name
+  geoms <- which(vapply(mdat_obj, function(col) inherits(col, 'sfc'), TRUE)) # from sf:::print.sf()
+  num_features <- nrow(mdat_obj)
+  num_columns <- ncol(mdat_obj) - length(geoms)
 
   # build the file path
   file_path <- file.path(
