@@ -1,5 +1,12 @@
 # Changelog
 
+## NEFSCspatial 1.1.0
+
+### Minor changes
+
+All MDEB data sets now hosted by Marine Development and Advanced
+Technology (MDAT) have been updated along with documentation
+
 ## NEFSCspatial 1.0.0
 
 ### Major changes

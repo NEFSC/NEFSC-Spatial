@@ -33,7 +33,7 @@ An `sf` object:
 
 - Features:
 
-  78720 x 2
+  78720 x 1
 
 - Source:
 
@@ -51,7 +51,7 @@ if (FALSE) { # \dontrun{
 library(terra)
 
 # convert sf to SpatVector
-amapps_vec <- NEFSCspatial::amapps_grid |> as('SpatVector') 
+amapps_vec <- NEFSCspatial::amapps_grid |> as('SpatVector')
 
 # empty raster from amapps_vec
 amapps_ras <- rast(amapps_vec, nrow = 328, ncol = 240)

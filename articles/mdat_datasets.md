@@ -17,11 +17,6 @@ A current list of all data sets included in the package:
 | North Atlantic Right Whale Aerial Survey | narw_strata |
 | Ecosystem Monitoring Survey | ecomon_stations |
 | Ecosystem Monitoring Survey | ecomon_strata |
-| Turtle Ecology Survey | turtle_strata |
-| Northern Shrimp Survey | shrimp_strata |
-| Seal Aerial Survey | seal_stations |
-| Atlantic Surfclam and Ocean Quahog Survey | oq_strata |
-| Atlantic Surfclam and Ocean Quahog Survey | sc_strata |
 | Cooperative Atlantic States Shark Pupping and Nursery Survey | coastspan_strata |
 | Marine Mammal and Sea Turtle Survey | mmst_strata |
 | Gulf of Maine Bottom Longline Survey | gombll_strata |
@@ -31,6 +26,11 @@ A current list of all data sets included in the package:
 | Coastal Shark Bottom Longline Survey | csbll_stations |
 | Coastal Shark Bottom Longline Survey | csbll_strata |
 | Bottom Trawl Survey | bts_strata |
+| Turtle Ecology Survey | turtle_strata |
+| Northern Shrimp Survey | shrimp_strata |
+| Seal Aerial Survey | seal_stations |
+| Atlantic Surfclam and Ocean Quahog Survey | oq_strata |
+| Atlantic Surfclam and Ocean Quahog Survey | sc_strata |
 
 We can then plot any attribute, for example the “SUBSTRATA” attribute of
 the `gombll_substrata` dataset:

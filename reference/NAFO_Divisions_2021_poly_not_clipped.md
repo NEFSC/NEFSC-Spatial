@@ -30,7 +30,7 @@ An `sf` object:
 
 - Features:
 
-  38 x 9
+  38 x 8
 
 - Metadata:
 

@@ -35,7 +35,7 @@ A `sf` object:
 
 - Features:
 
-  135 x 7
+  135 x 6
 
 ## Source
 

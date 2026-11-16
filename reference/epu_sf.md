@@ -39,7 +39,7 @@ An `sf` object
 
 - Features:
 
-  4 x 4
+  4 x 3
 
 - Metadata:
 

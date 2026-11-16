@@ -15,13 +15,13 @@ Source:
 [`DESCRIPTION`](https://github.com/NEFSC/NEFSC-Spatial/blob/main/DESCRIPTION)
 
 Beet A, Hatch J, Bastille K (2026). *NEFSCspatial: Spatial data package
-for regions in the northeast atlantic*. R package version 1.0.0,
+for regions in the northeast atlantic*. R package version 1.1.0,
 <https://github.com/NEFSC/NEFSC-Spatial/>.
 
     @Manual{,
       title = {NEFSCspatial: Spatial data package for regions in the northeast atlantic},
       author = {Andy Beet and Joshua Hatch and Kimberly Bastille},
       year = {2026},
-      note = {R package version 1.0.0},
+      note = {R package version 1.1.0},
       url = {https://github.com/NEFSC/NEFSC-Spatial/},
     }
