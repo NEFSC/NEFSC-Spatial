@@ -20,9 +20,8 @@ generate_roxygen_mdat <- function(dataset_name, title, description) {
   dimension_type <- ifelse(dimension == 2, 'XY', NA_character_)
   bbox <- sf::st_bbox(mdat_obj)
   projection <- sf::st_crs(mdat_obj, parameters = TRUE)$Name
-  geoms <- which(vapply(mdat_obj, function(col) inherits(col, 'sfc'), TRUE)) # from sf:::print.sf()
   num_features <- nrow(mdat_obj)
-  num_columns <- ncol(mdat_obj) - length(geoms)
+  num_columns <- ncol(mdat_obj)
 
   # build the file path
   file_path <- file.path(

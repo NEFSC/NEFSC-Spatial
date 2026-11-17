@@ -1,12 +1,10 @@
 ## check and update dimension of data to be consistent
 
 ## list of datasets
-all_data <- data(package = 'NEFSCspatial')
-
-## extract names
-data_names <- all_data$results[, 'Item']
-# data_names <- data_names[!data_names %in% c('ecomon_stations')]
-
+data_names <- here::here('data') |>
+  list.files(pattern = '\\.rda$') |>
+  tools::file_path_sans_ext()
+  
 ## loop through each dataset
 for (i in data_names) {
   # load data
