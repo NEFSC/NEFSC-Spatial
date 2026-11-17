@@ -4,7 +4,7 @@
 data_names <- here::here('data') |>
   list.files(pattern = '\\.rda$') |>
   tools::file_path_sans_ext()
-  
+
 ## loop through each dataset
 for (i in data_names) {
   # load data
