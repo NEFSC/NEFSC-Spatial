@@ -11,21 +11,21 @@ A current list of all data sets included in the package:
 | title | dataset_name |
 |----|----|
 | Passive Acoustic Monitoring Survey | pam_deployments |
-| Sea Scallop Survey | scallop_strata |
-| Sea Scallop Survey | scallop_strata_historic |
-| North Atlantic Right Whale Aerial Survey | narw_lines |
-| North Atlantic Right Whale Aerial Survey | narw_strata |
-| Ecosystem Monitoring Survey | ecomon_stations |
-| Ecosystem Monitoring Survey | ecomon_strata |
-| Cooperative Atlantic States Shark Pupping and Nursery Survey | coastspan_strata |
-| Marine Mammal and Sea Turtle Survey | mmst_strata |
-| Gulf of Maine Bottom Longline Survey | gombll_strata |
-| Hook and Line Survey | hl_strata |
 | eDNA Survey | edna_stations |
 | eDNA Survey | edna_strata |
 | Coastal Shark Bottom Longline Survey | csbll_stations |
 | Coastal Shark Bottom Longline Survey | csbll_strata |
 | Bottom Trawl Survey | bts_strata |
+| Hook and Line Survey | hl_strata |
+| Cooperative Atlantic States Shark Pupping and Nursery Survey | coastspan_strata |
+| Marine Mammal and Sea Turtle Survey | mmst_strata |
+| Gulf of Maine Bottom Longline Survey | gombll_strata |
+| Ecosystem Monitoring Survey | ecomon_stations |
+| Ecosystem Monitoring Survey | ecomon_strata |
+| Sea Scallop Survey | scallop_strata |
+| Sea Scallop Survey | scallop_strata_historic |
+| North Atlantic Right Whale Aerial Survey | narw_lines |
+| North Atlantic Right Whale Aerial Survey | narw_strata |
 | Turtle Ecology Survey | turtle_strata |
 | Northern Shrimp Survey | shrimp_strata |
 | Seal Aerial Survey | seal_stations |
